@@ -263,7 +263,8 @@
       grid-template-columns: repeat(3, 1fr);
     }
     &.lg-col-4 {
-      grid-template-columns: repeat(3, 1fr);
+      // grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
     }
   }
   .tf-grid-layout {
@@ -839,7 +840,8 @@
   .shape-img-bg {
     height: 568px;
     img {
-      height: 568px;
+      // height: 568px;
+      height: 506px;
     }
     &.style-2 {
       max-width: 682px;
@@ -1015,7 +1017,8 @@
       }
       .swiper-slide {
         overflow: hidden;
-        height: 794px;
+        // height: 794px;
+        height: 840px;
       }
       .swiper-slide-active {
         .testimonial {

@@ -225,42 +225,6 @@ const BusinessSetupDubaiMainland = () => {
         </div>
       </div>
 
-      {/* <div style={{ marginTop: 100 }}>
-        <div className="tf-container">
-          <div className="wrap">
-            <div className="row align-items-end">
-              <div className="row wrap-counter">
-                {counterItems3.map((item, index) => (
-                  <div key={index} className="col-md-4">
-                    <div className="counter-item style-default">
-                      <div className="sub-heading text_black text-uppercase mb_21">
-                        {item.title}
-                      </div>
-                      <div className="counter-number mb_15">
-                        <div className="odometer text_primary">
-                          <OdometerComponent max={item.value} />
-                        </div>
-                        <span className="sub text_primary">{item.unit}</span>
-                      </div>
-                      <p className="sub-heading text_mono-gray-5">
-                        {item.description.split("\n").map((line, i) => (
-                          <React.Fragment key={i}>
-                            {line}
-                            {i < item.description.split("\n").length - 1 && (
-                              <br />
-                            )}
-                          </React.Fragment>
-                        ))}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
-
       <div style={{marginTop:100}}>
         <div className="tf-container-2">
           <div className="heading-section text-center mb_58">
@@ -396,32 +360,6 @@ const BusinessSetupDubaiMainland = () => {
                         Review for completeness and accuracy
                       </li>
                     </ul>
-                    {/* <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
-                      <div className="avatar rounded-cycle overflow-hidden">
-                        <img
-                          alt="avatar"
-                          src="/images/avatar/avatar-17.jpg"
-                          width={144}
-                          height={144}
-                        />
-                      </div>
-                      <div className="content">
-                        <p className="description fw-3 text-body-2 mb_4 text_color-text-1">
-                          “It's a comprehensive tool of Advitex that we
-                          <span className="fw-6 text_color-text-1">
-                            rely on daily{" "}
-                          </span>
-                          to guide our
-                          <span className="fw-6 text_color-text-1">
-                            investment decisions
-                          </span>
-                          ”
-                        </p>
-                        <div className="text-body-2 fw-6 text_color-text-1">
-                          John Sena - CEO of Kling
-                        </div>
-                      </div>
-                    </div> */}
                   </div>
                 </div>
               </div>
@@ -471,26 +409,6 @@ const BusinessSetupDubaiMainland = () => {
                       company license
                     </li>
                   </ul>
-                  {/* <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
-                    <div className="avatar rounded-cycle overflow-hidden">
-                      <img
-                        alt="avatar"
-                        src="/images/avatar/avatar-5.jpg"
-                        width={100}
-                        height={100}
-                      />
-                    </div>
-                    <div className="content">
-                      <p className="description fw-3 text-body-2 mb_4 text_color-text-1">
-                        "Thanks to Advitex's stock planning tools, we have seen
-                        remarkable stability in our investments, even during
-                        volatile periods."
-                      </p>
-                      <div className="text-body-2 fw-6 text_color-text-1">
-                        Alex Boar - CEO of Marcus
-                      </div>
-                    </div>
-                  </div> */}
                 </div>
               </div>
             </div>
@@ -541,26 +459,7 @@ const BusinessSetupDubaiMainland = () => {
                       Apply for Emirates ID issuance
                     </li>
                   </ul>
-                  {/* <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
-                    <div className="avatar rounded-cycle overflow-hidden">
-                      <img
-                        alt="avatar"
-                        src="/images/avatar/avatar-6.jpg"
-                        width={100}
-                        height={100}
-                      />
-                    </div>
-                    <div className="content">
-                      <p className="description fw-3 text-body-2 mb_4 text_color-text-1">
-                        "Advitex's strategic insights have been crucial in
-                        redefining our business path and keeping us ahead of the
-                        curve."
-                      </p>
-                      <div className="text-body-2 fw-6 text_color-text-1">
-                        Elise Chrona - CEO of Minga
-                      </div>
-                    </div>
-                  </div> */}
+ 
                 </div>
               </div>
             </div>
@@ -611,30 +510,7 @@ const BusinessSetupDubaiMainland = () => {
                       Complete KYC and verification
                     </li>
                   </ul>
-                  {/* <div className="author d-flex gap_24 align-items-center effect-item effect-right effect-4">
-                    <div className="avatar rounded-cycle overflow-hidden">
-                      <img
-                        alt="avatar"
-                        src="/images/avatar/avatar-8.jpg"
-                        width={96}
-                        height={96}
-                      />
-                    </div>
-                    <div className="content">
-                      <p className="description fw-3 text-body-2 mb_4 text_color-text-1">
-                        "Advitex's investment planning has
-                        <span className="">simplified complex decisions</span> ,
-                        giving us clarity and
-                        <span className="text_color-text-1 fw-6">
-                          confidence
-                        </span>
-                        in our financial journey."
-                      </p>
-                      <div className="text-body-2 fw-6 text_color-text-1">
-                        Elise Chrona - CEO of Minga
-                      </div>
-                    </div>
-                  </div> */}
+
                 </div>
               </div>
             </div>
@@ -644,54 +520,7 @@ const BusinessSetupDubaiMainland = () => {
       <div className="tf-container-2">
         <div className="heading-section d-flex gap_12 justify-content-between flex-wrap-md mb_59">
           <div className="left">
-            {/* <div className="heading-tag d-flex gap_12 v2 mb_20 fw-5">
-              <div className="icon">
-                <svg
-                  width={18}
-                  height={18}
-                  viewBox="0 0 18 18"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clipPath="url(#clip0_10160_68)">
-                    <circle
-                      cx="4.6875"
-                      cy="4.6875"
-                      r="3.1875"
-                      stroke="#7E8995"
-                      strokeWidth="1.125"
-                    />
-                    <circle
-                      cx="13.3125"
-                      cy="13.3125"
-                      r="3.1875"
-                      stroke="#7E8995"
-                      strokeWidth="1.125"
-                    />
-                    <circle
-                      cx="4.6875"
-                      cy="13.3125"
-                      r="3.1875"
-                      stroke="#7E8995"
-                      strokeWidth="1.125"
-                    />
-                    <path
-                      d="M13.5 1.5V7.5M16.5 4.5L10.5 4.5"
-                      stroke="#7E8995"
-                      strokeWidth="1.125"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_10160_68">
-                      <rect width={18} height={18} fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </div>
-              <p className="text-body-3 text_mono-gray-5 fw-5">Figures</p>
-            </div> */}
+
             <h2 className="title text_white fw-5 split-text split-lines-transform">
               Where data <span className="text-gradient">tells</span> our storys
             </h2>
@@ -701,13 +530,6 @@ const BusinessSetupDubaiMainland = () => {
               Empowering businesses with data-driven strategies to <br />
               achieve sustainable growth and lasting impact.
             </p>
-            {/* <Link
-              to={`/about`}
-              className="btn_link text-body-1 text_white link d-flex align-items-center gap_8"
-            >
-              <span>Explore</span>
-              <i className="icon-long-arrow-alt-right-solid" />
-            </Link> */}
           </div>
         </div>
         <div className="wrap-counter style-2 tf-grid-layout lg-col-4 sm-col-2 gap-0">
