@@ -855,7 +855,8 @@
     overflow: hidden;
     position: absolute;
     width: 100%;
-    bottom: 0;
+    // bottom: 0;
+    bottom: -1px;
     svg {
       width: calc(200% + 1.3px);
       display: block;
@@ -863,12 +864,14 @@
       position: relative;
       transform: translateX(-50%);
       path {
-        fill: #f7f2e9;
+        // fill: #f7f2e9;
+         fill: #fff;
       }
     }
   }
   .shape-2 {
-    top: 44.2%;
+    // top: 44.2%;
+    top: 35%;
     left: 24.5%;
     overflow: hidden;
     height: 114px;

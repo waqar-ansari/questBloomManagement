@@ -31,6 +31,8 @@ import CartPage from "./pages/shop/cart";
 import CheckoutPage from "./pages/shop/checkout";
 import ContactUsPage from "./pages/otherPages/contact-us";
 import CompanyLiquidation from "./components/otherPages/CompanyLiquidation";
+import BusinessSetupDubaiMainland from "./components/otherPages/BusinessSetupDubaiMainland";
+import OtherServices from "./components/otherPages/OtherServices";
 function App() {
   return (
     <>
@@ -86,6 +88,8 @@ function App() {
                 <Route path="checkout" element={<CheckoutPage />} />
                 <Route path="contact-us" element={<ContactUsPage />} />
                 <Route path="company-liquidation" element={<CompanyLiquidation />} />
+                <Route path="business-setup-dubai-mainland" element={<BusinessSetupDubaiMainland />} />
+                <Route path="other-services" element={<OtherServices />} />
 
 
                 <Route path="*" element={<NotFoundPage />} />
