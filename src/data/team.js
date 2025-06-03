@@ -1,39 +1,39 @@
 export const teamMembers = [
   {
-    name: "Armor Dao",
-    role: "Co - Founder",
-    image: "/images/team/team-1.jpg",
+    name: "JALENDER SHARMA",
+    role: "JALENDER SHARMA",
+    image: "/images/qb/people1.webp",
   },
   {
-    name: "Michelle Garcia",
-    role: "SEO",
-    image: "/images/team/team-2.jpg",
+    name: "BRAHMARUP GAANGULY",
+    role: "HR Head",
+    image: "/images/qb/people4.png",
   },
   {
-    name: "Kobie Mainoo",
-    role: "Marketing Manager",
-    image: "/images/team/team-3.jpg",
+    name: "SYED MAJID HASAN",
+    role: "Business & Corporate Banking Head",
+    image: "/images/qb/people3.png",
   },
   {
-    name: "Samantha Nguyen",
-    role: "Compliance Specialist",
-    image: "/images/team/team-4.jpg",
+    name: "FAREEDA EK",
+    role: "CHARTERED ACCOUNTANT",
+    image: "/images/qb/people5.png",
   },
   {
-    name: "Michelle Garcia",
-    role: "HR Business ADMIN",
-    image: "/images/team/team-5.jpg",
+    name: "Muhammad Afzal Mir",
+    role: "Business Consultant",
+    image: "/images/qb/people6.webp",
   },
   {
-    name: "James David",
-    role: "Marketing Planning",
-    image: "/images/team/team-6.jpg",
+    name: "PRAGYA SHARMA",
+    role: "BUSINESS CONSULTANT",
+    image: "/images/qb/people2.png",
   },
-  {
-    name: "Oliver Benjamin",
-    role: "Occupancy",
-    image: "/images/team/team-7.jpg",
-  },
+  // {
+  //   name: "Oliver Benjamin",
+  //   role: "Occupancy",
+  //   image: "/images/team/team-7.jpg",
+  // },
 ];
 
 export const teamMembers2 = [

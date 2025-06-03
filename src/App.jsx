@@ -30,16 +30,12 @@ import ProductDetailsPage from "./pages/shop/product-details";
 import CartPage from "./pages/shop/cart";
 import CheckoutPage from "./pages/shop/checkout";
 import ContactUsPage from "./pages/otherPages/contact-us";
-import BusinessSetupDubaiMainland from "./components/otherPages/BusinessSetupDubaiMainland";
-import SmoothScroller from "./components/common/SmoothScroller";
-import OtherServices from "./components/otherPages/OtherServices";
 function App() {
   return (
     <>
       <div id="wrapper" className="counter-scroll">
         <LayoutWrapper>
           <Context>
-              {/* <SmoothScroller> */}
             <Routes>
               <Route path="/">
                 <Route index element={<HomePage />} />
@@ -88,13 +84,10 @@ function App() {
                 <Route path="cart" element={<CartPage />} />
                 <Route path="checkout" element={<CheckoutPage />} />
                 <Route path="contact-us" element={<ContactUsPage />} />
-                <Route path="business-setup-dubai-mainland" element={<BusinessSetupDubaiMainland />} />
-                <Route path="other-services" element={<OtherServices />} />
 
                 <Route path="*" element={<NotFoundPage />} />
               </Route>
             </Routes>
-            {/* </SmoothScroller> */}
           </Context>
 
           <ScrollTop />

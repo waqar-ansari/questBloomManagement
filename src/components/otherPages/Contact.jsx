@@ -13,23 +13,36 @@ export default function Contact() {
                   <h1 className="mb_21">
                     Success is a team play, right? Let’s work together!
                   </h1>
-                  <ul className="breadcrumb">
+                  {/* <ul className="breadcrumb">
                     <li>
                       <Link to={`/`} className="link">
                         Home
                       </Link>
                     </li>
                     <li>Contact</li>
-                  </ul>
+                  </ul> */}
                 </div>
                 <div className="bot">
-                  <div className="content mb-0">
-                    <h6>+068 5681 96 96</h6>
-                    <p className="text-body-2 text_mono-gray-6">
-                      Call us for urgent
-                    </p>
-                  </div>
+                <div className="content mb-0">
+                  <h6> (+971) 564 065 672</h6>
+                  <p className="text-body-2 text_mono-gray-6">
+                    Call us for urgent
+                  </p>
+                </div><br />
+                <div className="content mb-0">
+                  <h6><b>Monday – Friday:</b> 8.30AM to 8.00PM</h6>
+                  <p className="text-body-2 text_mono-gray-6">
+                    RECEPTION HOURS
+                  </p>
+                </div><br />
+                <div className="content mb-0">
+                  <h6><b>Monday – Friday:</b> 8.30AM to 8.00PM</h6>
+                  <h6><b>Saturday:</b> 10.00AM to 4.00PM</h6>
+                  <p className="text-body-2 text_mono-gray-6">
+                    CALL CENTRE HOURS
+                  </p>
                 </div>
+              </div>
               </div>
             </div>
             <div className="col-lg-6">

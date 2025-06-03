@@ -34,14 +34,14 @@ export default function AboutPage() {
                     to improve business and customer experience.
                   </p>
                 </div>
-                <ul className="breadcrumb">
+                {/* <ul className="breadcrumb">
                   <li>
                     <Link to={`/`} className="link">
                       Home
                     </Link>
                   </li>
                   <li>About us</li>
-                </ul>
+                </ul> */}
               </div>
             </div>
           </div>
@@ -50,10 +50,10 @@ export default function AboutPage() {
       <div className="main-content style-1">
         <About />
         <Team />
-        <Process />
+        {/* <Process /> */}
         <Testimonials />
-        <Faqs parentClass="section-faqs style-1 tf-spacing-8" />
-        <Contact />
+        {/* <Faqs parentClass="section-faqs style-1 tf-spacing-8" /> */}
+        {/* <Contact /> */}
       </div>
       <Footer1 />
     </>

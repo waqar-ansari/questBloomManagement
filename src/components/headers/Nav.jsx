@@ -19,7 +19,7 @@ export default function Nav() {
     <>
       {" "}
       <li className={`${isActiveParent(homepages) ? "current-menu" : ""} `}>
-        <a href="/">Home</a>
+        <a href="#">Home</a>
         {/* <div className="submenu mega-menu">
           <div className="wrap-demo-item tf-grid-layout-lg lg-col-3">
             {homepages.map((item, index) => (
@@ -57,7 +57,7 @@ export default function Nav() {
           isActiveParent(otherPages) ? "current-menu" : ""
         } `}
       >
-        <a href="/business-setup-dubai-mainland">Business Setup in Dubai Mainland</a>
+        <a href="#">Business Setup in Dubai Mainland</a>
         {/* <ul className="submenu">
           {otherPages.map((item) => (
             <li
@@ -109,8 +109,8 @@ export default function Nav() {
           ))}
         </ul>
       </li>
-      <li className={` ${isActive("/other-services") ? "current-menu" : ""} `}>
-        <Link to={`/other-services`}>Other Services</Link>
+      <li className={` ${isActive("/contact-us") ? "current-menu" : ""} `}>
+        <Link to={`/contact-us`}>Other Services</Link>
       </li>
       <li
         className={` position-relative ${

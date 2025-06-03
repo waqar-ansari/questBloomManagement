@@ -263,7 +263,7 @@
       grid-template-columns: repeat(3, 1fr);
     }
     &.lg-col-4 {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
   .tf-grid-layout {
@@ -613,10 +613,8 @@
         width: 100%;
       }
     }
-    // padding-top: 618px;
-    padding-top: 430px;
-    // margin-top: -521px;
-    margin-top: -340px;
+    padding-top: 618px;
+    margin-top: -521px;
   }
   .section-about {
     &.style-1 {
