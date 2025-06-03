@@ -63,7 +63,7 @@ export default function Header1({ parentClass = "header style-default" }) {
                     <span>Get Started</span>
                     <span className="bg-effect" />
                   </Link>
-                  <Link to={`/`} className="tf-btn hide-sm">
+                  <Link to={`/contact-us`} className="tf-btn hide-sm">
                     <span>Contact Us</span>
                     <span className="bg-effect" />
                   </Link>

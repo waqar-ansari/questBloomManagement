@@ -111,7 +111,7 @@ export default function Footer1({ parentClass = "footer style-default" }) {
                   <div className="tf-collapse-content">
                     <ul className="footer-menu-list">
                       <li className="text-body-2 text_mono-gray-6">
-                        <Link to={`/`} className="link footer-menu_item">
+                        <Link to={`/About`} className="link footer-menu_item">
                           About Quest Bloom
                         </Link>
                       </li>

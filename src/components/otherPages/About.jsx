@@ -10,12 +10,12 @@ export default function About() {
         <div className="tf-container">
           <div className="row">
             <div className="col-lg-6">
-              <div className="wrap-img">
+              <div className="wrap-img"><br /><br /><br /><br /><br /><br /><br />
                 <div className="shape-img-bg shape-border">
                   <img
                     alt="shape"
                     className="img-custom-anim-left wow"
-                    src="/images/section/img-with-shape-3.jpg"
+                    src="/images/qb/head of hr.png"
                     width={692}
                     height={543}
                   />
@@ -73,22 +73,18 @@ export default function About() {
             </div>
             <div className="col-lg-6">
               <div className="content mb-0">
-                <h2 className="title split-text split-lines-rotation-x">
-                  Innovate to streamline operations
+                <h5 className="title split-text split-lines-rotation-x">
+                  Head of Admin & HR
                   <br />
-                  and accelerate growth.
-                </h2>
+                  BRAHMARUP GANGULY Head Of Admin & HR - Quest Management Consultancy.
+                </h5>
                 <p
                   className="description text-body-1 text_mono-gray-7 description-1 wow animate__fadeInUp animate__animated"
                   data-wow-delay="0s"
                 >
-                  We are committed to driving innovation and delivering
-                  cutting-edge software solutions. Our team of skilled
-                  developers and industry experts collaborate closely to create
-                  tailored solutions that address the unique needs of our
-                  clients.
+                  Brahmarup Ganguly hails from the city of Calcutta, India. After Pursuing his MBA from “Christ College Institute of Management” Bangalore, he Joined the banking Industry in India. He worked with renowned banks like HDFC Bank and Axis Bank. Getting hands-on experience in Business Banking. Portfolio Management, Trade Finance and Corporate Banking for six years, he moved to Dubai. UAE in 2013. Brahmarup Ganguly has worked ith renowned banks like “First Gulf Bank” and “Mashreq Bank” in Dubai and gathered intrinsic knowledge in Business Banking. By virtue of his profession he developed a strong learning about the various protocols of the Authorities who incorporates companies in UAE. He also holds an extensive network of clients globally with a view to implement his knowledge to assist global clients to establish their company in UAE. Mr Brahmarup prides in solution delivery with minimum turn around time specially with various Govt Authorities like Ministry of Human Resource and Emiratisation(MOHRE), Development Economic Department (DED), Fedral Tax Authority and all the Free Zone authorities in UAE adding to the delight of the customers
                 </p>
-                <p
+                {/* <p
                   className="description text-body-1 text_mono-gray-7 description-2 wow animate__fadeInUp animate__animated"
                   data-wow-delay="0s"
                 >
@@ -98,7 +94,7 @@ export default function About() {
                   growth. Our innovative software solutions are designed to
                   increase efficiency, improve productivity, and enhance overall
                   business performance.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -111,22 +107,19 @@ export default function About() {
           <div className="row">
             <div className="col-xl-6">
               <div className="content">
-                <h2 className="title split-text split-lines-rotation-x">
-                  Innovate to streamline operations
+                <h5 className="title split-text split-lines-rotation-x">
+                  General Manager
+                  Head of Business Development
                   <br />
-                  and accelerate growth.
-                </h2>
+                  JALENDHAR SHARMA  Co-Founder Quest Management Consultancy.
+                </h5>
                 <p
                   className="description text-body-1 text_mono-gray-7 description-1 wow animate__fadeInUp animate__animated"
                   data-wow-delay="0s"
                 >
-                  We are committed to driving innovation and delivering
-                  cutting-edge software solutions. Our team of skilled
-                  developers and industry experts collaborate closely to create
-                  tailored solutions that address the unique needs of our
-                  clients.
+                  Jalendhar Sharma comes from a rich professional background wherein he was engaged in building strong client network over the past nine years. After completing his Graduation from the Calcutta University, Jalendhar joined HDFC Bank in India wherein developed strong skills to manage individual and corporate clients. He later moved to Max New York Life insurance company to manage investment portfolio of high net-worth clients. He was later hired by Kotak Mahindra Bank in India where he gathered extensive knowledge about the banking systems and protocols. His vast experience in India helped him make a strong foothold when he moved to Dubai, UAE in 2014. Working with one of the most prestigious Bank in UAE, Mashreq Bank to promote their Business Banking department , not only helped Mr Sharma to understand the global market, but also created a zeal in him to apply his knowledge towards entrepreneurship. With the zest of his ability he decided to form a company to assist his Global clients to setup their business and run it cost effectively from UAE. Mr Sharma believed in building a strong relationship with all Govt authorities like Ministry of Human Resource and Emiratisation (MOHRE), Department of Economic Development (DED), Federal Tax Authority (FTA), Dubai Courts, Security Industry Regulation Authority (SIRA) and designated freezones like JAFZA, DAFZA, DMCC, DWC, DIFC, ADGM, RAKEZ, SAIF Zone, Hamriyah Free Zone Authority, UAQFTZ etc. With his strong ability to convert the impossible, Mr Sharma prides in solution delivery with minimum turn around time prioritising Client’s satisfaction as his primary moto.
                 </p>
-                <p
+                {/* <p
                   className="description text-body-1 text_mono-gray-7 description-2 wow animate__fadeInUp animate__animated"
                   data-wow-delay="0s"
                 >
@@ -136,16 +129,16 @@ export default function About() {
                   growth. Our innovative software solutions are designed to
                   increase efficiency, improve productivity, and enhance overall
                   business performance.
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="col-xl-6">
-              <div className="wrap-img mb-0">
-                <div className="shape-img-bg">
+              <div className="wrap-img mb-0"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <div className="shape-img-bg shape-border">
                   <img
                     alt="shape"
                     className="img-custom-anim-right wow"
-                    src="/images/section/img-with-shape-4.jpg"
+                    src="/images/qb/General Manager.png"
                     width={695}
                     height={568}
                   />
@@ -230,3 +223,5 @@ export default function About() {
     </>
   );
 }
+
+

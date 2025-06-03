@@ -8,15 +8,17 @@ export default function Team() {
       <div className="tf-container">
         <div className="heading-secion mb_88">
           <h2 className="heading-title split-text effect-right">
-            Our Dedicated Membership
+            Dedicated Team
           </h2>
           <p
             className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated"
             data-wow-delay="0s"
           >
-            Our dedicated members actively participate in our community, sharing
+            {/* Our dedicated members actively participate in our community, sharing
             expertise, <br />
-            collaborating on projects, and supporting one another.
+            collaborating on projects, and supporting one another. */}
+            Professional Individuals
+
           </p>
         </div>
         <div className="tf-grid-layout-2 lg-col-4">
@@ -26,7 +28,10 @@ export default function Team() {
               className="team-item style-default hover-border hover-image"
             >
               <Link to={`/team`} className="img-style mb_19">
-                <img alt="avatar" src={member.image} width={406} height={406} />
+                <div className="w-full aspect-square overflow-hidden rounded-full">
+
+                  <img alt="avatar" src={member.image} className="w-full h-full object-cover object-top" />
+                </div>
               </Link>
               <div className="content">
                 <h3 className="name">
