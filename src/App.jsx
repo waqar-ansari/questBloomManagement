@@ -31,9 +31,26 @@ import CartPage from "./pages/shop/cart";
 import CheckoutPage from "./pages/shop/checkout";
 import ContactUsPage from "./pages/otherPages/contact-us";
 import CompanyLiquidation from "./components/otherPages/CompanyLiquidation";
+
 import TradeFinannceAssistance from "./components/otherPages/TradeFinannceAssistance";
 import BankAccountOpening from "./components/otherPages/BankAccountOpening";
 import MainlandCompanySetupwithDED from "./components/otherPages/MainlandCompanySetupwithDED-Dubai";
+
+import BusinessSetupDubaiMainland from "./components/otherPages/BusinessSetupDubaiMainland";
+import OtherServices from "./components/otherPages/OtherServices";
+import DubaiSouthFreezone from "./components/otherPages/BusinessSetupFreezone/DubaiSouthFreezone";
+import DmccFreezone from "./components/otherPages/BusinessSetupFreezone/DmccFreezone";
+import JabelAliFreeZone from "./components/otherPages/BusinessSetupFreezone/JebelAliFreezone";
+import JebelAliFreeZone from "./components/otherPages/BusinessSetupFreezone/JebelAliFreezone";
+import HamriyahFreezone from "./components/otherPages/BusinessSetupFreezone/HamriyahFreezone";
+import SharjahAirportFreezone from "./components/otherPages/BusinessSetupFreezone/SharjahAirportFreezone";
+import UmmAlQuwainFTZ from "./components/otherPages/BusinessSetupFreezone/UmmAlQuwainFTZ";
+import FujairahFZA from "./components/otherPages/BusinessSetupFreezone/FujairahFZA";
+import SharjahMediaCity from "./components/otherPages/BusinessSetupFreezone/SharjahMediaCity";
+import AjmanFZA from "./components/otherPages/BusinessSetupFreezone/AjmanFZA";
+import AjmanMediaCityFZ from "./components/otherPages/BusinessSetupFreezone/AjmanMediaCityFZ";
+import RasAlKhaimahFEZA from "./components/otherPages/BusinessSetupFreezone/RasAlKhaimahFEZA";
+
 function App() {
   return (
     <>
@@ -89,11 +106,25 @@ function App() {
                 <Route path="checkout" element={<CheckoutPage />} />
                 <Route path="contact-us" element={<ContactUsPage />} />
                 <Route path="company-liquidation" element={<CompanyLiquidation />} />
+
                 <Route path="trade-finannce-assistance" element={<TradeFinannceAssistance />} />
                 <Route path="bank-account-opening" element={<BankAccountOpening />} />
                 <Route path="mainland-company-setup-with-ded-dubai" element={<MainlandCompanySetupwithDED />} />
 
 
+                <Route path="business-setup-dubai-mainland" element={<BusinessSetupDubaiMainland />} />
+                <Route path="other-services" element={<OtherServices />} />
+                <Route path="dubai-south-freezone" element={<DubaiSouthFreezone />} />
+                <Route path="dmcc-freezone" element={<DmccFreezone />} />
+                <Route path="jebel-ali-freezone" element={<JebelAliFreeZone />} />
+                <Route path="hamriyah-freezone" element={<HamriyahFreezone />} />
+                <Route path="sharjah-airport-freezone" element={<SharjahAirportFreezone />} />
+                <Route path="umm-al-quwain-ftz" element={<UmmAlQuwainFTZ />} />
+                <Route path="fujairah-fza" element={<FujairahFZA />} />
+                <Route path="sharjah-media-city" element={<SharjahMediaCity />} />
+                <Route path="ajman-fza" element={<AjmanFZA />} />
+                <Route path="ajman-media-city-fz" element={<AjmanMediaCityFZ />} />
+                <Route path="ras-al-khaimah-feza" element={<RasAlKhaimahFEZA />} />
 
 
                 <Route path="*" element={<NotFoundPage />} />

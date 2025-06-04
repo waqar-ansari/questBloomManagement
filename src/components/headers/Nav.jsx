@@ -4,7 +4,7 @@ import {
   otherPages,
   servicePages,
   shopPages,
-  businessSetupInFreeZone
+  businessSetupInFreeZone,
 } from "@/data/menu";
 
 import { Link, useLocation } from "react-router-dom";
@@ -19,9 +19,25 @@ export default function Nav() {
     <>
       {" "}
       <li className={`${isActiveParent(homepages) ? "current-menu" : ""} `}>
-        <a href="#">Home</a>
-        {/* <div className="submenu mega-menu">
-          <div className="wrap-demo-item tf-grid-layout-lg lg-col-3">
+        <a href="/">Home</a>
+      </li>
+      {/* <li
+        className={`position-relative ${
+          isActiveParent(otherPages) ? "current-menu" : ""
+        } `}
+      >
+        <a href="/business-setup-dubai-mainland">
+          Business Setup
+        </a>
+      </li> */}
+      <li
+        className={`has-child ${
+          isActiveParent(homepages) ? "current-menu" : ""
+        } `}
+      >
+        <a href="#">Business Setup</a>
+        <div className="submenu mega-menu">
+          <div className="wrap-demo-item tf-grid-layout-lg lg-col-2">
             {homepages.map((item, index) => (
               <div
                 key={index}
@@ -44,39 +60,15 @@ export default function Nav() {
                 </Link>
               </div>
             ))}
-            <div className="comming-soon">
-              <Link to={`/coming-soon`} className="wrap">
-                <h5 className="demo-name">Coming Soon</h5>
-              </Link>
-            </div>
           </div>
-        </div> */}
-      </li>
-      <li
-        className={`position-relative ${
-          isActiveParent(otherPages) ? "current-menu" : ""
-        } `}
-      >
-        <a href="#">Business Setup in Dubai Mainland</a>
-        {/* <ul className="submenu">
-          {otherPages.map((item) => (
-            <li
-              key={item.href}
-              className={`menu-item  ${
-                isActive(item.href) ? "current-menu-item" : ""
-              }`}
-            >
-              <Link to={item.href}>{item.label}</Link>
-            </li>
-          ))}
-        </ul> */}
+        </div>
       </li>
       <li
         className={`has-child position-relative ${
           isActiveParent(businessSetupInFreeZone) ? "current-menu" : ""
         } `}
       >
-        <a href="#">Business Setup in Free Zone</a>
+        <a href="#">Free Zone</a>
         <ul className="submenu">
           {businessSetupInFreeZone.map((item) => (
             <li
@@ -109,27 +101,15 @@ export default function Nav() {
           ))}
         </ul>
       </li>
-      <li className={` ${isActive("/contact-us") ? "current-menu" : ""} `}>
-        <Link to={`/contact-us`}>Other Services</Link>
+      <li className={` ${isActive("/other-services") ? "current-menu" : ""} `}>
+        <Link to={`/other-services`}>Our Services</Link>
       </li>
       <li
         className={` position-relative ${
           isActiveParent(shopPages) ? "current-menu" : ""
         } `}
       >
-        <a href="#">Contact Us</a>
-        {/* <ul className="submenu">
-          {shopPages.map((item) => (
-            <li
-              key={item.href}
-              className={`menu-item  ${
-                isActive(item.href) ? "current-menu-item" : ""
-              }`}
-            >
-              <Link to={item.href}>{item.label}</Link>
-            </li>
-          ))}
-        </ul> */}
+        <a href="/contact-us">Contact Us</a>
       </li>
     </>
   );

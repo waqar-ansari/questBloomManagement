@@ -296,7 +296,7 @@ export default function Brands() {
                   <img
                     alt="img-with-shape-1"
                     className="img-custom-anim-left wow"
-                    src="/images/qb/manyPeople.webp"
+                    src="/images/qb/group.webp"
                     width={696}
                     height={598}
                   />
