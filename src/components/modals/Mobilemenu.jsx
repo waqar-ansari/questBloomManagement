@@ -1,8 +1,8 @@
 import {
-  blogPages,
+  bankingAssistance,
   homepages,
   otherPages,
-  servicePages,
+  businessSetupInFreeZone,
   shopPages,
 } from "@/data/menu";
 
@@ -21,7 +21,7 @@ export default function Mobilemenu() {
         <Link to={`/`} className="logo">
           <img
             alt="logo"
-            src="/images/logo/footer-logo.png"
+            src="/images/qb/questBloomTransparent.png"
             width={390}
             height={80}
           />
@@ -34,81 +34,27 @@ export default function Mobilemenu() {
         <div className="mb-body">
           <div className="mb-content-top">
             <ul className="nav-ul-mb" id="wrapper-menu-navigation">
-              <li
+               <li
                 className={`nav-mb-item ${
-                  isActiveParent(homepages) ? "active" : ""
+                  isActive("/") ? "active" : ""
                 }`}
               >
-                <a
-                  href="#dropdown-menu-home"
-                  className="collapsed mb-menu-link"
-                  data-bs-toggle="collapse"
-                  aria-expanded="true"
-                  aria-controls="dropdown-menu-home"
-                >
-                  <span>Home</span>
-                  <span className="btn-open-sub" />
-                </a>
-                <div
-                  id="dropdown-menu-home"
-                  className="collapse"
-                  data-bs-parent="#menu-mobile"
-                >
-                  <ul className="sub-nav-menu">
-                    {homepages.map((item, index) => (
-                      <li key={index}>
-                        <Link
-                          to={item.href}
-                          className={`sub-nav-link ${
-                            isActive(item.href) ? "active" : ""
-                          }`}
-                        >
-                          {item.title}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <Link to={`/`} className="mb-menu-link">
+                  Home
+                </Link>
               </li>
               <li
                 className={`nav-mb-item ${
-                  isActiveParent(otherPages) ? "active" : ""
+                  isActive("/business-setup-dubai-mainland") ? "active" : ""
                 }`}
               >
-                <a
-                  href="#dropdown-menu-pages"
-                  className="collapsed mb-menu-link"
-                  data-bs-toggle="collapse"
-                  aria-expanded="true"
-                  aria-controls="dropdown-menu-pages"
-                >
-                  <span>Pages</span>
-                  <span className="btn-open-sub" />
-                </a>
-                <div
-                  id="dropdown-menu-pages"
-                  className="collapse"
-                  data-bs-parent="#menu-mobile"
-                >
-                  <ul className="sub-nav-menu">
-                    {otherPages.map((item) => (
-                      <li key={item.href}>
-                        <Link
-                          to={item.href}
-                          className={`sub-nav-link ${
-                            isActive(item.href) ? "active" : ""
-                          }`}
-                        >
-                          {item.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <Link to={`/business-setup-dubai-mainland`} className="mb-menu-link">
+                  Business Setup in Dubai Mainland
+                </Link>
               </li>
               <li
                 className={`nav-mb-item ${
-                  isActiveParent(servicePages) ? "active" : ""
+                  isActiveParent(businessSetupInFreeZone) ? "active" : ""
                 }`}
               >
                 <a
@@ -118,7 +64,7 @@ export default function Mobilemenu() {
                   aria-expanded="true"
                   aria-controls="dropdown-menu-services"
                 >
-                  <span>Serivce</span>
+                  <span>Business Setup in Free Zone</span>
                   <span className="btn-open-sub" />
                 </a>
                 <div
@@ -127,7 +73,7 @@ export default function Mobilemenu() {
                   data-bs-parent="#menu-mobile"
                 >
                   <ul className="sub-nav-menu">
-                    {servicePages.map((item) => (
+                    {businessSetupInFreeZone.map((item) => (
                       <li key={item.href}>
                         <Link
                           to={item.href}
@@ -144,7 +90,7 @@ export default function Mobilemenu() {
               </li>
               <li
                 className={`nav-mb-item ${
-                  isActiveParent(blogPages) ? "active" : ""
+                  isActiveParent(bankingAssistance) ? "active" : ""
                 }`}
               >
                 <a
@@ -154,7 +100,7 @@ export default function Mobilemenu() {
                   aria-expanded="true"
                   aria-controls="dropdown-menu-blog"
                 >
-                  <span>Blog</span>
+                  <span>Banking Assistance</span>
                   <span className="btn-open-sub" />
                 </a>
                 <div
@@ -163,7 +109,7 @@ export default function Mobilemenu() {
                   data-bs-parent="#menu-mobile"
                 >
                   <ul className="sub-nav-menu">
-                    {blogPages.map((item) => (
+                    {bankingAssistance.map((item) => (
                       <li key={item.href}>
                         <Link
                           to={item.href}
@@ -178,43 +124,16 @@ export default function Mobilemenu() {
                   </ul>
                 </div>
               </li>
-              <li
+               <li
                 className={`nav-mb-item ${
-                  isActiveParent(shopPages) ? "active" : ""
+                  isActive("/other-services") ? "active" : ""
                 }`}
               >
-                <a
-                  href="#dropdown-menu-shop"
-                  className="collapsed mb-menu-link"
-                  data-bs-toggle="collapse"
-                  aria-expanded="true"
-                  aria-controls="dropdown-menu-shop"
-                >
-                  <span>Shop</span>
-                  <span className="btn-open-sub" />
-                </a>
-                <div
-                  id="dropdown-menu-shop"
-                  className="collapse"
-                  data-bs-parent="#menu-mobile"
-                >
-                  <ul className="sub-nav-menu">
-                    {shopPages.map((item) => (
-                      <li key={item.href}>
-                        <Link
-                          to={item.href}
-                          className={`sub-nav-link ${
-                            isActive(item.href) ? "active" : ""
-                          }`}
-                        >
-                          {item.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                <Link to={`/other-services`} className="mb-menu-link">
+                  Other Services
+                </Link>
               </li>
-              <li
+               <li
                 className={`nav-mb-item ${
                   isActive("/contact-us") ? "active" : ""
                 }`}
@@ -223,6 +142,7 @@ export default function Mobilemenu() {
                   Contact
                 </Link>
               </li>
+             
             </ul>
           </div>
           <div className="mb-other-content">
@@ -235,7 +155,7 @@ export default function Mobilemenu() {
                     href="https://www.google.com/maps?q=16/9,ScotlandUnitedKingdom"
                   >
                     <span className="fw-5 text_mono-gray-5">
-                      16/9, Scotland United Kingdom
+                      Office 1004, 10th Floor, Bayswater,<br/> Business Bay, Dubai-UAE
                     </span>
                   </a>
                 </p>
@@ -243,9 +163,9 @@ export default function Mobilemenu() {
               <li>
                 <p className="text_mono-gray">
                   Email:
-                  <a href="mailto:themesflat@gmail.com">
+                  <a href="mailto:info@questmanagement.ae">
                     <span className="fw-5 text_mono-gray-5">
-                      themesflat@gmail.com
+                      info@questmanagement.ae
                     </span>
                   </a>
                 </p>
@@ -255,7 +175,7 @@ export default function Mobilemenu() {
                   Phone:
                   <a href="tel:+11635565389">
                     <span className="fw-5 text_mono-gray-5">
-                      +1 16355 65389
+                      +971 564 065 672
                     </span>
                   </a>
                 </p>
