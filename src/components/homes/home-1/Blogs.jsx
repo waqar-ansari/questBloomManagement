@@ -58,7 +58,7 @@ export default function Blogs() {
               <SwiperSlide className="swiper-slide" key={article.id}>
                 <div className="blog-article-item hover-image">
                   <Link
-                    to={`/single-post/${article.id}`}
+                    to={`/${article.link}`}
                     className="article-thumb mb_25"
                   >
                     <img

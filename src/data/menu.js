@@ -6,13 +6,6 @@ export const homepages = [
     title: "Dubai Mainland",
     current: false,
   },
-  {
-    href: "/freezones",
-    src: "/images/qb/freezones.jpeg",
-    alt: "freezones",
-    title: "Free Zones",
-    current: false,
-  },
 ];
 export const freezones2 = [
   {

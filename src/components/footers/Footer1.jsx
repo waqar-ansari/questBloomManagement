@@ -92,16 +92,17 @@ export default function Footer1({ parentClass = "footer style-default" }) {
                       Reg.Add: A3, 3rd Floor, Dubai South Freezone, P.O Box
                       113225, Dubai-UAE
                     </div>
+                    <div className="text-body-2">(+971) 458 964 36</div>
                     <div className="text-body-2">(+971) 564 065 672</div>
+                    <div className="text-body-2">(+971) 504 509 183</div>
                   </div>
-                  <div className="tf-social">
+                  {/* <div className="tf-social">
                     <a href="#" className="icon-twitter-x" />
                     <a href="#" className="icon-facebook-f" />
                     <a href="#" className="icon-github" />
                     <a href="#" className="icon-instagram" />
                     <a href="#" className="icon-youtube" />
-                    <a href="#" className="icon-whatsapp" />
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="col-lg-2 col-md-6">

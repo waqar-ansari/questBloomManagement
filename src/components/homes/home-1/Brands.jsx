@@ -419,7 +419,7 @@ export default function Brands() {
                       <i className="icon-tty-solid" />
                     </div>
                     <p className="font2 text-body-2">
-                      24/7 Support: (+971) 564 065 672
+                      24/7 Support: (+971) 458 964 36
                     </p>
                   </div>
                 </div>

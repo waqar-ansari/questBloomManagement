@@ -28,7 +28,7 @@ export default function Contact() {
                 </div>
                 <div className="bot">
                   <div className="content mb-0">
-                    <h6> (+971) 564 065 672</h6>
+                    <h6> (+971) 458 964 36</h6>
                     <p className="text-body-2 text_mono-gray-6">
                       Call us for urgent
                     </p>

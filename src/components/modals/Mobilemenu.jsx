@@ -173,9 +173,9 @@ export default function Mobilemenu() {
               <li>
                 <p className="text_mono-gray">
                   Phone:
-                  <a href="tel:+11635565389">
+                  <a href="tel:+97145896436">
                     <span className="fw-5 text_mono-gray-5">
-                      +971 564 065 672
+                     (+971) 458 964 36
                     </span>
                   </a>
                 </p>

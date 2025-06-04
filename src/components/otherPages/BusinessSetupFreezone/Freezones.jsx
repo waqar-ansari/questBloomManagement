@@ -102,6 +102,11 @@ const Freezones = () => {
                         <span>{article.month}</span>
                       </div> */}
                     </Link>
+
+
+
+
+                    
                     <div className="article-content mb_25">
                       <h6 className="title fw-5 letter-spacing-2 mb_8">
                         <Link to={`/${item.link}`} className="link">
