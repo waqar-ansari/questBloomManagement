@@ -14,7 +14,7 @@ export default function Header1({ parentClass = "header style-default" }) {
                 <div className="header-left d-flex align-items-center">
                   <div className="header-logo">
                     <Link to={`/`} className="site-logo">
-                 
+
                       {/* <svg
                         width={149}
                         height={46}
@@ -48,7 +48,7 @@ export default function Header1({ parentClass = "header style-default" }) {
                           fill="black"
                         />
                       </svg> */}
-                      <div style={{background:"#fff", padding:"5px 12px", borderRadius:30, marginRight:10}}><img src="/images/qb/questBloomTransparent.png" width={120}/></div>
+                      <div style={{ background: "#fff", padding: "5px 12px", borderRadius: 30, marginRight: 10 }}><img src="/images/qb/questBloomTransparent.png" width={120} /></div>
                     </Link>
                   </div>
                   <nav className="main-menu style-default">
@@ -67,6 +67,11 @@ export default function Header1({ parentClass = "header style-default" }) {
                     <span>Contact Us</span>
                     <span className="bg-effect" />
                   </Link>
+                  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+                  </link>
+                  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"></link>
+                  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"></link>
+
                   <div
                     className="mobile-button"
                     data-bs-toggle="offcanvas"

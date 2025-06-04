@@ -31,6 +31,9 @@ import CartPage from "./pages/shop/cart";
 import CheckoutPage from "./pages/shop/checkout";
 import ContactUsPage from "./pages/otherPages/contact-us";
 import CompanyLiquidation from "./components/otherPages/CompanyLiquidation";
+import TradeFinannceAssistance from "./components/otherPages/TradeFinannceAssistance";
+import BankAccountOpening from "./components/otherPages/BankAccountOpening";
+import MainlandCompanySetupwithDED from "./components/otherPages/MainlandCompanySetupwithDED-Dubai";
 function App() {
   return (
     <>
@@ -86,6 +89,11 @@ function App() {
                 <Route path="checkout" element={<CheckoutPage />} />
                 <Route path="contact-us" element={<ContactUsPage />} />
                 <Route path="company-liquidation" element={<CompanyLiquidation />} />
+                <Route path="trade-finannce-assistance" element={<TradeFinannceAssistance />} />
+                <Route path="bank-account-opening" element={<BankAccountOpening />} />
+                <Route path="mainland-company-setup-with-ded-dubai" element={<MainlandCompanySetupwithDED />} />
+
+
 
 
                 <Route path="*" element={<NotFoundPage />} />
