@@ -112,7 +112,7 @@ export default function Footer1({ parentClass = "footer style-default" }) {
                     <ul className="footer-menu-list">
                       <li className="text-body-2 text_mono-gray-6">
                         <Link to={`/About`} className="link footer-menu_item">
-                          About Quest Bloom
+                          About Quest Management
                         </Link>
                       </li>
                       <li className="text-body-2 text_mono-gray-6">
@@ -363,7 +363,7 @@ export default function Footer1({ parentClass = "footer style-default" }) {
                 <p className="text-body-2">
                   © {new Date().getFullYear()} Copyright by{" "}
                   <a href="#" className="link-black text_primary text-body-3">
-                    Quest Bloom
+                    Quest Management
                   </a>{" "}
                   . All Right Reserved.
                 </p>

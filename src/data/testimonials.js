@@ -109,7 +109,7 @@ export const testimonials3 = [
   {
     id: 3,
     quote:
-      "Questbloom Real Management's expertise and dedication led us to the perfect business in Dubai Marina.",
+      "Quest Management's expertise and dedication led us to the perfect business in Dubai Marina.",
     avatar: "/images/qb/customer3.webp",
     position: "Customer",
     name: "Z. k. mainoo",
