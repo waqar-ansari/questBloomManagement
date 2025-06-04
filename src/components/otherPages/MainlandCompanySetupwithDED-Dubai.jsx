@@ -273,9 +273,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+// const metadata = {
+//     title: "Dubai Mainland Company Setup with DED",
+//     description: "Dubai Mainland Company Setup with DED",
+// };
 const metadata = {
-    title: "Dubai Mainland Company Setup with DED",
-    description: "Dubai Mainland Company Setup with DED",
+  title:
+    "Dubai Mainland Company Setup with DED || Advitex - Finance and Business Consulting Reactjs Template",
+  description: "Advitex - Finance and Business Consulting Reactjs Template",
 };
 const MainlandCompanySetupwithDED = () => {
     return (

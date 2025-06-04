@@ -16,6 +16,11 @@ export default function Contact() {
                   <p className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
                     data-wow-delay="0s">
                     Let us know how we can help! Fill out our contact form and we will get back to you as soon as possible.
+                  </p><br /><br /><br />
+                  <p className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
+                    data-wow-delay="0s">
+                    Reach Our Expert Team : <br /><br />
+                    Send a message through given form, If your enquiry is time sensitive please use below contact details.
                   </p>
                   {/* <ul className="breadcrumb">
                     <li>
@@ -26,27 +31,7 @@ export default function Contact() {
                     <li>Contact</li>
                   </ul> */}
                 </div>
-                <div className="bot">
-                  <div className="content mb-0">
-                    <h6> (+971) 564 065 672</h6>
-                    <p className="text-body-2 text_mono-gray-6">
-                      Call us for urgent
-                    </p>
-                  </div><br />
-                  <div className="content mb-0">
-                    <h6><b>Monday – Friday:</b> 8.30AM to 8.00PM</h6>
-                    <p className="text-body-2 text_mono-gray-6">
-                      RECEPTION HOURS
-                    </p>
-                  </div><br />
-                  <div className="content mb-0">
-                    <h6><b>Monday – Friday:</b> 8.30AM to 8.00PM</h6>
-                    <h6><b>Saturday:</b> 10.00AM to 4.00PM</h6>
-                    <p className="text-body-2 text_mono-gray-6">
-                      CALL CENTRE HOURS
-                    </p>
-                  </div>
-                </div>
+
               </div>
             </div>
             <div className="col-lg-6">
