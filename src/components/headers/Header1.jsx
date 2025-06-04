@@ -69,10 +69,11 @@ export default function Header1({ parentClass = "header style-default" }) {
                   </nav>
                 </div>
                 <div className="header-right d-flex align-items-center">
-                  <a href="tel:+971564065672" className="tf-btn hide-sm">
+                  <Link href="tel:+971564065672" className="tf-btn hide-sm">
                     <span><img src="/images/qb/phoneIcon.png" width={20} /> ( +971 ) 564 065 672</span>
                     <span className="bg-effect" />
-                  </a>
+                  </Link>
+                 
                   <div
                     className="mobile-button"
                     data-bs-toggle="offcanvas"
