@@ -1,0 +1,237 @@
+import React from 'react';
+import Header1 from '../headers/Header1';
+import Footer1 from '../footers/Footer1';
+import MetaComponent from '@/components/common/MetaComponent';
+
+const metadata = {
+    title: "Company Liquidation || Advitex - Finance and Business Consulting Reactjs Template",
+    description: "Advitex - Finance and Business Consulting Reactjs Template",
+};
+
+const BankAccountOpening = () => {
+    return (
+        <>
+            <MetaComponent meta={metadata} />
+
+            {/* Header */}
+            <div className="wrap-page-header">
+                <Header1 />
+            </div>
+
+
+
+            <div class="container my-5">
+
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6">
+                        <div class="row g-2">
+                            <div class="col-6"><img src="https://questmanagement.ae/wp-content/uploads/2023/05/Banking-Pic-2.jpg.webp" class="img-fluid rounded shadow-sm" alt="img1" height={300} width={200} /></div>
+                            <div class="col-6"><img src="https://questmanagement.ae/wp-content/uploads/2023/05/banking-3.jpg.webp" class="img-fluid rounded shadow-sm" alt="img2" /></div>
+                            <div class="col-12 mt-2"><img src="https://questmanagement.ae/wp-content/uploads/2023/05/Banking-Pic-1.jpg.webp" class="img-fluid rounded shadow-sm" alt="img3" /></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="mb-3">
+                            Corporate Bank Account Assistance</h3>
+                        <p class="text-muted">Quest Management Consultancy is a reputable consulting firm which specializes in providing a wide range of Business Banking services. One of the key services offered by the firm is facilitating trade finance services and Business Account Opening.As businesses expand and operate in different locations, it is essential to have a trusted banking partner that can facilitate financial transactions. However, opening a corporate bank account can be a time-consuming and complicated process, particularly in International markets. Quest Management Consultancy understands the complexities involved in business banking, thereby offering customized solutions to corporates seeking to expand business in the Mid-East.</p>
+                        <p>The firm's team of experts assists businesses in preparing the necessary documentation, including company registration documents, tax certificates, and identification papers, among others. They also guide clients through the bank selection process, ensuring that they choose a bank that meets their specific needs. With their extensive experience and knowledge of banking regulations and procedures, Quest Management Consultancy provides clients with a hassle-free and efficient corporate bank account opening process.</p>
+                        <p>In summary, Quest Management Consultancy's corporate/company bank account opening assistance services offer businesses the convenience of having a trusted banking partner without the stress and complexities of the account opening process.</p>
+                    </div>
+                </div>
+                {/* 
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6">
+                        <h3 class="mb-3">Tailored Business Solutions</h3>
+                        <p class="text-muted">Our solutions are specifically crafted to fit your company's unique requirements, providing long-term value and sustainable growth.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row g-2">
+                            <div class="col-6"><img src="https://via.placeholder.com/200x150" class="img-fluid rounded shadow-sm" alt="img4" /></div>
+                            <div class="col-6"><img src="https://via.placeholder.com/200x150" class="img-fluid rounded shadow-sm" alt="img5" /></div>
+                        </div>
+                    </div>
+                </div> */}
+                {/* 
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6">
+                        <img src="https://via.placeholder.com/500x300" class="img-fluid rounded shadow-sm" alt="img6" />
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="mb-3">Visual Communication That Connects</h3>
+                        <p class="text-muted">We create visual content that captures attention and keeps users engaged, while telling a compelling story about your brand.</p>
+                    </div>
+                </div> */}
+
+                <div class="row text-center mb-5">
+                    <div class="col-md-4">
+                        <div class="p-4 border rounded shadow-sm h-100">
+                            <i class="bi bi-headset display-4 text-primary mb-3"></i>
+                            <h5 class="mb-2">24/7 Support</h5>
+                            <p class="text-muted">Our team is available around the clock to assist you with any issues or inquiries you have.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 border rounded shadow-sm h-100">
+                            <i class="bi bi-bar-chart-line display-4 text-success mb-3"></i>
+                            <h5 class="mb-2">Performance Insights</h5>
+                            <p class="text-muted">Track your performance metrics in real-time with our integrated analytics dashboard.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 border rounded shadow-sm h-100">
+                            <i class="bi bi-shield-lock display-4 text-danger mb-3"></i>
+                            <h5 class="mb-2">Data Security</h5>
+                            <p class="text-muted">We ensure your data is encrypted, backed up, and protected against any breaches.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div className="title_sections three center my-5 text-center">
+                    <div className="main_title heading-title split-text fw-bold fs-3 mb-3">
+                        Effective Solutions
+                    </div>
+                    <p>Opening a corporate bank account can be a time-consuming and complicated process, particularly in International markets. Quest Management Consultancy understands the complexities involved in business banking, thereby offering customized solutions to corporates seeking to expand business in the Mid-East</p>
+
+                </div>
+
+                <div class="row text-center mb-5">
+                    <div class="col-md-4">
+                        <div class="p-4 border rounded shadow-sm h-100">
+                            {/* <i class="bi bi-headset display-4 text-primary mb-3"></i> */}
+                            <h3 class="mb-2">Client Profile Analysis:</h3>
+                            <p class="text-muted">The firm's professionals are knowledgeable in banking regulations,Documentation and Risk assessment allowing them to provide clients with comprehensive and reliable advice.
+                                <br />With Quest Management Consultancy's customized services, clients can access exclusive banking facilities, such as Business Banking & Private banking, offshore banking, and investment opportunities.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 border rounded shadow-sm h-100">
+                            {/* <i class="bi bi-bar-chart-line display-4 text-success mb-3"></i> */}
+                            <h3 class="mb-2">Business Profile Analysis:</h3>
+                            <p class="text-muted">With over two decade of banking experience, the firm's professionals are updated with the current banking regulations, accordingly paving the road map for clients for the ease of banking</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 border rounded shadow-sm h-100">
+                            {/* <i class="bi bi-shield-lock display-4 text-danger mb-3"></i> */}
+                            <h3 class="mb-2">Selecting Bank:</h3>
+                            <p class="text-muted">Quest Management team of experts work closely with clients to understand their unique financial needs and develop tailor made solution to meet customer’s banking requirements.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-6">
+                        <h3 class="mb-3">
+                            Quest Management  Provide Private Account Services</h3>
+                        <p class="text-muted">Quest Management Consultancy provides private account services to individuals looking for personalized banking solutions. Quest team of experts works closely with clients to understand their unique financial needs and develop tailored solutions that meet their requirements. The private account services offered by Quest Management Consultancy include opening and managing bank accounts, investment advisory services, wealth management, and tax planning. The firm's professionals are knowledgeable in banking regulations, investment opportunities, and taxation, allowing them to provide clients with comprehensive and reliable advice.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <p>With Quest Management Consultancy’s private account services, clients can access exclusive banking facilities, such as private banking, offshore banking, and investment opportunities. The firm prioritizes client confidentiality and ensures that all private account services are conducted with the utmost discretion.
+                                    Whether clients are looking to secure their wealth, minimize their tax liabilities, or diversify their investment portfolio, Quest Management Consultancy’s private account services offer a range of solutions that cater to their individual needs. The firm’s commitment to excellence and personalized service ensures that clients receive the best possible advice and support to achieve their financial goals.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div className="container my-5">
+                    <div className="row g-4">
+                        <div className="col-md-4">
+                            <ul className="list-unstyled border rounded p-3 h-100 shadow-sm text-center">
+                                <li>
+                                    <i className='bi bi-book display-4 text-primary mb-3'></i>
+
+                                </li>
+                                <li>
+                                    <h3>
+
+                                        Easy to Maintain                                    </h3>
+                                </li>
+                                <br /><br /><br /><br />
+                                <li>
+                                    <i className='bi bi-book display-4 text-primary mb-3'></i>
+
+                                </li>
+                                <li>
+                                    <h3>
+
+                                        Trade Support</h3>
+                                </li><br /><br /><br />
+                                <li>                                    <i className='bi bi-book display-4 text-primary mb-3'></i>
+                                </li>
+                                <li>
+
+                                    <h3>24/7 Customer Support</h3>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="col-md-4">
+                            <ul className="list-unstyled border rounded p-3 h-100 shadow-sm text-center">
+                                <li>
+                                    <img src="https://questmanagement.ae/wp-content/uploads/2023/05/Bank-pic-4.jpg.webp" alt="" height={700} width={500} />
+                                </li>
+
+                            </ul>
+                        </div>
+
+
+
+                        <div className="col-md-4">
+                            <ul className="list-unstyled border rounded p-3 h-100 shadow-sm text-center">
+                                <li>
+                                    <i className='bi bi-book display-4 text-primary mb-3'></i>
+                                </li>
+                                <li>
+                                    <h3>
+                                        Exclusive RM for Each Business Account
+                                    </h3>
+                                </li>
+                                <br /><br /><br /><br />
+                                <li>
+                                    <i className='bi bi-bank display-4 text-primary mb-3'></i>
+                                </li>
+                                <li>
+                                    <h3>
+
+
+                                        Easy Transfer Local or International</h3>
+                                </li><br /><br /><br /><br />
+                                <li>
+                                    <i className='bi bi-bank display-4 text-primary mb-3'></i>
+                                </li>
+                                <li>
+                                    <h3>Digital Banking</h3>
+                                </li><br /><br /><br /><br />
+                                <li>
+                                    <i className='fa fa-globe'></i>
+                                </li>
+                                <li>                                    <i className='bi bi-globe display-4 text-primary mb-3'></i>
+                                </li>
+                                <li>
+                                    <h3>
+
+
+
+                                        Worldwide Bank Network</h3>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            {/* Footer */}
+            <Footer1 />
+        </>
+    );
+};
+
+export default BankAccountOpening;

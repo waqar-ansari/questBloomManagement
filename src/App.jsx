@@ -31,6 +31,11 @@ import CartPage from "./pages/shop/cart";
 import CheckoutPage from "./pages/shop/checkout";
 import ContactUsPage from "./pages/otherPages/contact-us";
 import CompanyLiquidation from "./components/otherPages/CompanyLiquidation";
+
+import TradeFinannceAssistance from "./components/otherPages/TradeFinannceAssistance";
+import BankAccountOpening from "./components/otherPages/BankAccountOpening";
+import MainlandCompanySetupwithDED from "./components/otherPages/MainlandCompanySetupwithDED-Dubai";
+
 import BusinessSetupDubaiMainland from "./components/otherPages/BusinessSetupDubaiMainland";
 import OtherServices from "./components/otherPages/OtherServices";
 import DubaiSouthFreezone from "./components/otherPages/BusinessSetupFreezone/DubaiSouthFreezone";
@@ -45,6 +50,7 @@ import SharjahMediaCity from "./components/otherPages/BusinessSetupFreezone/Shar
 import AjmanFZA from "./components/otherPages/BusinessSetupFreezone/AjmanFZA";
 import AjmanMediaCityFZ from "./components/otherPages/BusinessSetupFreezone/AjmanMediaCityFZ";
 import RasAlKhaimahFEZA from "./components/otherPages/BusinessSetupFreezone/RasAlKhaimahFEZA";
+
 function App() {
   return (
     <>
@@ -100,6 +106,12 @@ function App() {
                 <Route path="checkout" element={<CheckoutPage />} />
                 <Route path="contact-us" element={<ContactUsPage />} />
                 <Route path="company-liquidation" element={<CompanyLiquidation />} />
+
+                <Route path="trade-finannce-assistance" element={<TradeFinannceAssistance />} />
+                <Route path="bank-account-opening" element={<BankAccountOpening />} />
+                <Route path="mainland-company-setup-with-ded-dubai" element={<MainlandCompanySetupwithDED />} />
+
+
                 <Route path="business-setup-dubai-mainland" element={<BusinessSetupDubaiMainland />} />
                 <Route path="other-services" element={<OtherServices />} />
                 <Route path="dubai-south-freezone" element={<DubaiSouthFreezone />} />
