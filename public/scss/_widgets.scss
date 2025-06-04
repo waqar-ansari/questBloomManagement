@@ -452,6 +452,8 @@
   }
   .counter-number {
     display: flex;
+    //written by me
+    flex: 0 0 auto;
   }
   &.style-default {
     padding-top: 17px;

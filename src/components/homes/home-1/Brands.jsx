@@ -363,10 +363,10 @@ export default function Brands() {
                         <textPath
                           xlinkHref="#textcircle"
                           textLength={900}
-                          className="h5"
+                          className="h3"
                         >
                           {/* BUSINESS CONSULTING • ADVITEX • */}
-                          Quest Bloom Management Services
+                          Quest Management Services
                         </textPath>
                       </text>
                     </svg>
