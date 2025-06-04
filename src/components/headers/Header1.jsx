@@ -67,10 +67,7 @@ export default function Header1({ parentClass = "header style-default" }) {
                     <span>Contact Us</span>
                     <span className="bg-effect" />
                   </Link>
-                  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-                  </link>
-                  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"></link>
-                  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"></link>
+                
 
                   <div
                     className="mobile-button"
