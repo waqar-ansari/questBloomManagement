@@ -67,7 +67,7 @@ export default function Header1({ parentClass = "header style-default" }) {
                     <span>Contact Us</span>
                     <span className="bg-effect" />
                   </Link>
-          
+                
 
                   <div
                     className="mobile-button"
