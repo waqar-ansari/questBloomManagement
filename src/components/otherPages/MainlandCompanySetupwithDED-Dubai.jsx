@@ -135,7 +135,7 @@ const MainlandCompanySetupwithDED = () => {
                                         <img src="https://questmanagement.ae/wp-content/uploads/2023/05/Untitled-design-2023-05-12T154926.444.png.webp" alt="Image 1" className="img-fluid rounded" />
                                     </div> */}
                                     <div className="col-6">
-                                        <img src="https://questmanagement.ae/wp-content/uploads/2023/05/Untitled-design-2023-05-12T133303.436.png.webp" alt="Image 2" className="img-fluid rounded" height={500} width={500}/>
+                                        <img src="https://questmanagement.ae/wp-content/uploads/2023/05/Untitled-design-2023-05-12T133303.436.png.webp" alt="Image 2" className="img-fluid rounded" height={500} width={500} />
                                     </div>
                                 </div>
                             </div>
@@ -179,7 +179,8 @@ const MainlandCompanySetupwithDED = () => {
                                 <li>
                                     <h3>
 
-                                        Easy to Maintain                                    </h3>
+                                        Step 1                                   </h3>
+                                    <p>Getting documentation together for Govt. Approvals.</p>
                                 </li>
                                 <br /><br /><br /><br />
                                 <li>
@@ -189,20 +190,15 @@ const MainlandCompanySetupwithDED = () => {
                                 <li>
                                     <h3>
 
-                                        Trade Support</h3>
+                                        Step 2</h3>
+                                    <p>Initiate the Trade Name approval & Initial Approval, MOA Typing , Getting Ejari and then finally Getting a company license.</p>
                                 </li><br /><br /><br />
-                                <li>                                    <i className='bi bi-book display-4 text-primary mb-3'></i>
-                                </li>
-                                <li>
-
-                                    <h3>24/7 Customer Support</h3>
-                                </li>
                             </ul>
                         </div>
                         <div className="col-md-4">
                             <ul className="list-unstyled border rounded p-3 h-100 shadow-sm text-center">
                                 <li>
-                                    <img src="https://questmanagement.ae/wp-content/uploads/2023/05/Bank-pic-4.jpg.webp" alt="" height={700} width={500} />
+                                    <img src="https://questmanagement.ae/wp-content/uploads/2023/05/stylish-businesswoman-cafe-2.jpg.webp" alt="" height={700} width={500} />
                                 </li>
 
                             </ul>
@@ -217,8 +213,8 @@ const MainlandCompanySetupwithDED = () => {
                                 </li>
                                 <li>
                                     <h3>
-                                        Exclusive RM for Each Business Account
-                                    </h3>
+                                        Step 3
+                                    </h3><p>Getting the Visa Application Process and need to complete the visa process & also to get the Emirates ID.</p>
                                 </li>
                                 <br /><br /><br /><br />
                                 <li>
@@ -228,39 +224,22 @@ const MainlandCompanySetupwithDED = () => {
                                     <h3>
 
 
-                                        Easy Transfer Local or International</h3>
+                                        Step 4</h3>
+                                    <p>We we arrange the Banker to complete Company Bank Account Opening process.</p>
                                 </li><br /><br /><br /><br />
-                                <li>
-                                    <i className='bi bi-bank display-4 text-primary mb-3'></i>
-                                </li>
-                                <li>
-                                    <h3>Digital Banking</h3>
-                                </li><br /><br /><br /><br />
-                                <li>
-                                    <i className='fa fa-globe'></i>
-                                </li>
-                                <li>                                    <i className='bi bi-globe display-4 text-primary mb-3'></i>
-                                </li>
-                                <li>
-                                    <h3>
-
-
-
-                                        Worldwide Bank Network</h3>
-                                </li>
-
+                                
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                
+
                 <div class="row align-items-center mb-5">
-                    
+
                     <div class="col-md-6">
                         <h3 class="mb-3">
                             Expert Team:
-</h3>
+                        </h3>
                         <p>We are specialists in providing business setup services to entrepreneurs, investors, and companies looking to establish their presence in the UAE. With years of experience and a team of experts, Quest Management offers a range of services including company registration, licensing, visa processing, and office space solutions. We work closely with clients to understand their business objectives and help them to choose the best free zone or mainland location to set up their business. Quest Management's services also include legal and financial consulting, accounting and bookkeeping, and ongoing business support to ensure clients remain compliant with UAE regulations and focused on growth.With a focus on professionalism, transparency, and client satisfaction, Quest Management has built a reputation as a trusted partner for business setup in the UAE. Their commitment to quality service and personalized attention has helped numerous clients successfully establish and grow their businesses in the UAE.</p>
                     </div>
                     <div class="col-md-6">
