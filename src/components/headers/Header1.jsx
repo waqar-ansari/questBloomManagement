@@ -70,7 +70,9 @@ export default function Header1({ parentClass = "header style-default" }) {
                 </div>
                 <div className="header-right d-flex align-items-center">
                   <Link href="tel:+971564065672" className="tf-btn hide-sm">
-                    <span><img src="/images/qb/phoneIcon.png" width={20} /> (+971) 458 964 36</span>
+                    <span>
+                      {/* <img src="/images/qb/phoneIcon.png" width={20} /> */}
+                     (+971) 458 964 36</span>
                     <span className="bg-effect" />
                   </Link>
                  

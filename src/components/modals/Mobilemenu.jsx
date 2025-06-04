@@ -182,10 +182,10 @@ export default function Mobilemenu() {
               </li>
             </ul>
             <div className="mb-wrap-btn d-flex gap_12">
-              <Link to={`/pricing`} className="tf-btn">
+              {/* <Link to={`/pricing`} className="tf-btn">
                 <span>Get Started</span>
                 <span className="bg-effect" />
-              </Link>
+              </Link> */}
               <Link to={`/contact-us`} className="tf-btn">
                 <span>Contact Us</span>
                 <span className="bg-effect" />

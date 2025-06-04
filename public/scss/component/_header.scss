@@ -433,6 +433,8 @@
       padding: 32px;
       z-index: 3;
       pointer-events: none;
+      // overflow: auto;
+      // height: 100vh;
       display: flex;
       row-gap: 13px;
       flex-direction: column;

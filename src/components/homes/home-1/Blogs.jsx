@@ -74,7 +74,7 @@ export default function Blogs() {
                     <ul className="blog-article-meta mb_15 d-flex align-items-center">
                       <li className="meta-item text-body-1">
                         <Link
-                          to={`/single-post/${article.id}`}
+                          to={`/${article.link}`}
                           className="link-black"
                         >
                           {article.category}
@@ -85,7 +85,7 @@ export default function Blogs() {
                       </li> */}
                     </ul>
                     <h5 className="title letter-spacing-2">
-                      <Link to={`/single-post/${article.id}`} className="link">
+                      <Link to={`/${article.link}`} className="link">
                         {article.title}
                       </Link>
                     </h5>

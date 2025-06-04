@@ -46,7 +46,7 @@ const OtherServices = () => {
         <div className="tf-grid-layout lg-col-3 md-col-2">
           {otherServices.map((item)=>{
             return(
-              <div className="tf-box-icon style-5 effect-icon hover-border border-element" key={item.id} style={{borderRadius:0}}>
+              <div className="tf-box-icon style-5 effect-icon bg-on-hover" key={item.id} >
             <div className="icon mb_24">
               <img
                 alt="icon"
@@ -68,7 +68,7 @@ const OtherServices = () => {
           </div>
             )
           })}
-          <div className="tf-box-icon style-5 effect-icon">
+          {/* <div className="tf-box-icon style-5 effect-icon">
             <div className="icon mb_24">
               <img
                 alt="icon"
@@ -320,7 +320,7 @@ const OtherServices = () => {
                QMC assists in liquidation of companies in UAE.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <Footer1 />

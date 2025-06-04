@@ -68,7 +68,7 @@ export default function Nav() {
                 </Link>
               </div>
             ))}
-            
+
           </div>
         </div>
       </li>
@@ -78,7 +78,7 @@ export default function Nav() {
         } `}
       >
         <a href="#">Free Zones</a>
-        <div className="submenu mega-menu">
+        <div className="submenu mega-menu" style={{height:"100vh", overflow:"auto"}}>
           <div className="wrap-demo-item tf-grid-layout-lg lg-col-4">
             {freezones2.map((item, index) => (
               <div
