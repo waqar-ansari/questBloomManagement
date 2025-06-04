@@ -440,8 +440,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // };
 const metadata = {
   title:
-    "Company Liquidation || Advitex - Finance and Business Consulting Reactjs Template",
-  description: "Advitex - Finance and Business Consulting Reactjs Template",
+    "Company Liquidation",
+  description: "Company Liquidation",
 };
 const CompanyLiquidation = () => {
     return (

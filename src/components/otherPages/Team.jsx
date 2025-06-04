@@ -21,7 +21,7 @@ export default function Team() {
 
           </p>
         </div>
-        <div className="tf-grid-layout-2 lg-col-4">
+        <div className="tf-grid-layout-2 lg-col-3">
           {teamMembers.map((member, index) => (
             <div
               key={index}
@@ -43,22 +43,6 @@ export default function Team() {
               </div>
             </div>
           ))}
-          <div className="team-item empty">
-            <div className="img-style position-relative">
-              <img
-                alt="avatar"
-                src="/images/item/team-emty.png"
-                width={406}
-                height={406}
-              />
-              <h3 className="name">
-                <Link to={`/team`} className="link hover-line-text">
-                  See All <br />
-                  Members
-                </Link>
-              </h3>
-            </div>
-          </div>
         </div>
       </div>
     </div>

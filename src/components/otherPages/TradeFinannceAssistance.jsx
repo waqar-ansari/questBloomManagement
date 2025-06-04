@@ -360,8 +360,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // };
 const metadata = {
   title:
-    "Trade Finannce Assistance || Advitex - Finance and Business Consulting Reactjs Template",
-  description: "Advitex - Finance and Business Consulting Reactjs Template",
+    "Trade Finannce Assistance",
+  description: "Trade Finannce Assistance",
 };
 const TradeFinannceAssistance = () => {
   return (

@@ -253,8 +253,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // };
 const metadata = {
   title:
-    "Bank Account Opeing || Advitex - Finance and Business Consulting Reactjs Template",
-  description: "Advitex - Finance and Business Consulting Reactjs Template",
+    "Bank Account Opeing",
+  description: "Bank Account Opeing",
 };
 const BankAccountOpening = () => {
   return (
