@@ -44,8 +44,8 @@ export default function Nav() {
         } `}
       >
         <a href="#">Business Setup</a>
-        <div className="submenu mega-menu">
-          <div className="wrap-demo-item tf-grid-layout-lg lg-col-2">
+        <div className="submenu mega-menu" style={{width:"38%"}}>
+          <div  className={`single-item-grid`}>
             {homepages.map((item, index) => (
               <div
                 key={index}

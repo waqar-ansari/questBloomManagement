@@ -56,6 +56,10 @@
     }
   }
 }
+.single-item-grid {
+  display: flex;
+  justify-content: center;
+}
 @media (min-width: 768px) {
   .tf-grid-layout-2,
   .tf-grid-layout,
@@ -251,6 +255,7 @@
   }
 }
 @media (min-width: 992px) {
+  
   .tf-grid-layout-2,
   .tf-grid-layout,
   .tf-grid-layout-md,
