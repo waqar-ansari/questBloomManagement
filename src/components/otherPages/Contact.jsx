@@ -16,6 +16,11 @@ export default function Contact() {
                   <p className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
                     data-wow-delay="0s">
                     Let us know how we can help! Fill out our contact form and we will get back to you as soon as possible.
+                  </p><br /><br /><br />
+                  <p className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
+                    data-wow-delay="0s">
+                    Reach Our Expert Team : <br /><br />
+                    Send a message through given form, If your enquiry is time sensitive please use below contact details.
                   </p>
                   {/* <ul className="breadcrumb">
                     <li>
