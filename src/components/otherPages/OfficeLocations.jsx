@@ -52,7 +52,9 @@ export default function OfficeLocations() {
               <ul className="info d-grid gap_11">
                 <li>
                   <h6 className="text_primary">Location</h6>
-                  <p className="text-body-2">{item.location}</p>
+                  <p className="text-body-2">{item.location}</p><br />
+                  <p>Monday – Friday: 8.30AM to 8.00PM</p>
+                  <p>Saturday: 10.00AM to 4.00PM</p>
                 </li>
                 <li>
                   <h6 className="text_primary">Phone</h6>
@@ -64,6 +66,7 @@ export default function OfficeLocations() {
                     {item.email}
                   </a>
                 </li>
+                
               </ul>
 
             </div>

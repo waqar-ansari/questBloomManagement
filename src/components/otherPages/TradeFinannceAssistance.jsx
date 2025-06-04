@@ -354,9 +354,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+// const metadata = {
+//   title: "Dubai Trade Finannce Assistance",
+//   description: "Dubai Trade Finannce Assistance",
+// };
 const metadata = {
-  title: "Dubai Trade Finannce Assistance",
-  description: "Dubai Trade Finannce Assistance",
+  title:
+    "Trade Finannce Assistance || Advitex - Finance and Business Consulting Reactjs Template",
+  description: "Advitex - Finance and Business Consulting Reactjs Template",
 };
 const TradeFinannceAssistance = () => {
   return (

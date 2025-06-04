@@ -247,9 +247,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 
+// const metadata = {
+//   title: "Dubai South Freezone",
+//   description: "Dubai South Freezone",
+// };
 const metadata = {
-  title: "Dubai South Freezone",
-  description: "Dubai South Freezone",
+  title:
+    "Bank Account Opeing || Advitex - Finance and Business Consulting Reactjs Template",
+  description: "Advitex - Finance and Business Consulting Reactjs Template",
 };
 const BankAccountOpening = () => {
   return (
