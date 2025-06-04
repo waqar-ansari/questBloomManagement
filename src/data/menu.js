@@ -118,8 +118,8 @@ export const blogPages = [
   { href: "/single-post/1", label: "Single Post" },
 ];
 export const bankingAssistance = [
-  { href: "/bankAccountOpening", label: "Bank Account Opening" },
-  { href: "/tradeFinance", label: "Trade Finance" },
+  { href: "/bank-account-opening", label: "Bank Account Opening" },
+  { href: "/trade-finannce-assistance", label: "Trade Finance" },
 ];
 
 export const servicePages = [

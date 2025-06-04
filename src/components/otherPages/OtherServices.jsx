@@ -46,7 +46,7 @@ const OtherServices = () => {
         <div className="tf-grid-layout lg-col-3 md-col-2">
           {otherServices.map((item)=>{
             return(
-              <div className="tf-box-icon style-5 effect-icon" key={item.id}>
+              <div className="tf-box-icon style-5 effect-icon hover-border border-element" key={item.id} style={{borderRadius:0}}>
             <div className="icon mb_24">
               <img
                 alt="icon"

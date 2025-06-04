@@ -95,6 +95,7 @@ const Freezones = () => {
                         src={item.imageSrc}
                         width={item.width}
                         height={item.height}
+                        style={{borderRadius:20}}
                       />
                       {/* <div className="tag text-body-3 text_white d-flex flex-column">
                         <h6 className="text_white">{article.day}</h6>

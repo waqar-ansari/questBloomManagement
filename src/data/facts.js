@@ -112,7 +112,7 @@ export const counterItems4 = [
   {
     icon: "icon-clapping-01",
     label: "Happy Clients",
-    value: 20,
+    value: 400,
     initialDisplay: 0,
     unit: "+",
   },

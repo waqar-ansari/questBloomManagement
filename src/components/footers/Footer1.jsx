@@ -100,6 +100,7 @@ export default function Footer1({ parentClass = "footer style-default" }) {
                     <a href="#" className="icon-github" />
                     <a href="#" className="icon-instagram" />
                     <a href="#" className="icon-youtube" />
+                    <a href="#" className="icon-whatsapp" />
                   </div>
                 </div>
               </div>
@@ -246,7 +247,7 @@ export default function Footer1({ parentClass = "footer style-default" }) {
                           </Link>
                         </li>
                         <li className="text-body-2 text_mono-gray-6">
-                          <Link to={`/trade-finannce-assistance`} className="link footer-menu_item">
+                          <Link to={`/trade-finance-assistance`} className="link footer-menu_item">
                             Trade Finannce Assistance
                           </Link>
                         </li>

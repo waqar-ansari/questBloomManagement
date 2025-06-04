@@ -109,7 +109,7 @@ function App() {
                 <Route path="contact-us" element={<ContactUsPage />} />
                 <Route path="company-liquidation" element={<CompanyLiquidation />} />
 
-                <Route path="trade-finannce-assistance" element={<TradeFinannceAssistance />} />
+                <Route path="trade-finance-assistance" element={<TradeFinannceAssistance />} />
                 <Route path="bank-account-opening" element={<BankAccountOpening />} />
                 <Route path="mainland-company-setup-with-ded-dubai" element={<MainlandCompanySetupwithDED />} />
 
