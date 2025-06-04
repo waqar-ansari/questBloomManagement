@@ -74,10 +74,13 @@ export default function About() {
             <div className="col-lg-6">
               <div className="content mb-0">
                 <h5 className="title split-text split-lines-rotation-x">
-                  Head of Admin & HR
                   <br />
                   BRAHMARUP GANGULY
                 </h5>
+                <p className="title split-text split-lines-rotation-x">
+                  Head of Admin & HR
+
+                </p>
                 <p
                   className="description text-body-1 text_mono-gray-7 description-1 wow animate__fadeInUp animate__animated"
                   data-wow-delay="0s"
@@ -108,11 +111,13 @@ export default function About() {
             <div className="col-xl-6">
               <div className="content">
                 <h5 className="title split-text split-lines-rotation-x">
-                  General Manager
-                  Head of Business Development
                   <br />
                   JALENDHAR SHARMA
                 </h5>
+                <p className="title split-text split-lines-rotation-x">
+                    General Manager
+                  Head of Business Development
+                </p>
                 <p
                   className="description text-body-1 text_mono-gray-7 description-1 wow animate__fadeInUp animate__animated"
                   data-wow-delay="0s"

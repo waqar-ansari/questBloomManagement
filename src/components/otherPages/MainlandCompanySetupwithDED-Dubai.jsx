@@ -279,8 +279,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // };
 const metadata = {
   title:
-    "Dubai Mainland Company Setup with DED || Advitex - Finance and Business Consulting Reactjs Template",
-  description: "Advitex - Finance and Business Consulting Reactjs Template",
+    "Mainland Company Setup with DED - Dubai",
+  description: "Mainland Company Setup with DED - Dubai",
 };
 const MainlandCompanySetupwithDED = () => {
     return (

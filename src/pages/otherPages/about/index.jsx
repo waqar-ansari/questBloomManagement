@@ -10,8 +10,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "About || Advitex - Finance and Business Consulting Reactjs Template",
-  description: "Advitex - Finance and Business Consulting Reactjs Template",
+  title: "About Quest Management",
+  description: "About Quest Management",
 };
 export default function AboutPage() {
   return (
