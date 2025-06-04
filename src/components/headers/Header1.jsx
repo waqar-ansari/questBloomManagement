@@ -64,8 +64,7 @@ export default function Header1({ parentClass = "header style-default" }) {
                     <span>( +971 ) 564 065 672</span>
                     <span className="bg-effect" />
                   </Link>
-                
-
+                 
                   <div
                     className="mobile-button"
                     data-bs-toggle="offcanvas"

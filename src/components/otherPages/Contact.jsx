@@ -11,8 +11,12 @@ export default function Contact() {
               <div className="left">
                 <div className="heading">
                   <h1 className="mb_21">
-                    Success is a team play, right? Let’s work together!
+                    Contact Us
                   </h1>
+                  <p className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
+                    data-wow-delay="0s">
+                    Let us know how we can help! Fill out our contact form and we will get back to you as soon as possible.
+                  </p>
                   {/* <ul className="breadcrumb">
                     <li>
                       <Link to={`/`} className="link">
@@ -23,26 +27,26 @@ export default function Contact() {
                   </ul> */}
                 </div>
                 <div className="bot">
-                <div className="content mb-0">
-                  <h6> (+971) 564 065 672</h6>
-                  <p className="text-body-2 text_mono-gray-6">
-                    Call us for urgent
-                  </p>
-                </div><br />
-                <div className="content mb-0">
-                  <h6><b>Monday – Friday:</b> 8.30AM to 8.00PM</h6>
-                  <p className="text-body-2 text_mono-gray-6">
-                    RECEPTION HOURS
-                  </p>
-                </div><br />
-                <div className="content mb-0">
-                  <h6><b>Monday – Friday:</b> 8.30AM to 8.00PM</h6>
-                  <h6><b>Saturday:</b> 10.00AM to 4.00PM</h6>
-                  <p className="text-body-2 text_mono-gray-6">
-                    CALL CENTRE HOURS
-                  </p>
+                  <div className="content mb-0">
+                    <h6> (+971) 564 065 672</h6>
+                    <p className="text-body-2 text_mono-gray-6">
+                      Call us for urgent
+                    </p>
+                  </div><br />
+                  <div className="content mb-0">
+                    <h6><b>Monday – Friday:</b> 8.30AM to 8.00PM</h6>
+                    <p className="text-body-2 text_mono-gray-6">
+                      RECEPTION HOURS
+                    </p>
+                  </div><br />
+                  <div className="content mb-0">
+                    <h6><b>Monday – Friday:</b> 8.30AM to 8.00PM</h6>
+                    <h6><b>Saturday:</b> 10.00AM to 4.00PM</h6>
+                    <p className="text-body-2 text_mono-gray-6">
+                      CALL CENTRE HOURS
+                    </p>
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
             <div className="col-lg-6">
@@ -97,10 +101,10 @@ export default function Contact() {
                     defaultValue={""}
                   />
                 </fieldset>
-                <a href="#" className="link attachment">
+                {/* <a href="#" className="link attachment">
                   <i className="icon-paperclip-solid" />
                   Add an attachment
-                </a>
+                </a> */}
                 <button type="submit" className="tf-btn btn-primary2 mt_22">
                   <span>Send Message</span>
                   <span className="bg-effect" />
