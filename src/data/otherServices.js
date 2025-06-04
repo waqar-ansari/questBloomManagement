@@ -27,6 +27,7 @@ export const otherServices = [
     description: "Renew your VISA without Hassle.",
     link: "hamriyah-freezone",
   },
+  
   {
     id: 5,
     icon: "Dependent’s Visa.png",
