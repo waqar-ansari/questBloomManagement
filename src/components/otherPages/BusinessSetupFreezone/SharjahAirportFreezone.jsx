@@ -73,9 +73,9 @@ const SharjahAirportFreezone = () => {
                 <div className="img-style effect-item effect-left effect-2">
                   <img
                     className="lazyload"
-                    data-src="/images/qb/sharjahAirportFreezone2.jpg"
+                    data-src="/images/qb/sharjahAirportFreezone2.webp"
                     alt="service"
-                    src="/images/qb/sharjahAirportFreezone2.jpg"
+                    src="/images/qb/sharjahAirportFreezone2.webp"
                     width={657}
                     height={534}
                   />

@@ -59,7 +59,7 @@ const UmmAlQuwainFTZ = () => {
                     <img
                       alt=""
                       className="img-custom-anim-left wow"
-                      src="/images/qb/dmcc.jpg"
+                      src="/images/qb/ummalquwainFTZ.jpeg"
                       width={802}
                       height={535}
                     />
@@ -79,9 +79,9 @@ const UmmAlQuwainFTZ = () => {
                 <div className="img-style effect-item effect-left effect-2">
                   <img
                     className="lazyload"
-                    data-src="/images/qb/dmcc2.jpg"
+                    data-src="/images/qb/ummalquwainFTZ2.jpg"
                     alt="service"
-                    src="/images/qb/dmcc2.jpg"
+                    src="/images/qb/ummalquwainFTZ2.jpg"
                     width={657}
                     height={534}
                   />

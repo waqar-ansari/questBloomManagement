@@ -54,7 +54,7 @@ const SharjahMediaCity = () => {
                     <img
                       alt=""
                       className="img-custom-anim-left wow"
-                      src="/images/qb/dmcc.jpg"
+                      src="/images/qb/sharjahMediaCity.jpeg"
                       width={802}
                       height={535}
                     />
@@ -74,9 +74,9 @@ const SharjahMediaCity = () => {
                 <div className="img-style effect-item effect-left effect-2">
                   <img
                     className="lazyload"
-                    data-src="/images/qb/dmcc2.jpg"
+                    data-src="/images/qb/sharjahMediaCity2.avif"
                     alt="service"
-                    src="/images/qb/dmcc2.jpg"
+                    src="/images/qb/sharjahMediaCity2.avif"
                     width={657}
                     height={534}
                   />
