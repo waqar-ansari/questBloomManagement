@@ -2,6 +2,7 @@ import React from "react";
 import MetaComponent from "../common/MetaComponent";
 import Header1 from "../headers/Header1";
 import Footer1 from "../footers/Footer1";
+import { otherServices } from "@/data/otherServices";
 const metadata = {
   title: "Other Services",
   description: "Other Services",
@@ -43,24 +44,30 @@ const OtherServices = () => {
           </h2>
         </div>
         <div className="tf-grid-layout lg-col-3 md-col-2">
-          <div className="tf-box-icon style-5 effect-icon">
+          {otherServices.map((item)=>{
+            return(
+              <div className="tf-box-icon style-5 effect-icon" key={item.id}>
             <div className="icon mb_24">
               <img
                 alt="icon"
-                src="/images/box-icon/creative-solutions.svg"
-                width={29}
-                height={29}
+                src={`/images/qb/${item.icon}`}
+                width={32}
+                height={32}
               />
             </div>
             <div className="content">
               <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
-                License Renewal
+                {/* License Renewal */}
+                {item.title}
               </div>
               <p className="text-body-3 text_mono-gray-7">
-                Renew Your License Hassle Free without your presence in UAE.
+                {/* Renew Your License Hassle Free without your presence in UAE. */}
+                {item.description}
               </p>
             </div>
           </div>
+            )
+          })}
           <div className="tf-box-icon style-5 effect-icon">
             <div className="icon mb_24">
               <img

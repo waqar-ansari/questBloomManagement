@@ -71,10 +71,10 @@ export default function Services() {
               from your unique vision.
             </p>
           </div>
-          <Link to={`/services`} className="tf-btn btn-primary2">
+          {/* <Link to={`/services`} className="tf-btn btn-primary2">
             <span>View Services</span>
             <span className="bg-effect" />
-          </Link>
+          </Link> */}
         </div>
         <Swiper
           className="swiper tf-sw-mobile bg_1 swiper-active-576"
@@ -104,6 +104,7 @@ export default function Services() {
                     src={service.imgSrc}
                     width={160}
                     height={160}
+                    style={{width:160, height:160,objectFit: "contain"}}
                   />
                 </div>
                 <p className="text-body-1 text_mono-gray-7">

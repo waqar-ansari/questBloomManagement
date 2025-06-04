@@ -58,13 +58,10 @@ export default function Header1({ parentClass = "header style-default" }) {
                   </nav>
                 </div>
                 <div className="header-right d-flex align-items-center">
-                  <SearchPopup />
-                  <Link to={`/`} className="tf-btn btn-white hide-sm">
-                    <span>Get Started</span>
-                    <span className="bg-effect" />
-                  </Link>
+              
+                  
                   <Link to={`/contact-us`} className="tf-btn hide-sm">
-                    <span>Contact Us</span>
+                    <span>( +971 ) 564 065 672</span>
                     <span className="bg-effect" />
                   </Link>
                 

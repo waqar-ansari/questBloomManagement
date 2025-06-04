@@ -7,7 +7,7 @@ export const homepages = [
     current: false,
   },
   {
-    href: "/",
+    href: "/freezones",
     src: "/images/qb/freezones.jpeg",
     alt: "freezones",
     title: "Free Zones",
