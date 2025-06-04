@@ -14,15 +14,15 @@ export const teamMembers = [
     role: "Business & Corporate Banking Head",
     image: "/images/qb/people3.png",
   },
+    {
+    name: "Muhammad Afzal Mir",
+    role: "Business Development Director",
+    image: "/images/qb/people7.png",
+  },
   {
     name: "FAREEDA EK",
     role: "CHARTERED ACCOUNTANT",
     image: "/images/qb/people5.png",
-  },
-  {
-    name: "Muhammad Afzal Mir",
-    role: "Business Consultant",
-    image: "/images/qb/people6.webp",
   },
   {
     name: "PRAGYA SHARMA",
