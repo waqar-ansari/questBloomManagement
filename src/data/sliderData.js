@@ -485,3 +485,47 @@ export const rasAlKhaimahFEZA = [
     quote: `Set up your manufacturing unit for production of goods such as textiles, plastics, food products, Petroleum products and electronic equipment etc.`,
   },
 ];
+export const internationalFZA = [
+  {
+    id: 1,
+    imageSrc: "/images/qb/whyDubaiSouth1.avif",
+    heading: "Cost-Effective Setup",
+    quote: `IFZA offers one of the most affordable company setup packages in the UAE, making it an ideal choice for startups and small businesses looking to minimize overhead costs.`,
+  },
+  {
+    id: 2,
+    imageSrc: "/images/qb/whyDubaiSouth2.avif",
+    heading: "Premium Infrastructure",
+    quote: `IFZA provides modern, fully-equipped office spaces, flexible desk solutions, and meeting rooms within its state-of-the-art Dubai Silicon Oasis headquarters.`,
+  },
+  {
+    id: 3,
+    imageSrc: "/images/qb/whyDubaiSouth1.avif",
+    heading: "100% Foreign Ownership & Tax Benefits",
+    quote: `Businesses in IFZA enjoy full foreign ownership, zero corporate and personal income tax, and no import/export duties within the free zone.`,
+  },
+  {
+    id: 4,
+    imageSrc: "/images/qb/whyDubaiSouth2.avif",
+    heading: "Fast & Flexible Licensing",
+    quote: `IFZA offers a wide range of professional, commercial, and industrial licenses with minimal documentation and quick approval processes.`,
+  },
+  {
+    id: 5,
+    imageSrc: "/images/qb/whyDubaiSouth1.avif",
+    heading: "Strategic Dubai Location",
+    quote: `Located in the heart of Dubai, IFZA provides excellent access to global markets through major ports, airports, and a thriving business ecosystem.`,
+  },
+  {
+    id: 6,
+    imageSrc: "/images/qb/whyDubaiSouth2.avif",
+    heading: "Repatriation & Asset Protection",
+    quote: `Companies in IFZA can repatriate 100% of profits and capital, with no currency restrictions and strong protection of intellectual property rights.`,
+  },
+  {
+    id: 7,
+    imageSrc: "/images/qb/whyDubaiSouth1.avif",
+    heading: "Business Support Services",
+    quote: `From visa processing to banking assistance, IFZA offers comprehensive support services to simplify your business journey in the UAE.`,
+  },
+];

@@ -5,6 +5,7 @@ import {
   servicePages,
   shopPages,
   businessSetupInFreeZone,
+  freezones2,
 } from "@/data/menu";
 
 import { Link, useLocation } from "react-router-dom";
@@ -19,7 +20,7 @@ export default function Nav() {
     <>
       {" "}
       <li className={`${isActiveParent(homepages) ? "current-menu" : ""} `}>
-        <a href="/">Home</a>
+        <Link to="/">Home</Link>
       </li>
       {/* <li
         className={`position-relative ${
@@ -30,6 +31,13 @@ export default function Nav() {
           Business Setup
         </a>
       </li> */}
+      <li
+        className={` position-relative ${
+          isActiveParent(shopPages) ? "current-menu" : ""
+        } `}
+      >
+        <a href="/about">About Us</a>
+      </li>
       <li
         className={`has-child ${
           isActiveParent(homepages) ? "current-menu" : ""
@@ -64,6 +72,42 @@ export default function Nav() {
         </div>
       </li>
       <li
+        className={`has-child ${
+          isActiveParent(homepages) ? "current-menu" : ""
+        } `}
+      >
+        <a href="#">Free Zones</a>
+        <div className="submenu mega-menu">
+          <div className="wrap-demo-item tf-grid-layout-lg lg-col-4">
+            {freezones2.map((item, index) => (
+              <div
+                key={index}
+                className={`demo-item ${
+                  isActive(item.href) ? "current-menu-item" : ""
+                }`}
+              >
+                <Link to={item.href}>
+                  <div className="demo-image">
+                    <img
+                      className="lazyload"
+                      data-src={item.src}
+                      src={item.src}
+                      alt={item.alt}
+                      // width={480}
+                      width={300}
+                      // height={228}
+                      height={143}
+                      style={{height:200,borderRadius:15}}
+                    />
+                  </div>
+                  <h6 className="demo-name fw-4">{item.title}</h6>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </li>
+      {/* <li
         className={`has-child position-relative ${
           isActiveParent(businessSetupInFreeZone) ? "current-menu" : ""
         } `}
@@ -81,7 +125,7 @@ export default function Nav() {
             </li>
           ))}
         </ul>
-      </li>
+      </li> */}
       <li
         className={`has-child position-relative ${
           isActiveParent(bankingAssistance) ? "current-menu" : ""
@@ -104,6 +148,7 @@ export default function Nav() {
       <li className={` ${isActive("/other-services") ? "current-menu" : ""} `}>
         <Link to={`/other-services`}>Our Services</Link>
       </li>
+      
       <li
         className={` position-relative ${
           isActiveParent(shopPages) ? "current-menu" : ""

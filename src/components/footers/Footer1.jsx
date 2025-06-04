@@ -111,19 +111,19 @@ export default function Footer1({ parentClass = "footer style-default" }) {
                   <div className="tf-collapse-content">
                     <ul className="footer-menu-list">
                       <li className="text-body-2 text_mono-gray-6">
-                        <Link to={`/About`} className="link footer-menu_item">
+                        <Link to={`/about`} className="link footer-menu_item">
                           About Quest Management
                         </Link>
                       </li>
                       <li className="text-body-2 text_mono-gray-6">
                         <Link
-                          to={`/`}
+                          to={`/contact-us`}
                           className="link footer-menu_item"
                         >
                           Contact us
                         </Link>
                       </li>
-                      <li className="text-body-2 text_mono-gray-6">
+                      {/* <li className="text-body-2 text_mono-gray-6">
                         <Link
                           to={`/`}
                           className="link footer-menu_item"
@@ -140,10 +140,10 @@ export default function Footer1({ parentClass = "footer style-default" }) {
                         <Link to={`/`} className="link footer-menu_item">
                           Career
                         </Link>
-                      </li>
+                      </li> */}
                       <li className="text-body-2 text_mono-gray-6">
-                        <Link to={`/`} className="link footer-menu_item">
-                          Our Team
+                        <Link to={`/other-services`} className="link footer-menu_item">
+                         Other Services
                         </Link>
                       </li>
                     </ul>
@@ -160,7 +160,15 @@ export default function Footer1({ parentClass = "footer style-default" }) {
                       <ul className="footer-menu-list">
                         <li className="text-body-2 text_mono-gray-6">
                           <Link
-                            to={`/`}
+                            to={`/international-fza`}
+                            className="link footer-menu_item"
+                          >
+                           IFZA
+                          </Link>
+                        </li>
+                        <li className="text-body-2 text_mono-gray-6">
+                          <Link
+                            to={`/umm-al-quwain-ftz`}
                             className="link footer-menu_item"
                           >
                             UAQ FTZ
@@ -168,49 +176,49 @@ export default function Footer1({ parentClass = "footer style-default" }) {
                         </li>
                         <li className="text-body-2 text_mono-gray-6">
                           <Link
-                            to={`/`}
+                            to={`/hamriyah-freezone`}
                             className="link footer-menu_item"
                           >
                             HAFZA
                           </Link>
                         </li>
                         <li className="text-body-2 text_mono-gray-6">
-                          <a href="#" className="link footer-menu_item">
+                          <a href="/sharjah-airport-freezone" className="link footer-menu_item">
                             SAIF Zone
                           </a>
                         </li>
                         <li className="text-body-2 text_mono-gray-6">
-                          <Link to={`/`} className="link footer-menu_item">
+                          <Link to={`/ras-al-khaimah-feza`} className="link footer-menu_item">
                             RAKEZ
                           </Link>
                         </li>
                         <li className="text-body-2 text_mono-gray-6">
-                          <Link to={`/`} className="link footer-menu_item">
+                          <Link to={`/fujairah-fza`} className="link footer-menu_item">
                             FFZA
                           </Link>
                         </li>
                         <li className="text-body-2 text_mono-gray-6">
-                          <Link to={`/`} className="link footer-menu_item">
+                          <Link to={`/ajman-media-city-fz`} className="link footer-menu_item">
                             AMCFZ
                           </Link>
                         </li>
                         <li className="text-body-2 text_mono-gray-6">
-                          <Link to={`/`} className="link footer-menu_item">
+                          <Link to={`/sharjah-media-city`} className="link footer-menu_item">
                             SHAMS
                           </Link>
                         </li>
                         <li className="text-body-2 text_mono-gray-6">
-                          <Link to={`/`} className="link footer-menu_item">
+                          <Link to={`/ajman-fza`} className="link footer-menu_item">
                             AFZA
                           </Link>
                         </li>
                         <li className="text-body-2 text_mono-gray-6">
-                          <Link to={`/`} className="link footer-menu_item">
+                          <Link to={`/jebel-ali-freezone`} className="link footer-menu_item">
                             JAFZA
                           </Link>
                         </li>
                         <li className="text-body-2 text_mono-gray-6">
-                          <Link to={`/`} className="link footer-menu_item">
+                          <Link to={`/dmcc-freezone`} className="link footer-menu_item">
                             DMCC
                           </Link>
                         </li>
@@ -252,7 +260,7 @@ export default function Footer1({ parentClass = "footer style-default" }) {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-2 col-md-6">
+              {/* <div className="col-lg-2 col-md-6">
                 <div>
                   <div className="footer-col-block">
                     <h6 className="footer-heading footer-heading-mobile">
@@ -279,7 +287,7 @@ export default function Footer1({ parentClass = "footer style-default" }) {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
               {/* <div className="col-lg-4">
                 <div className="footer-newsletter">
                   <h6 className="footer-heading">Subscribe Our Newseltter</h6>
@@ -378,31 +386,31 @@ export default function Footer1({ parentClass = "footer style-default" }) {
                   </li>
                   <li>
                     <Link
-                      to={`/`}
+                      to={`/about`}
                       className="link text_mono-gray-5 text-body-1"
                     >
                       About
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       to={`/`}
                       className="link text_mono-gray-5 text-body-1"
                     >
                       Serivce
                     </Link>
-                  </li>
-                  <li>
+                  </li> */}
+                  {/* <li>
                     <Link
                       to={`/`}
                       className="link text_mono-gray-5 text-body-1"
                     >
                       Blog
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
-                      to={`/`}
+                      to={`/contact-us`}
                       className="link text_mono-gray-5 text-body-1"
                     >
                       Contact

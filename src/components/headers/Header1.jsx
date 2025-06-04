@@ -14,7 +14,6 @@ export default function Header1({ parentClass = "header style-default" }) {
                 <div className="header-left d-flex align-items-center">
                   <div className="header-logo">
                     <Link to={`/`} className="site-logo">
-
                       {/* <svg
                         width={149}
                         height={46}
@@ -48,7 +47,19 @@ export default function Header1({ parentClass = "header style-default" }) {
                           fill="black"
                         />
                       </svg> */}
-                      <div style={{ background: "#fff", padding: "5px 12px", borderRadius: 30, marginRight: 10 }}><img src="/images/qb/questBloomTransparent.png" width={120} /></div>
+                      <div
+                        style={{
+                          background: "#fff",
+                          padding: "5px 12px",
+                          borderRadius: 30,
+                          marginRight: 10,
+                        }}
+                      >
+                        <img
+                          src="/images/qb/questBloomTransparent.png"
+                          width={120}
+                        />
+                      </div>
                     </Link>
                   </div>
                   <nav className="main-menu style-default">
@@ -58,14 +69,10 @@ export default function Header1({ parentClass = "header style-default" }) {
                   </nav>
                 </div>
                 <div className="header-right d-flex align-items-center">
-              
-                  
-                  <Link to={`/contact-us`} className="tf-btn hide-sm">
-                    <span>( +971 ) 564 065 672</span>
+                  <a href="tel:+971564065672" className="tf-btn hide-sm">
+                    <span><img src="/images/qb/phoneIcon.png" width={20} /> ( +971 ) 564 065 672</span>
                     <span className="bg-effect" />
-                  </Link>
-                
-
+                  </a>
                   <div
                     className="mobile-button"
                     data-bs-toggle="offcanvas"

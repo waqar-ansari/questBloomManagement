@@ -11,7 +11,7 @@ export default function Hero() {
            Start Your Company<br/>
            in Dubai
             </div>
-            <Link to={`/about`} className="tf-btn btn-white height-2">
+            <Link to={`/contact-us`} className="tf-btn btn-white height-2">
               <span className="text_black">Get Free Quote</span>
               <span className="bg-effect" />
             </Link>

@@ -76,7 +76,7 @@ export default function About() {
                 <h5 className="title split-text split-lines-rotation-x">
                   Head of Admin & HR
                   <br />
-                  BRAHMARUP GANGULY Head Of Admin & HR - Quest Management Consultancy.
+                  BRAHMARUP GANGULY
                 </h5>
                 <p
                   className="description text-body-1 text_mono-gray-7 description-1 wow animate__fadeInUp animate__animated"
@@ -111,7 +111,7 @@ export default function About() {
                   General Manager
                   Head of Business Development
                   <br />
-                  JALENDHAR SHARMA  Co-Founder Quest Management Consultancy.
+                  JALENDHAR SHARMA
                 </h5>
                 <p
                   className="description text-body-1 text_mono-gray-7 description-1 wow animate__fadeInUp animate__animated"

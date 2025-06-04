@@ -6,7 +6,7 @@ export default function Brands() {
   return (
     <div className="section-about style-2 tf-spacing-15 pt-0">
       <div className="tf-container">
-        <div className="tf-spacing-14">
+        {/* <div className="tf-spacing-14">
           <div className="heading-section text-center mb_55">
             <h6 className="title text-uppercase font2 text_mono-gray-4">
               Our clients reflect our expertise
@@ -287,8 +287,8 @@ export default function Brands() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="text-with-img-1">
+        </div> */}
+        <div className="text-with-img-1 tf-spacing-14">
           <div className="row">
             <div className="col-lg-6">
               <div className="left">
@@ -408,7 +408,7 @@ export default function Brands() {
                   data-wow-delay="0s"
                 >
                   <a
-                    href="#"
+                    href="/about"
                     className="tf-btn btn-primary2 height-2 btn-px-28"
                   >
                     <span> Learn more</span>

@@ -51,6 +51,7 @@ import AjmanFZA from "./components/otherPages/BusinessSetupFreezone/AjmanFZA";
 import AjmanMediaCityFZ from "./components/otherPages/BusinessSetupFreezone/AjmanMediaCityFZ";
 import RasAlKhaimahFEZA from "./components/otherPages/BusinessSetupFreezone/RasAlKhaimahFEZA";
 import Freezones from "./components/otherPages/BusinessSetupFreezone/Freezones";
+import InternationalFZA from "./components/otherPages/BusinessSetupFreezone/InternationalFZA";
 
 function App() {
   return (
@@ -127,6 +128,7 @@ function App() {
                 <Route path="ajman-media-city-fz" element={<AjmanMediaCityFZ />} />
                 <Route path="ras-al-khaimah-feza" element={<RasAlKhaimahFEZA />} />
                 <Route path="freezones" element={<Freezones />} />
+                <Route path="international-fza" element={<InternationalFZA />} />
 
 
                 <Route path="*" element={<NotFoundPage />} />

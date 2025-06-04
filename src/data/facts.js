@@ -24,7 +24,7 @@ export const counterItems2 = [
     value: 10,
     initialDisplay: 0,
     unit: "+",
-    description: "Years of Experience<br />since at 1996",
+    description: "Years of Experience<br />since at 2016",
   },
   {
     value: 400,
@@ -36,7 +36,7 @@ export const counterItems2 = [
     value: 15,
     initialDisplay: 0,
     unit: "+",
-    description: "Skilled professionals driving success\nacross every department",
+    description: "Skilled professionals driving success",
   },
   {
     value: 15,
@@ -97,9 +97,9 @@ export const counterData = {
 export const counterItems4 = [
   {
     icon: "icon-file-verified",
-    label: "Project Completed",
-    value: 200,
-    initialDisplay: 100,
+    label: "Services Offerend",
+    value: 15,
+    initialDisplay: 0,
     unit: "+",
   },
   {
@@ -118,9 +118,9 @@ export const counterItems4 = [
   },
   {
     icon: "icon-mic-01",
-    label: "Workshop Conducted",
-    value: 300,
-    initialDisplay: 100,
+    label: "Team of Professionals",
+    value: 15,
+    initialDisplay: 0,
     unit: "+",
   },
 ];

@@ -12,8 +12,8 @@ import Testimonials from "@/components/common/Testimonials";
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
   title:
-    "Business Consulting || Advitex - Finance and Business Consulting Reactjs Template",
-  description: "Advitex - Finance and Business Consulting Reactjs Template",
+    "Quest Management Services",
+  description: "Quest Management Services",
 };
 export default function HomePage() {
   return (
@@ -27,7 +27,7 @@ export default function HomePage() {
         <Services />
         <Process />
         {/* <CaseStudies /> */}
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Blogs />
         <Faqs />
         <Contact />
