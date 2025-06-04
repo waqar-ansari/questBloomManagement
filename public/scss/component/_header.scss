@@ -125,7 +125,8 @@
       .demo-name {
         color: var(--Primary);
         &::after {
-          width: 100%;
+          // width: 100%;
+          width: 0;
           right: auto;
           left: 0;
         }
@@ -377,7 +378,8 @@
       .demo-name {
         color: var(--Primary);
         &::after {
-          width: 100%;
+          // width: 100%;
+          width: 0;
           right: auto;
           left: 0;
         }
