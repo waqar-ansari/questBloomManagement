@@ -15,7 +15,7 @@ export const teamMembers = [
     image: "/images/qb/people3.png",
   },
     {
-    name: "Muhammad Afzal Mir",
+    name: "Tianlai Zhang(Simon)",
     role: "Business Development Director",
     image: "/images/qb/people7.png",
   },
