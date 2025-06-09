@@ -87,4 +87,12 @@ export const freezones = [
     width: 406,
     height: 553,
   },
+  {
+    id: 12,
+    imageSrc: "/images/qb/ifzaFreezone.png",
+    title: "International Free Zone Authority",
+    link: "international-fza",
+    width: 406,
+    height: 553,
+  },
 ];

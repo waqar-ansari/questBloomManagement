@@ -155,7 +155,8 @@ export default function Mobilemenu() {
                     href="https://www.google.com/maps?q=16/9,ScotlandUnitedKingdom"
                   >
                     <span className="fw-5 text_mono-gray-5">
-                      Office 1004, 10th Floor, Bayswater,<br/> Business Bay, Dubai-UAE
+                     Office 1702, 17th Floor, Marasi Drive, Business Bay, Dubai, <br/>
+                      P.O Box 113225
                     </span>
                   </a>
                 </p>

@@ -6,6 +6,13 @@ export const homepages = [
     title: "Dubai Mainland",
     current: false,
   },
+  {
+    href: "/freezones",
+    src: "/images/qb/freezones.jpeg",
+    alt: "freezones",
+    title: "Free Zones",
+    current: false,
+  },
 ];
 export const freezones2 = [
   {
@@ -112,7 +119,7 @@ export const blogPages = [
 ];
 export const bankingAssistance = [
   { href: "/bank-account-opening", label: "Bank Account Opening" },
-  { href: "/trade-finannce-assistance", label: "Trade Finance" },
+  { href: "/trade-finance-assistance", label: "Trade Finance" },
 ];
 
 export const servicePages = [
