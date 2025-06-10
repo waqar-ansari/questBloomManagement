@@ -4,6 +4,7 @@ import {
   otherPages,
   businessSetupInFreeZone,
   shopPages,
+  mobileBusinessSetup,
 } from "@/data/menu";
 
 import { Link, useLocation } from "react-router-dom";
@@ -34,23 +35,55 @@ export default function Mobilemenu() {
         <div className="mb-body">
           <div className="mb-content-top">
             <ul className="nav-ul-mb" id="wrapper-menu-navigation">
-               <li
-                className={`nav-mb-item ${
-                  isActive("/") ? "active" : ""
-                }`}
-              >
+              <li className={`nav-mb-item ${isActive("/") ? "active" : ""}`}>
                 <Link to={`/`} className="mb-menu-link">
                   Home
                 </Link>
               </li>
-              <li
+              {/* <li
                 className={`nav-mb-item ${
                   isActive("/business-setup-dubai-mainland") ? "active" : ""
                 }`}
               >
                 <Link to={`/business-setup-dubai-mainland`} className="mb-menu-link">
-                  Business Setup in Dubai Mainland
+                  Business Setup
                 </Link>
+              </li> */}
+              <li
+                className={`nav-mb-item ${
+                  isActiveParent(mobileBusinessSetup) ? "active" : ""
+                }`}
+              >
+                <a
+                  href="#dropdown-menu-homepages"
+                  className="collapsed mb-menu-link"
+                  data-bs-toggle="collapse"
+                  aria-expanded="true"
+                  aria-controls="dropdown-menu-homepages"
+                >
+                  <span>Business Setup</span>
+                  <span className="btn-open-sub" />
+                </a>
+                <div
+                  id="dropdown-menu-homepages"
+                  className="collapse"
+                  data-bs-parent="#menu-mobile"
+                >
+                  <ul className="sub-nav-menu">
+                    {mobileBusinessSetup.map((item) => (
+                      <li key={item.href}>
+                        <Link
+                          to={item.href}
+                          className={`sub-nav-link ${
+                            isActive(item.href) ? "active" : ""
+                          }`}
+                        >
+                          {item.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </li>
               <li
                 className={`nav-mb-item ${
@@ -64,7 +97,7 @@ export default function Mobilemenu() {
                   aria-expanded="true"
                   aria-controls="dropdown-menu-services"
                 >
-                  <span>Business Setup in Free Zone</span>
+                  <span>Free Zone</span>
                   <span className="btn-open-sub" />
                 </a>
                 <div
@@ -124,7 +157,7 @@ export default function Mobilemenu() {
                   </ul>
                 </div>
               </li>
-               <li
+              <li
                 className={`nav-mb-item ${
                   isActive("/other-services") ? "active" : ""
                 }`}
@@ -133,7 +166,7 @@ export default function Mobilemenu() {
                   Other Services
                 </Link>
               </li>
-               <li
+              <li
                 className={`nav-mb-item ${
                   isActive("/contact-us") ? "active" : ""
                 }`}
@@ -142,7 +175,6 @@ export default function Mobilemenu() {
                   Contact
                 </Link>
               </li>
-             
             </ul>
           </div>
           <div className="mb-other-content">
@@ -155,8 +187,9 @@ export default function Mobilemenu() {
                     href="https://www.google.com/maps?q=16/9,ScotlandUnitedKingdom"
                   >
                     <span className="fw-5 text_mono-gray-5">
-                     Office 1702, 17th Floor, Marasi Drive, Business Bay, Dubai, <br/>
-                      P.O Box 113225
+                      P.O Box 113225 <br />
+                      Office 1702, 17th Floor, Lake Central Tower <br />
+                      Marasi Drive, Business Bay, Dubai, UAE
                     </span>
                   </a>
                 </p>
@@ -174,9 +207,9 @@ export default function Mobilemenu() {
               <li>
                 <p className="text_mono-gray">
                   Phone:
-                  <a href="tel:+97145896436">
+                  <a href="tel:+97145299247">
                     <span className="fw-5 text_mono-gray-5">
-                     (+971) 458 964 36
+                      +971 4 529 9247
                     </span>
                   </a>
                 </p>

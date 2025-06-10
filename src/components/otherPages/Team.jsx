@@ -27,17 +27,17 @@ export default function Team() {
               key={index}
               className="team-item style-default hover-border hover-image"
             >
-              <Link to={`/team`} className="img-style mb_19">
+              <div className="img-style mb_19">
                 <div className="w-full aspect-square overflow-hidden rounded-full">
 
                   <img alt="avatar" src={member.image} className="w-full h-full object-cover object-top" />
                 </div>
-              </Link>
+              </div>
               <div className="content">
                 <h3 className="name">
-                  <Link to={`/team`} className="link hover-line-text">
+                  <div className="link hover-line-text">
                     {member.name}
-                  </Link>
+                  </div>
                 </h3>
                 <p className="text-body-1">{member.role}</p>
               </div>

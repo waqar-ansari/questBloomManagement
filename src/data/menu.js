@@ -140,6 +140,10 @@ export const businessSetupInFreeZone = [
   { href: "/ras-al-khaimah-feza", label: "Ras Al Khaimah Free Economic Zone Authority" },
   { href: "/international-fza", label: "International Free Zone Authority" },
 ];
+export const mobileBusinessSetup = [
+  { href: "/business-setup-dubai-mainland", label: "Dubai Mainland" },
+  { href: "/freezones", label: "Free Zones" },
+];
 export const shopPages = [
   { href: "/shop", label: "Shop" },
   { href: "/product-details/1", label: "Product Detail" },

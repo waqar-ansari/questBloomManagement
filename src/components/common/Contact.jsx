@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function Contact() {
+
+  
   return (
     <div className="section-contact style-default position-relative">
       <div className="tf-container">
@@ -11,19 +13,17 @@ export default function Contact() {
               <div className="heading">
                 <div className="h1 split-text split-lines-rotation-x">
                   Success is a team play, right? Let’s work together!
+                  
+
                 </div>
               </div>
               <div className="bot">
                 <div className="content">
-                  <h6 className="mb_5">+971 56 406 5672</h6>
-                  <p className="text-body-2 text_mono-gray-6">
+                  <h6 className="mb_5"><img src="/images/qb/phoneIconGolden.png" width={35} style={{marginRight:20}}/>+971 4 529 9247</h6>
+                  {/* <p className="text-body-2 text_mono-gray-6">
                     Call us for urgent
-                  </p>
+                  </p> */}
                 </div>
-                <Link to={`/`} className="tf-btn btn-primary2 h36">
-                  <span className="text-caption">Get Direction</span>
-                  <span className="bg-effect" />
-                </Link>
               </div>
             </div>
           </div>
@@ -71,10 +71,6 @@ export default function Contact() {
                   defaultValue={""}
                 />
               </fieldset>
-              {/* <a href="#" className="link attachment">
-                <i className="icon-paperclip-solid" />
-                Add an attachment
-              </a> */}
               <button type="submit" className="tf-btn btn-primary2 mt_27">
                 <span>Send Message</span>
                 <span className="bg-effect" />
@@ -88,6 +84,7 @@ export default function Contact() {
           alt="item"
           src="/images/item/shape-5.png"
           width={1105}
+          className="contact-image-animate"
           height={720}
         />
       </div>

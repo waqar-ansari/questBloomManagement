@@ -8,8 +8,9 @@ export default function Hero() {
         <div className="tf-container">
           <div className="heading-title">
             <div className="text-display-2 text_white mb_49 split-text effect-scale">
-           Start Your Company<br/>
-           in Dubai
+              Start Your Company
+              <br />
+              in Dubai
             </div>
             <Link to={`/contact-us`} className="tf-btn btn-white height-2">
               <span className="text_black">Get Free Quote</span>
@@ -18,7 +19,8 @@ export default function Hero() {
           </div>
           <div className="bot d-flex align-items-end justify-content-between gap-20 flex-wrap">
             <p className="text_white sub-heading description">
-            Register your company in Mainland Dubai & Freezone <br/> with ease through expert guidance and support from Quest Management.
+              Register your company in Mainland Dubai & Freezone <br /> with
+              ease through expert guidance and support from Quest Management.
             </p>
             <div className="wrap-facts">
               <h5 className="text_white mb_19">Connect Your Experts</h5>
@@ -29,7 +31,7 @@ export default function Hero() {
                       alt=""
                       src="/images/qb/people1.webp"
                       width={40}
-                      style={{borderRadius:20,height:"100%"}}
+                      style={{ borderRadius: 20, height: "100%" }}
                       height={40}
                     />
                   </div>
@@ -38,7 +40,7 @@ export default function Hero() {
                       alt=""
                       src="/images/qb/people2.webp"
                       width={40}
-                      style={{borderRadius:20,height:"100%"}}
+                      style={{ borderRadius: 20, height: "100%" }}
                       height={40}
                     />
                   </div>
@@ -47,7 +49,7 @@ export default function Hero() {
                       alt=""
                       src="/images/qb/people3.webp"
                       width={40}
-                      style={{borderRadius:20,height:"100%"}}
+                      style={{ borderRadius: 20, height: "100%" }}
                       height={40}
                     />
                   </div>

@@ -9,6 +9,7 @@ import Team from "@/components/otherPages/Team";
 import React from "react";
 import { Link } from "react-router-dom";
 import MetaComponent from "@/components/common/MetaComponent";
+import OriginalTestimonials from "@/components/common/OriginalTestimonials";
 const metadata = {
   title: "About Quest Management",
   description: "About Quest Management",
@@ -25,33 +26,25 @@ export default function AboutPage() {
               <div className="col-12">
                 <div className="heading mb_51">
                   <h1 className="text_black mb_16 letter-spacing-1">
-                    Play a key role in <br />
-                    business advancement
+                    Meet the minds our success
                   </h1>
                   <p className="sub-heading text_mono-gray-7">
-                    Promote innovation by introducing breakthrough ideas and
-                    technologies <br />
-                    to improve business and customer experience.
+                    A dedicated team driving innovation and
+                    <br /> delivering great results.
                   </p>
                 </div>
-                {/* <ul className="breadcrumb">
-                  <li>
-                    <Link to={`/`} className="link">
-                      Home
-                    </Link>
-                  </li>
-                  <li>About us</li>
-                </ul> */}
               </div>
             </div>
           </div>
         </div>
       </div>
       <div className="main-content style-1">
+        <Testimonials />
+
         <About />
         <Team />
+        <OriginalTestimonials />
         {/* <Process /> */}
-        <Testimonials />
         {/* <Faqs parentClass="section-faqs style-1 tf-spacing-8" /> */}
         {/* <Contact /> */}
       </div>

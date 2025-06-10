@@ -57,13 +57,26 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: linear-gradient(
-          253.29deg,
-          rgba(0, 0, 0, 0) 0.26%,
-          rgba(0, 0, 0, 0.1) 97.54%
-        ),
-        linear-gradient(270deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.15) 90%);
+      background: 
+linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 80%,
+    rgba(0, 0, 0, 0.85) 100%
+),
+linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0) 20%,
+    rgba(0, 0, 0, 0.35) 100%
+);
     }
+    //   background: linear-gradient(
+    //       253.29deg,
+    //       rgba(0, 0, 0, 0) 0.26%,
+    //       rgba(0, 0, 0, 0.1) 97.54%
+    //     ),
+    //     linear-gradient(270deg, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0.15) 90%);
+    // }
   }
   &.style-2 {
     background-color: var(--Bg-color-3);
@@ -591,6 +604,13 @@
     .shape {
       bottom: -8%;
       left: -10%;
+       transition: bottom 1s ease, transform 1s ease; // 🆕 Enables smooth movement and scaling
+  transform: scale(1); // 🆕 Initial scale
+    }
+     &:hover .shape {
+      bottom: 20%;
+  
+        transform: scale(30.05); // 🆕 Slight zoom on hover
     }
   }
   &.style-1 {

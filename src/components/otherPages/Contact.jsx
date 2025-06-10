@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Contact() {
   return (
     <div className="page-title style-default -mb_11">
-      <div className="section-contact style-default position-relative py-0">
+      <div className="section-contact style-default position-relative py-0 hover-animate">
         <div className="tf-container">
           <div className="row">
             <div className="col-lg-6">
@@ -104,6 +104,7 @@ export default function Contact() {
             src="/images/item/shape-5.png"
             width={1105}
             height={720}
+            className="shape-img"
           />
         </div>
       </div>

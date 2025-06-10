@@ -1,6 +1,6 @@
 import React from "react";
 
-import { counterItems5 } from "@/data/facts";
+import { counterItems3, counterItems5 } from "@/data/facts";
 import OdometerComponent from "../common/OdometerComponent";
 export default function About() {
   return (
@@ -200,29 +200,31 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="wrap-counter style-4">
-            <div className="row">
-              {counterItems5.map((item, index) => (
-                <div key={index} className="col-md-4">
-                  <div className="counter-item style-default">
-                    <div className="sub-heading text_black text-uppercase mb_22">
-                      {item.title}
-                    </div>
-                    <div className="counter-number">
-                      <div className="odometer text_primary mb_15">
-                        <OdometerComponent max={item.value} />
-                      </div>
-                      <span className="sub text_primary">{item.unit}</span>
-                    </div>
-                    <p
-                      className="sub-heading text_mono-gray-5"
-                      dangerouslySetInnerHTML={{ __html: item.description }}
-                    />
-                  </div>
+          <div className="row wrap-counter" style={{paddingTop:100}}>
+          {counterItems3.map((item, index) => (
+            <div key={index} className="col-md-4">
+              <div className="counter-item style-default">
+                <div className="sub-heading text_black text-uppercase mb_21">
+                  {item.title}
                 </div>
-              ))}
+                <div className="counter-number mb_15">
+                  <div className="odometer text_primary">
+                    <OdometerComponent max={item.value} />
+                  </div>
+                  <span className="sub text_primary">{item.unit}</span>
+                </div>
+                <p className="sub-heading text_mono-gray-5">
+                  {item.description.split("\n").map((line, i) => (
+                    <React.Fragment key={i}>
+                      {line}
+                      {i < item.description.split("\n").length - 1 && <br />}
+                    </React.Fragment>
+                  ))}
+                </p>
+              </div>
             </div>
-          </div>
+          ))}
+        </div>
         </div>
       </div>
     </>

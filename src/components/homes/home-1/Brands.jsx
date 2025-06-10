@@ -393,13 +393,17 @@ export default function Brands() {
                       className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
                       data-wow-delay="0s"
                     >
-                     Quest Management is a leading business consulting firm in the UAE with over 10 years of experience.
+                      Quest Management is a leading business consulting firm in
+                      the UAE with over 10 years of experience.
                     </p>
                     <p
                       className="text-body-1 text_mono-gray-7 wow animate__fadeInUp animate__animated"
                       data-wow-delay="0s"
                     >
-                      We provide expert assistance in Corporate Banking and all aspects of company registration with an impressive track record in business license related Services for clients globally.
+                      We provide expert assistance in Corporate Banking and all
+                      aspects of company registration with an impressive track
+                      record in business license related Services for clients
+                      globally.
                     </p>
                   </div>
                 </div>
@@ -419,7 +423,13 @@ export default function Brands() {
                       <i className="icon-tty-solid" />
                     </div>
                     <p className="font2 text-body-2">
-                      24/7 Support: (+971) 458 964 36
+                      24/7 Support:{" "}
+                      <a
+                        href="tel:+97145299247"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        +971 4 529 9247
+                      </a>
                     </p>
                   </div>
                 </div>

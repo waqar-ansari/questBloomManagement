@@ -1,8 +1,8 @@
 export const mapLocations = [
   {
-    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28880.459585507484!2d55.24949462000004!3d25.20128507330067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f42813dbc8057%3A0x3c7ace4f38f16ac0!2sServcorp%20Boulevard%20Plaza%20-%20Coworking%2C%20Offices%2C%20Virtual%20Offices%20%26%20Meeting%20Rooms!5e0!3m2!1sen!2sin!4v1749015049362!5m2!1sen!2sin",
-    location: "Office 1702, 17th Floor, Marasi Drive, Business Bay, Dubai, P.O Box 113225",
-    phone: "+971 (04) 529 9247",
+    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.5016411138286!2d55.27043537708035!3d25.186300077718133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f682d79f79769%3A0x775f469534962029!2sLake%20Central%20Tower!5e0!3m2!1sen!2sae!4v1749475527898!5m2!1sen!2sae",
+    location: `P.O Box 113225, Office 1702, 17th Floor, Lake Central Tower, Marasi Drive,  Business Bay, Dubai, UAE`,
+    phone: "+971 4 529 9247",
     email: "info@questmanagement.ae",
   },
   // {

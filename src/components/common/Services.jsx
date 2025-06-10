@@ -2,151 +2,117 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-const services = [
-  {
-    title: (
-      <>
-        Business Setup <br /> - Dubai Mainland
-      </>
-    ),
-    imgSrc: "/images//qb/dubaiMainland.svg  ",
-    description:
-      "Expert assistance for hassle-free Dubai mainland business setup, licensing, and complete legal compliance.",
-    delay: "0s",
-  },
-  {
-    title: (
-      <>
-        Business Setup
-        <br />
-        - Freezone
-      </>
-    ),
-    imgSrc: "/images/qb/dubaiFreezone.svg",
-    description:
-      "Seamless Freezone business setup services in Dubai, including licensing, documentation, and office space support.",
-    delay: ".15s",
-  },
-  {
-    title: (
-      <>
-        Banking 
-        <br />
-        Assistance
-      </>
-    ),
-    imgSrc: "/images/qb/bankingServices.svg",
-    description:
-      "Expert banking assistance for smooth account opening, compliance, and financial setup in Dubai.",
-    delay: ".25s",
-  },
-  {
-    title: (
-      <>
-        Other <br /> Services
-      </>
-    ),
-    imgSrc: "/images/qb/otherServices.svg",
-    description:
-      "Comprehensive support including VAT registration, PRO services, legal documentation, and office setup solutions.",
-    delay: ".35s",
-  },
-];
+import { Pagination,Navigation } from "swiper/modules";
+import { caseStudies } from "@/data/caseStudies";
+import { homepageServices } from "@/data/homepageServices";
+
 
 export default function Services() {
   return (
-    <div className="section section-service style-1 bg-sub-color tf-spacing-16">
+   
+    <div className="section sw-layout-1 tf-spacing-13 pt-0" style={{marginTop:100}}>
       <div className="tf-container">
-        <div className="heading-section d-flex justify-content-between flex-wrap-md gap_12 align-items-end mb_112">
+        <div className="heading-section d-flex justify-content-between flex-wrap-md gap_12 align-items-end mb_88">
           <div className="left">
             <h2 className="heading-title split-text effect-right">
-              Tailored Solutions For Your Growth
+             Smart Business Services, Built Around You
             </h2>
             <p
               className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated"
               data-wow-delay="0s"
             >
-              With custom services, we empower the development, provide support
-              from your unique vision.
+            From company formation to banking and compliance — our expert-led services are
+             tailored to fuel your success and simplify your journey in Dubai.
             </p>
           </div>
-          {/* <Link to={`/services`} className="tf-btn btn-primary2">
-            <span>View Services</span>
-            <span className="bg-effect" />
-          </Link> */}
+          <div className="wrap-sw-button d-flex gap_16">
+            <div className="sw-button style-default v2 has-bg nav-prev-layout-1 snbp6">
+              <i className="icon-caret-left" />
+            </div>
+            <div className="sw-button style-default v2 has-bg nav-next-layout-1 snbn6">
+              <i className="icon-caret-right" />
+            </div>
+          </div>
         </div>
+      </div>
+      <div className="tf-container slider-layout-right w-xl">
         <Swiper
-          className="swiper tf-sw-mobile bg_1 swiper-active-576"
-          data-screen={576}
+          className="swiper"
           spaceBetween={15}
-          modules={[Pagination]}
-          pagination={{
-            clickable: true,
-            el: ".spd16",
+          breakpoints={{
+            0: { slidesPerView: 1 },
+            575: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 1.1,
+            },
+            992: {
+              slidesPerView: 1.4,
+              spaceBetween: 20,
+            },
+            1200: {
+              slidesPerView: 2.2,
+              spaceBetween: 24,
+            },
+          }}
+          modules={[Navigation]}
+          navigation={{
+            prevEl: ".snbp6",
+            nextEl: ".snbn6",
           }}
         >
-          {services.map((service, index) => (
-            <SwiperSlide
-              key={index}
-              className="swiper-slide wow animate__fadeInRight animate__animated"
-              data-wow-delay={service.delay}
-            >
-              <div className="tf-box-icon style-1 hover-border">
-                <h5 className="mb_53 title">
-                  <a href="#" className="link hover-line-text line-clamp-2">
-                    {service.title}
-                  </a>
-                </h5>
-                <div className="icon">
+          {homepageServices.map((item) => (
+            <SwiperSlide className="swiper-slide" key={item.id}>
+              <div className="case-studies-item style-1 hover-image hover-border border-element h-full">
+                <Link to={`/${item.link}`} className="img-style">
                   <img
-                    alt="icon"
-                    src={service.imgSrc}
-                    width={160}
-                    height={160}
-                    style={{width:160, height:160,objectFit: "contain"}}
+                    className="lazyload"
+                    data-src={item.image}
+                    alt="case-studies"
+                    src={item.image}
+                    width={382}
+                    height={502}
                   />
+                </Link>
+                <div className="content">
+                  <div className="top d-flex align-items-center justify-content-end mb_31">
+                    {/* <div className="brand">
+                      <img
+                        alt="brand"
+                        src={item.brandSrc}
+                        width={item.brandWidth}
+                        height={item.brandHeight}
+                      />
+                    </div> */}
+                    <a href={`/${item.link}`} className="tf-btn" target="_blank">
+                      <span className="icon-arrow-top-right" />
+                      <span className="bg-effect" />
+                    </a>
+                  </div>
+                  <div className="heading mb_65">
+                    <h4 className="mb_15 title">
+                      <Link to={`/${item.link}`} className="link">
+                        {item.title}
+                      </Link>
+                    </h4>
+                    <p className="text_mono-gray-7 text-body-2">
+                      {item.description}
+                    </p>
+                  </div>
+                  {/* <div className="group-number">
+                    {item.stats.map((stat, index) => (
+                      <div className="wrap-number" key={index}>
+                        <h3 className="number fw-5">{stat.value}</h3>
+                        <p className="font2 text-body-1 lh-20">{stat.label}</p>
+                      </div>
+                    ))}
+                  </div> */}
                 </div>
-                <p className="text-body-1 text_mono-gray-7">
-                  {service.description}
-                </p>
               </div>
             </SwiperSlide>
           ))}
-
-          <div className="sw-dots style-default spd16 sw-pagination-mb mt_20 justify-content-center d-flex d-md-none" />
         </Swiper>
-        <div className="swiper tf-sw-mobile bg_1 swiper-inActive-576">
-          <div className="swiper-wrapper tf-grid-layout-sm xl-col-4 sm-col-2 gap_24">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="swiper-slide wow animate__fadeInRight animate__animated"
-                data-wow-delay={service.delay}
-              >
-                <div className="tf-box-icon style-1 hover-border">
-                  <h5 className="mb_53 title">
-                    <a href="#" className="link hover-line-text line-clamp-2">
-                      {service.title}
-                    </a>
-                  </h5>
-                  <div className="icon">
-                    <img
-                      alt="icon"
-                      src={service.imgSrc}
-                      width={160}
-                      height={160}
-                    />
-                  </div>
-                  <p className="text-body-1 text_mono-gray-7">
-                    {service.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="sw-dots style-default sw-pagination-mb mt_20 justify-content-center d-flex d-md-none" />
-        </div>
       </div>
     </div>
   );
