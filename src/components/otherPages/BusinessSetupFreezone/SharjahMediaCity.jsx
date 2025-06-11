@@ -8,7 +8,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import EffectiveSolutions from "../EffectiveSolutions";
-import { sharjahAirportFreezone, fujairahFZA, sharjahMediaCity } from "@/data/sliderData";
+import {
+  sharjahAirportFreezone,
+  fujairahFZA,
+  sharjahMediaCity,
+} from "@/data/sliderData";
+import { Autoplay } from "swiper/modules";
 
 const metadata = {
   title: "Sharjah Media City",
@@ -29,18 +34,33 @@ const SharjahMediaCity = () => {
                   <div className="content">
                     <div className="heading">
                       <h1 className="title split-text effect-right  mb-5">
-                  Sharjah Media <br/> City (SHAMS)
+                        Sharjah Media <br /> City (SHAMS)
                       </h1>
                       <div className="description">
                         <p
                           className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
                           data-wow-delay="0s"
                         >
-                 Sharjah Media City (SHAMS), is located in the emirate of Sharjah, the cultural capital of the UAE. Shams was launched in January 2017, with a vision to be a world-class hub for media and creativity in the region. The Shams community fosters a vibrant ecosystem for innovation to live, learn and co-create. As a world-class free zone hub for innovation, Shams sets the benchmark for service and support to those wishing to set up and launch their business with specialized facilities for the creative and media industries. SHAMS’ mission is to make creative entrepreneurship accessible to all aspiring startups, SMEs and established companies striving to grow their business both locally and globally. Shams is a dynamic initiative that makes a strong connection with the talented individuals it attracts. As a creative forward-thinking community, it inspires, shapes and celebrates its many successes, both individually and as a group.
+                          Sharjah Media City (SHAMS), is located in the emirate
+                          of Sharjah, the cultural capital of the UAE. Shams was
+                          launched in January 2017, with a vision to be a
+                          world-class hub for media and creativity in the
+                          region. The Shams community fosters a vibrant
+                          ecosystem for innovation to live, learn and co-create.
+                          As a world-class free zone hub for innovation, Shams
+                          sets the benchmark for service and support to those
+                          wishing to set up and launch their business with
+                          specialized facilities for the creative and media
+                          industries. SHAMS’ mission is to make creative
+                          entrepreneurship accessible to all aspiring startups,
+                          SMEs and established companies striving to grow their
+                          business both locally and globally. Shams is a dynamic
+                          initiative that makes a strong connection with the
+                          talented individuals it attracts. As a creative
+                          forward-thinking community, it inspires, shapes and
+                          celebrates its many successes, both individually and
+                          as a group.
                         </p>
-                  
-                       
-                       
                       </div>
                     </div>
                   </div>
@@ -86,7 +106,20 @@ const SharjahMediaCity = () => {
                     <h3 className="text_dark fw-6">SHAMS</h3>
                   </div>
                   <p className="text-body-1 text_mono-gray-7 mt_20 mb-4">
-            Shams offers smart innovative services, coupled with a holistic community-centered approach. It projects great value on localized content and actively encourage entrepreneurial talent from within this thriving community. SHAMS represent a safe and progressive environment for company formation, offering foreign investors benefits, such as zero corporate, import and export taxes, in addition to other advantages. The UAE is well-recognized the world over as a trading hub, boasting a large non-oil sector that contributes to nearly 70% of the GDP – 45% of which is contributed by Sharjah’s trading activities. Join the thousands of entrepreneurs who have successfully completed the business formation process and are now part of this thriving community.
+                    Shams offers smart innovative services, coupled with a
+                    holistic community-centered approach. It projects great
+                    value on localized content and actively encourage
+                    entrepreneurial talent from within this thriving community.
+                    SHAMS represent a safe and progressive environment for
+                    company formation, offering foreign investors benefits, such
+                    as zero corporate, import and export taxes, in addition to
+                    other advantages. The UAE is well-recognized the world over
+                    as a trading hub, boasting a large non-oil sector that
+                    contributes to nearly 70% of the GDP – 45% of which is
+                    contributed by Sharjah’s trading activities. Join the
+                    thousands of entrepreneurs who have successfully completed
+                    the business formation process and are now part of this
+                    thriving community.
                   </p>
 
                   <Link
@@ -103,16 +136,21 @@ const SharjahMediaCity = () => {
         </div>
       </div>
 
-     <EffectiveSolutions/>
+      <EffectiveSolutions />
       <div className="section-testimonial style-5 tf-spacing-16 pb-0">
         <div className="heading-section text-center mb_63">
           <h3 className="text_white split-text effect-right">
-   Why Should You Setup Your Business in Shams Free Zone
+            Why Should You Setup Your Business in Shams Free Zone
           </h3>
         </div>
         <Swiper
           className="swiper sw-layout"
-          loop
+          loop={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+           modules={[Autoplay]}
           initialSlide={1}
           centeredSlides
           spaceBetween={15}
@@ -152,14 +190,14 @@ const SharjahMediaCity = () => {
                   />
                 </div>
                 <div className="content">
-                 <div className="d-flex flex-column">
-                      <h2 className="text_white mb-3">{testimonial.heading}</h2>
-                      <div className="left">
-                        <p className="text-body-2 text_white mb_12">
-                          {testimonial.quote}
-                        </p>
-                      </div>
-                 </div>
+                  <div className="d-flex flex-column">
+                    <h2 className="text_white mb-3">{testimonial.heading}</h2>
+                    <div className="left">
+                      <p className="text-body-2 text_white mb_12">
+                        {testimonial.quote}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
@@ -192,7 +230,6 @@ const SharjahMediaCity = () => {
           </div>
         </div>
       </div>
-
 
       <Footer1 />
     </>

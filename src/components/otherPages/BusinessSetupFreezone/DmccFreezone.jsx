@@ -7,6 +7,7 @@ import { dmccFreezone } from "@/data/sliderData";
 import { testimonials } from "@/data/testimonials";
 import React from "react";
 import { Link } from "react-router-dom";
+import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const metadata = {
@@ -28,16 +29,31 @@ const DmccFreezone = () => {
                   <div className="content">
                     <div className="heading">
                       <h1 className="title split-text effect-right">
-                        Dubai Multi Commodities<br/> Center (DMCC)
+                        Dubai Multi Commodities
+                        <br /> Center (DMCC)
                       </h1>
                       <div className="description">
                         <p
                           className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
                           data-wow-delay="0s"
                         >
-                        DMCC was established in 2002 to enhance commodity trade flows in Dubai. DMCC is the preferred destination for trading of global commodities like Gold, Diamond, etc.DMCC provides a business-friendly environment, with streamlined business registration processes, simplified import/export procedures, and 100% foreign ownership. The free zone also offers access to world-class infrastructure, including modern office buildings, logistics facilities, and a dedicated commodities exchange. DMCC is a strategic location for businesses operating in commodities trade and related industries, offering access to major global markets. The free zone also provides industry-specific benefits, including the DMCC Free Zone member portal which offers a range of services and support for members.
+                          DMCC was established in 2002 to enhance commodity
+                          trade flows in Dubai. DMCC is the preferred
+                          destination for trading of global commodities like
+                          Gold, Diamond, etc.DMCC provides a business-friendly
+                          environment, with streamlined business registration
+                          processes, simplified import/export procedures, and
+                          100% foreign ownership. The free zone also offers
+                          access to world-class infrastructure, including modern
+                          office buildings, logistics facilities, and a
+                          dedicated commodities exchange. DMCC is a strategic
+                          location for businesses operating in commodities trade
+                          and related industries, offering access to major
+                          global markets. The free zone also provides
+                          industry-specific benefits, including the DMCC Free
+                          Zone member portal which offers a range of services
+                          and support for members.
                         </p>
-                       
                       </div>
                     </div>
                   </div>
@@ -83,7 +99,17 @@ const DmccFreezone = () => {
                     <h3 className="text_dark fw-6">DMCC</h3>
                   </div>
                   <p className="text-body-1 text_mono-gray-7 mt_20 mb-4">
-                   Dubai Multi Commodities Center (DMCC) is a free zone in Dubai dedicated to commodities trade and enterprise. DMCC offers a range of benefits to entrepreneurs and investors looking forward to establish their businesses in the region. Partnering with Quest Management Business Setup Services LLC can help entrepreneurs and investors take advantage of the numerous benefits of setting up a business in DMCC. Quest Management can provide a range of services including company registration, licensing, visa processing, and ongoing business support to help ensure a successful business setup in the UAE.
+                    Dubai Multi Commodities Center (DMCC) is a free zone in
+                    Dubai dedicated to commodities trade and enterprise. DMCC
+                    offers a range of benefits to entrepreneurs and investors
+                    looking forward to establish their businesses in the region.
+                    Partnering with Quest Management Business Setup Services LLC
+                    can help entrepreneurs and investors take advantage of the
+                    numerous benefits of setting up a business in DMCC. Quest
+                    Management can provide a range of services including company
+                    registration, licensing, visa processing, and ongoing
+                    business support to help ensure a successful business setup
+                    in the UAE.
                   </p>
 
                   <Link
@@ -114,7 +140,11 @@ const DmccFreezone = () => {
             className="text-body-1 text_mono-gray-7 mb-4"
             style={{ marginBottom: 100 }}
           >
-          We are a team of professionals who are specialized in providing holistic support and services towards setting up your business in UAE and abroad. We are always ready to walk the extra mile to cater to all your business requisites. Our customer-centric approach makes us more accessible to our global clientele.
+            We are a team of professionals who are specialized in providing
+            holistic support and services towards setting up your business in
+            UAE and abroad. We are always ready to walk the extra mile to cater
+            to all your business requisites. Our customer-centric approach makes
+            us more accessible to our global clientele.
           </p>
           <div className="tf-grid-layout lg-col-3">
             <div
@@ -124,7 +154,11 @@ const DmccFreezone = () => {
               <div className="heading">
                 <h5 className="text_dark fw-6 mb_16">Choose Your Activity:</h5>
                 <p className="text-body-1 text_dark">
-                The First step to start a business in Dubai is to choose the correct business activity. In Dubai you have access to thousands of business activities and Quest Management Services can help you to analyze and choose the correct and most suitable Business Activity.
+                  The First step to start a business in Dubai is to choose the
+                  correct business activity. In Dubai you have access to
+                  thousands of business activities and Quest Management Services
+                  can help you to analyze and choose the correct and most
+                  suitable Business Activity.
                 </p>
               </div>
             </div>
@@ -137,7 +171,11 @@ const DmccFreezone = () => {
                   Choose Jurisdictions:
                 </h5>
                 <p className="text-body-1 text_dark text_white mb_32">
-                 Our Business Setup Expert team ensures that you choose the most appropriate jurisdictions to ensures that your UAE Free Zone firm is successfully registered and that all UAE rules are followed. Examine the advantages among UAE Free Zones and helps you to create the appropriate company setup strategy.
+                  Our Business Setup Expert team ensures that you choose the
+                  most appropriate jurisdictions to ensures that your UAE Free
+                  Zone firm is successfully registered and that all UAE rules
+                  are followed. Examine the advantages among UAE Free Zones and
+                  helps you to create the appropriate company setup strategy.
                 </p>
               </div>
             </div>
@@ -148,7 +186,14 @@ const DmccFreezone = () => {
               <div className="heading">
                 <h5 className="text_dark fw-6 mb_16">Get Your License:</h5>
                 <p className="text-body-1 text_dark">
-                 Starting a business in Dubai can be difficult, but it doesn't have to be! There are several legal procedures, government documentation, and paperwork needed in establishing a business in Dubai. Don't be concerned if you are unfamiliar with all of the legal etiquette! That's where Quest Management Services can help you out and guide you through the process. Leave the legal stuff to us so you can concentrate on your core business.
+                  Starting a business in Dubai can be difficult, but it doesn't
+                  have to be! There are several legal procedures, government
+                  documentation, and paperwork needed in establishing a business
+                  in Dubai. Don't be concerned if you are unfamiliar with all of
+                  the legal etiquette! That's where Quest Management Services
+                  can help you out and guide you through the process. Leave the
+                  legal stuff to us so you can concentrate on your core
+                  business.
                 </p>
               </div>
             </div>
@@ -158,12 +203,17 @@ const DmccFreezone = () => {
       <div className="section-testimonial style-5 tf-spacing-16 pb-0">
         <div className="heading-section text-center mb_63">
           <h3 className="text_white split-text effect-right">
-           Benefits to set up business in DMCC Free Zone
+            Benefits to set up business in DMCC Free Zone
           </h3>
         </div>
         <Swiper
           className="swiper sw-layout"
-          loop
+          loop={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+           modules={[Autoplay]}
           initialSlide={1}
           centeredSlides
           spaceBetween={15}
@@ -203,14 +253,14 @@ const DmccFreezone = () => {
                   />
                 </div>
                 <div className="content">
-                 <div className="d-flex flex-column">
-                      <h2 className="text_white mb-3">{testimonial.heading}</h2>
-                      <div className="left">
-                        <p className="text-body-2 text_white mb_12">
-                          {testimonial.quote}
-                        </p>
-                      </div>
-                 </div>
+                  <div className="d-flex flex-column">
+                    <h2 className="text_white mb-3">{testimonial.heading}</h2>
+                    <div className="left">
+                      <p className="text-body-2 text_white mb_12">
+                        {testimonial.quote}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
@@ -243,7 +293,6 @@ const DmccFreezone = () => {
           </div>
         </div>
       </div>
-
 
       <Footer1 />
     </>

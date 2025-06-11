@@ -74,7 +74,7 @@ const Freezones = () => {
      <div className="tf-container" style={{marginTop:100}}>
          <div className="row">
               {freezones.map((item) => (
-                <div className="col-md-4 mb-5" key={item.id}>
+                <div className="col-md-3 col-sm-2 col-12 mb-5" key={item.id}>
                   <div className="blog-article-item style-1 hover-image-3">
                     <Link
                       to={`/${item.link}`}

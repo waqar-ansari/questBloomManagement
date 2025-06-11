@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import MetaComponent from "../common/MetaComponent";
 import Header1 from "../headers/Header1";
 import Footer1 from "../footers/Footer1";
-import { otherServices } from "@/data/otherServices";
+
+import axios from "axios";
+import api from "@/axios/axiosInstance";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 const metadata = {
   title: "Other Services",
   description: "Other Services",
 };
+
 const OtherServices = () => {
+
+const allServices = useSelector((state)=>state.services)
+
   return (
     <>
       <MetaComponent meta={metadata} />
@@ -44,13 +52,13 @@ const OtherServices = () => {
           </h2>
         </div>
         <div className="tf-grid-layout lg-col-3 md-col-2">
-          {otherServices.map((item)=>{
+          {allServices.map((item)=>{
             return(
-              <div className="tf-box-icon style-5 effect-icon bg-on-hover" key={item.id} >
+              <Link className="tf-box-icon style-5 effect-icon bg-on-hover" key={item.id} to={item.page_link} >
             <div className="icon mb_24">
               <img
                 alt="icon"
-                src={`/images/qb/${item.icon}`}
+                src={item.image_url}
                 width={32}
                 height={32}
               />
@@ -58,269 +66,16 @@ const OtherServices = () => {
             <div className="content">
               <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
                 {/* License Renewal */}
-                {item.title}
+                {item.name}
               </div>
               <p className="text-body-3 text_mono-gray-7">
                 {/* Renew Your License Hassle Free without your presence in UAE. */}
                 {item.description}
               </p>
             </div>
-          </div>
+          </Link>
             )
           })}
-          {/* <div className="tf-box-icon style-5 effect-icon">
-            <div className="icon mb_24">
-              <img
-                alt="icon"
-                src="/images/box-icon/package-open.svg"
-                width={33}
-                height={32}
-              />
-            </div>
-            <div className="content">
-              <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
-                Immigration Card Renewal
-              </div>
-              <p className="text-body-3 text_mono-gray-7">
-                Get your Immigration Card Renewed Without Hassle
-              </p>
-            </div>
-          </div>
-          <div className="tf-box-icon style-5 effect-icon">
-            <div className="icon mb_24">
-              <img
-                alt="icon"
-                src="/images/box-icon/laptop-issue.svg"
-                width={33}
-                height={32}
-              />
-            </div>
-            <div className="content">
-              <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
-                New VISA Application
-              </div>
-              <p className="text-body-3 text_mono-gray-7">
-                Let us handle your all VISA related ratters
-              </p>
-            </div>
-          </div>
-          <div className="tf-box-icon style-5 effect-icon">
-            <div className="icon mb_24">
-              <img
-                alt="icon"
-                src="/images/box-icon/auto-conversations.svg"
-                width={32}
-                height={32}
-              />
-            </div>
-            <div className="content">
-              <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
-                Visa Renewal
-              </div>
-              <p className="text-body-3 text_mono-gray-7">
-                Renew your VISA without Hassle.
-              </p>
-            </div>
-          </div>
-          <div className="tf-box-icon style-5 effect-icon">
-            <div className="icon mb_24">
-              <img
-                alt="icon"
-                src="/images/box-icon/database.svg"
-                width={33}
-                height={32}
-              />
-            </div>
-            <div className="content">
-              <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
-                Dependent’s Visa
-              </div>
-              <p className="text-body-3 text_mono-gray-7">
-                Complete assistance to get your Dependent VISA.
-              </p>
-            </div>
-          </div>
-          <div className="tf-box-icon style-5 effect-icon">
-            <div className="icon mb_24">
-              <img
-                alt="icon"
-                src="/images/box-icon/discover-circle.svg"
-                width={33}
-                height={32}
-              />
-            </div>
-            <div className="content">
-              <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
-                Ejari – Tenancy Contract
-              </div>
-              <p className="text-body-3 text_mono-gray-7">
-                We assist with documentation related to office Occupancy.
-              </p>
-            </div>
-          </div>
-          <div className="tf-box-icon style-5 effect-icon">
-            <div className="icon mb_24">
-              <img
-                alt="icon"
-                src="/images/box-icon/creative-solutions.svg"
-                width={29}
-                height={29}
-              />
-            </div>
-            <div className="content">
-              <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
-                Registration Services
-              </div>
-              <p className="text-body-3 text_mono-gray-7">
-                Register your Company in Three Easy Steps
-              </p>
-            </div>
-          </div>
-          <div className="tf-box-icon style-5 effect-icon">
-            <div className="icon mb_24">
-              <img
-                alt="icon"
-                src="/images/box-icon/package-open.svg"
-                width={33}
-                height={32}
-              />
-            </div>
-            <div className="content">
-              <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
-                Document Attestation Support
-              </div>
-              <p className="text-body-3 text_mono-gray-7">
-                Get your Documents MOFA And Other Country Embassy Attestation
-                Hassle Free.
-              </p>
-            </div>
-          </div>
-          <div className="tf-box-icon style-5 effect-icon">
-            <div className="icon mb_24">
-              <img
-                alt="icon"
-                src="/images/box-icon/laptop-issue.svg"
-                width={33}
-                height={32}
-              />
-            </div>
-            <div className="content">
-              <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
-                Cancelation of staff visas
-              </div>
-              <p className="text-body-3 text_mono-gray-7">
-                Hassle Free VISA Cancellation.
-              </p>
-            </div>
-          </div>
-          <div className="tf-box-icon style-5 effect-icon">
-            <div className="icon mb_24">
-              <img
-                alt="icon"
-                src="/images/box-icon/auto-conversations.svg"
-                width={32}
-                height={32}
-              />
-            </div>
-            <div className="content">
-              <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
-                Change in Labour Contracts
-              </div>
-              <p className="text-body-3 text_mono-gray-7">
-                We Assist to get it done
-              </p>
-            </div>
-          </div>
-          <div className="tf-box-icon style-5 effect-icon">
-            <div className="icon mb_24">
-              <img
-                alt="icon"
-                src="/images/box-icon/database.svg"
-                width={33}
-                height={32}
-              />
-            </div>
-            <div className="content">
-              <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
-                PO Box renewal.
-              </div>
-              <p className="text-body-3 text_mono-gray-7">
-                We will Assist to get it done without your presence in UAE.
-              </p>
-            </div>
-          </div>
-          <div className="tf-box-icon style-5 effect-icon">
-            <div className="icon mb_24">
-              <img
-                alt="icon"
-                src="/images/box-icon/discover-circle.svg"
-                width={33}
-                height={32}
-              />
-            </div>
-            <div className="content">
-              <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
-                Emirates ID & Medical
-              </div>
-              <p className="text-body-3 text_mono-gray-7">
-                We will you assist till completion.
-              </p>
-            </div>
-          </div>
-          <div className="tf-box-icon style-5 effect-icon">
-            <div className="icon mb_24">
-              <img
-                alt="icon"
-                src="/images/box-icon/discover-circle.svg"
-                width={33}
-                height={32}
-              />
-            </div>
-            <div className="content">
-              <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
-               Translations Assistance
-              </div>
-              <p className="text-body-3 text_mono-gray-7">
-              We assist you to get it done.
-              </p>
-            </div>
-          </div>
-          <div className="tf-box-icon style-5 effect-icon">
-            <div className="icon mb_24">
-              <img
-                alt="icon"
-                src="/images/box-icon/discover-circle.svg"
-                width={33}
-                height={32}
-              />
-            </div>
-            <div className="content">
-              <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
-               Staff Labour card processing
-              </div>
-              <p className="text-body-3 text_mono-gray-7">
-              Complete assistance to get it
-              </p>
-            </div>
-          </div>
-          <div className="tf-box-icon style-5 effect-icon">
-            <div className="icon mb_24">
-              <img
-                alt="icon"
-                src="/images/box-icon/discover-circle.svg"
-                width={33}
-                height={32}
-              />
-            </div>
-            <div className="content">
-              <div className="text-body-2 text_mono-dark-9 mb_9 fw-5">
-              Company Liquidation
-              </div>
-              <p className="text-body-3 text_mono-gray-7">
-               QMC assists in liquidation of companies in UAE.
-              </p>
-            </div>
-          </div> */}
         </div>
       </div>
       <Footer1 />

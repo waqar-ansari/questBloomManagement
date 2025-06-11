@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import EffectiveSolutions from "../EffectiveSolutions";
 import { sharjahAirportFreezone, ummAlQuwainFTZ } from "@/data/sliderData";
+import { Autoplay } from "swiper/modules";
 
 const metadata = {
   title: "Umm Al Quwain Free Trade Zone",
@@ -29,23 +30,32 @@ const UmmAlQuwainFTZ = () => {
                   <div className="content">
                     <div className="heading">
                       <h1 className="title split-text effect-right  mb-5">
-                    Umm Al Quwain Free Trade <br/>Zone (UAQ FTZ)
+                        Umm Al Quwain Free Trade <br />
+                        Zone (UAQ FTZ)
                       </h1>
                       <div className="description">
                         <p
                           className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
                           data-wow-delay="0s"
                         >
-                    Umm Al Quwain Free Trade Zone (UAQ FTZ) is a rapidly growing free zone in the emirate of Umm Al Quwain, UAE. UAQ FTZ offers a range of benefits to entrepreneurs and investors looking to establish their businesses in the region.
+                          Umm Al Quwain Free Trade Zone (UAQ FTZ) is a rapidly
+                          growing free zone in the emirate of Umm Al Quwain,
+                          UAE. UAQ FTZ offers a range of benefits to
+                          entrepreneurs and investors looking to establish their
+                          businesses in the region.
                         </p>
                         <p
                           className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
                           data-wow-delay="0s"
                         >
-                   UAQ FTZ provides a business-friendly environment, with simplified business registration processes, 100% foreign ownership, and zero corporate and personal income taxes. The free zone also offers access to world-class infrastructure, including modern office buildings, logistics facilities, and easy access to major highways.
+                          UAQ FTZ provides a business-friendly environment, with
+                          simplified business registration processes, 100%
+                          foreign ownership, and zero corporate and personal
+                          income taxes. The free zone also offers access to
+                          world-class infrastructure, including modern office
+                          buildings, logistics facilities, and easy access to
+                          major highways.
                         </p>
-                       
-                       
                       </div>
                     </div>
                   </div>
@@ -91,10 +101,19 @@ const UmmAlQuwainFTZ = () => {
                     <h3 className="text_dark fw-6">UAQ FTZ</h3>
                   </div>
                   <p className="text-body-1 text_mono-gray-7 mt_20 mb-4">
-               UAQ FTZ is a strategic location for businesses operating in manufacturing, trading, and other industries, offering access to major global markets. The free zone also provides industry-specific benefits, including a dedicated business center and support for startups.
+                    UAQ FTZ is a strategic location for businesses operating in
+                    manufacturing, trading, and other industries, offering
+                    access to major global markets. The free zone also provides
+                    industry-specific benefits, including a dedicated business
+                    center and support for startups.
                   </p>
                   <p className="text-body-1 text_mono-gray-7 mt_20 mb-4">
-             Partnering with Quest Management can help entrepreneurs and investors take advantage of the numerous benefits of setting up a business in UAQ FTZ. Quest Management can provide a range of services including company registration, licensing, visa processing, and ongoing business support to help ensure a successful business setup in the UAE.
+                    Partnering with Quest Management can help entrepreneurs and
+                    investors take advantage of the numerous benefits of setting
+                    up a business in UAQ FTZ. Quest Management can provide a
+                    range of services including company registration, licensing,
+                    visa processing, and ongoing business support to help ensure
+                    a successful business setup in the UAE.
                   </p>
 
                   <Link
@@ -111,16 +130,21 @@ const UmmAlQuwainFTZ = () => {
         </div>
       </div>
 
-     <EffectiveSolutions/>
+      <EffectiveSolutions />
       <div className="section-testimonial style-5 tf-spacing-16 pb-0">
         <div className="heading-section text-center mb_63">
           <h3 className="text_white split-text effect-right">
-      Why Should You Choose to Setup Your Business in UAQFTZ
+            Why Should You Choose to Setup Your Business in UAQFTZ
           </h3>
         </div>
         <Swiper
           className="swiper sw-layout"
-          loop
+          loop={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+           modules={[Autoplay]}
           initialSlide={1}
           centeredSlides
           spaceBetween={15}
@@ -160,14 +184,14 @@ const UmmAlQuwainFTZ = () => {
                   />
                 </div>
                 <div className="content">
-                 <div className="d-flex flex-column">
-                      <h2 className="text_white mb-3">{testimonial.heading}</h2>
-                      <div className="left">
-                        <p className="text-body-2 text_white mb_12">
-                          {testimonial.quote}
-                        </p>
-                      </div>
-                 </div>
+                  <div className="d-flex flex-column">
+                    <h2 className="text_white mb-3">{testimonial.heading}</h2>
+                    <div className="left">
+                      <p className="text-body-2 text_white mb_12">
+                        {testimonial.quote}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
@@ -200,7 +224,6 @@ const UmmAlQuwainFTZ = () => {
           </div>
         </div>
       </div>
-
 
       <Footer1 />
     </>

@@ -36,7 +36,7 @@ export default function Nav() {
           isActiveParent(shopPages) ? "current-menu" : ""
         } `}
       >
-        <a href="/about">About Us</a>
+        <a href="/about">Who we are</a>
       </li>
       <li
         className={`has-child ${
@@ -46,7 +46,7 @@ export default function Nav() {
         <a href="#">Business Setup</a>
         {/* <div className="submenu mega-menu" style={{width:"38%"}}>
           <div  className={`single-item-grid`}> */}
-           <div className="submenu mega-menu">
+        <div className="submenu mega-menu" style={{width:"50%"}}>
           <div className="wrap-demo-item tf-grid-layout-lg lg-col-2">
             {homepages.map((item, index) => (
               <div
@@ -70,7 +70,6 @@ export default function Nav() {
                 </Link>
               </div>
             ))}
-
           </div>
         </div>
       </li>
@@ -80,7 +79,10 @@ export default function Nav() {
         } `}
       >
         <a href="#">Free Zones</a>
-        <div className="submenu mega-menu" style={{height:"100vh", overflow:"auto"}}>
+        <div
+          className="submenu mega-menu"
+          style={{ height: "100vh", overflow: "auto" ,width:"80%"}}
+        >
           <div className="wrap-demo-item tf-grid-layout-lg lg-col-4">
             {freezones2.map((item, index) => (
               <div
@@ -100,7 +102,7 @@ export default function Nav() {
                       width={300}
                       // height={228}
                       height={143}
-                      style={{height:200,borderRadius:15}}
+                      style={{ height: 200, borderRadius: 15 }}
                     />
                   </div>
                   <h6 className="demo-name fw-4">{item.title}</h6>
@@ -151,7 +153,6 @@ export default function Nav() {
       <li className={` ${isActive("/other-services") ? "current-menu" : ""} `}>
         <Link to={`/other-services`}>Our Services</Link>
       </li>
-      
       <li
         className={` position-relative ${
           isActiveParent(shopPages) ? "current-menu" : ""

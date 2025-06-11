@@ -366,7 +366,7 @@ export default function Brands() {
                           className="h3"
                         >
                           {/* BUSINESS CONSULTING • ADVITEX • */}
-                          Quest Management Services
+                          Quest Management Consultancy 
                         </textPath>
                       </text>
                     </svg>
@@ -407,7 +407,7 @@ export default function Brands() {
                     </p>
                   </div>
                 </div>
-                <div
+                {/* <div
                   className="wrap d-flex wow animate__fadeInUp animate__animated"
                   data-wow-delay="0s"
                 >
@@ -432,7 +432,7 @@ export default function Brands() {
                       </a>
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

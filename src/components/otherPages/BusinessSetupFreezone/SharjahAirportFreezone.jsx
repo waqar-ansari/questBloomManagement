@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import EffectiveSolutions from "../EffectiveSolutions";
 import { sharjahAirportFreezone } from "@/data/sliderData";
+import { Autoplay } from "swiper/modules";
 
 const metadata = {
   title: "Sharjah Airport International Freezone",
@@ -29,17 +30,30 @@ const SharjahAirportFreezone = () => {
                   <div className="content">
                     <div className="heading">
                       <h1 className="title split-text effect-right  mb-5">
-                     Sharjah Airport International<br/> Free Zone
+                        Sharjah Airport International
+                        <br /> Free Zone
                       </h1>
                       <div className="description">
                         <p
                           className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
                           data-wow-delay="0s"
                         >
-                     Sharjah Airport International Free Zone (SAIF Zone) is a dynamic free zone located adjacent to the Sharjah International Airport. Established in 1995, SAIF Zone offers a business-friendly environment and a range of benefits to entrepreneurs and investors looking to establish their businesses in the region. SAIF Zone provides a range of business services, including simplified business registration procedures, 100% foreign ownership, and zero personal and corporate income tax. The free zone also offers access to world-class infrastructure, including modern office buildings, warehouses, and logistics facilities. SAIF Zone is a strategic location for businesses operating in manufacturing, trading, and related industries, offering easy access to major global markets.
+                          Sharjah Airport International Free Zone (SAIF Zone) is
+                          a dynamic free zone located adjacent to the Sharjah
+                          International Airport. Established in 1995, SAIF Zone
+                          offers a business-friendly environment and a range of
+                          benefits to entrepreneurs and investors looking to
+                          establish their businesses in the region. SAIF Zone
+                          provides a range of business services, including
+                          simplified business registration procedures, 100%
+                          foreign ownership, and zero personal and corporate
+                          income tax. The free zone also offers access to
+                          world-class infrastructure, including modern office
+                          buildings, warehouses, and logistics facilities. SAIF
+                          Zone is a strategic location for businesses operating
+                          in manufacturing, trading, and related industries,
+                          offering easy access to major global markets.
                         </p>
-                       
-                       
                       </div>
                     </div>
                   </div>
@@ -85,10 +99,15 @@ const SharjahAirportFreezone = () => {
                     <h3 className="text_dark fw-6">SAIF</h3>
                   </div>
                   <p className="text-body-1 text_mono-gray-7 mt_20 mb-4">
-                 SAIF specializes in licenses for general trading, commercial, service, and industrial purposes.
+                    SAIF specializes in licenses for general trading,
+                    commercial, service, and industrial purposes.
                   </p>
                   <p className="text-body-1 text_mono-gray-7 mt_20 mb-4">
-              Foreign investments and initiatives are attracted by efficiency and low-cost operations. It’s ideal location simplifies transportation and logistics. Warehouses, storage facilities, container parking, bunkers, and worker housing are all easily available for the establishment of a firm.
+                    Foreign investments and initiatives are attracted by
+                    efficiency and low-cost operations. It’s ideal location
+                    simplifies transportation and logistics. Warehouses, storage
+                    facilities, container parking, bunkers, and worker housing
+                    are all easily available for the establishment of a firm.
                   </p>
 
                   <Link
@@ -105,16 +124,21 @@ const SharjahAirportFreezone = () => {
         </div>
       </div>
 
-     <EffectiveSolutions/>
+      <EffectiveSolutions />
       <div className="section-testimonial style-5 tf-spacing-16 pb-0">
         <div className="heading-section text-center mb_63">
           <h3 className="text_white split-text effect-right">
-        Why Should You Setup Business in SAIF Zone
+            Why Should You Setup Business in SAIF Zone
           </h3>
         </div>
         <Swiper
           className="swiper sw-layout"
-          loop
+          loop={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+           modules={[Autoplay]}
           initialSlide={1}
           centeredSlides
           spaceBetween={15}
@@ -154,14 +178,14 @@ const SharjahAirportFreezone = () => {
                   />
                 </div>
                 <div className="content">
-                 <div className="d-flex flex-column">
-                      <h2 className="text_white mb-3">{testimonial.heading}</h2>
-                      <div className="left">
-                        <p className="text-body-2 text_white mb_12">
-                          {testimonial.quote}
-                        </p>
-                      </div>
-                 </div>
+                  <div className="d-flex flex-column">
+                    <h2 className="text_white mb-3">{testimonial.heading}</h2>
+                    <div className="left">
+                      <p className="text-body-2 text_white mb_12">
+                        {testimonial.quote}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
@@ -194,7 +218,6 @@ const SharjahAirportFreezone = () => {
           </div>
         </div>
       </div>
-
 
       <Footer1 />
     </>

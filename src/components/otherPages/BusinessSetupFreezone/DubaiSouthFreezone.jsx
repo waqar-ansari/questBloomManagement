@@ -8,6 +8,7 @@ import { testimonials } from "@/data/testimonials";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 
 const metadata = {
   title: "Dubai South Freezone",
@@ -267,7 +268,12 @@ const DubaiSouthFreezone = () => {
         </div>
         <Swiper
           className="swiper sw-layout"
-          loop
+          loop={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+           modules={[Autoplay]}
           initialSlide={1}
           centeredSlides
           spaceBetween={15}
@@ -307,14 +313,14 @@ const DubaiSouthFreezone = () => {
                   />
                 </div>
                 <div className="content">
-                 <div className="d-flex flex-column">
-                      <h2 className="text_white mb-3">{testimonial.heading}</h2>
-                      <div className="left">
-                        <p className="text-body-2 text_white mb_12">
-                          {testimonial.quote}
-                        </p>
-                      </div>
-                 </div>
+                  <div className="d-flex flex-column">
+                    <h2 className="text_white mb-3">{testimonial.heading}</h2>
+                    <div className="left">
+                      <p className="text-body-2 text_white mb_12">
+                        {testimonial.quote}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
@@ -347,7 +353,6 @@ const DubaiSouthFreezone = () => {
           </div>
         </div>
       </div>
-
 
       <Footer1 />
     </>

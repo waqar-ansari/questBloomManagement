@@ -6,7 +6,7 @@ export default function About() {
   return (
     <>
       {/* .section-about */}
-      <div className="text-with-img-2 tf-spacing-4">
+      <div className="text-with-img-2 tf-spacing-2">
         <div className="tf-container">
           <div className="row">
             <div className="col-lg-6">
@@ -78,7 +78,7 @@ export default function About() {
                   BRAHMARUP GANGULY
                 </h5>
                 <p className="title split-text split-lines-rotation-x">
-                  Head of Admin & HR
+                  Director
 
                 </p>
                 <p
@@ -200,31 +200,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="row wrap-counter" style={{paddingTop:100}}>
-          {counterItems3.map((item, index) => (
-            <div key={index} className="col-md-4">
-              <div className="counter-item style-default">
-                <div className="sub-heading text_black text-uppercase mb_21">
-                  {item.title}
-                </div>
-                <div className="counter-number mb_15">
-                  <div className="odometer text_primary">
-                    <OdometerComponent max={item.value} />
-                  </div>
-                  <span className="sub text_primary">{item.unit}</span>
-                </div>
-                <p className="sub-heading text_mono-gray-5">
-                  {item.description.split("\n").map((line, i) => (
-                    <React.Fragment key={i}>
-                      {line}
-                      {i < item.description.split("\n").length - 1 && <br />}
-                    </React.Fragment>
-                  ))}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+          
         </div>
       </div>
     </>

@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import EffectiveSolutions from "../EffectiveSolutions";
 import { ajmanMediaCityFZ } from "@/data/sliderData";
+import { Autoplay } from "swiper/modules";
 
 const metadata = {
   title: "Ajman Media City Free Zone",
@@ -29,18 +30,33 @@ const AjmanMediaCityFZ = () => {
                   <div className="content">
                     <div className="heading">
                       <h1 className="title split-text effect-right  mb-5">
-                 Ajman Media City Free<br/> Zone (AMCFZ)
+                        Ajman Media City Free
+                        <br /> Zone (AMCFZ)
                       </h1>
                       <div className="description">
                         <p
                           className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
                           data-wow-delay="0s"
                         >
-               Ajman Media City Free Zone is the latest free zone offering in the United Arab Emirates, in the city of Ajman. It has been formed with an aspiration to create a dependable, harmonious and a professional environment for businesses and individuals alike. We are aiming to create a world class environment with innovative and flexible processes to ensure professional guidance in every step of company formation. Ajman Media City Free Zone was launched to act as catalyst for creative and media businesses to grow and thrive. Partnering with Quest Management can help entrepreneurs and investors take advantage of the numerous benefits of setting up a business in Ajman Media City Free Zone. Quest Management can provide a range of services including company registration, licensing, visa processing, and ongoing business support to help ensure a successful business setup in the UAE.
+                          Ajman Media City Free Zone is the latest free zone
+                          offering in the United Arab Emirates, in the city of
+                          Ajman. It has been formed with an aspiration to create
+                          a dependable, harmonious and a professional
+                          environment for businesses and individuals alike. We
+                          are aiming to create a world class environment with
+                          innovative and flexible processes to ensure
+                          professional guidance in every step of company
+                          formation. Ajman Media City Free Zone was launched to
+                          act as catalyst for creative and media businesses to
+                          grow and thrive. Partnering with Quest Management can
+                          help entrepreneurs and investors take advantage of the
+                          numerous benefits of setting up a business in Ajman
+                          Media City Free Zone. Quest Management can provide a
+                          range of services including company registration,
+                          licensing, visa processing, and ongoing business
+                          support to help ensure a successful business setup in
+                          the UAE.
                         </p>
-                  
-                       
-                       
                       </div>
                     </div>
                   </div>
@@ -86,7 +102,19 @@ const AjmanMediaCityFZ = () => {
                     <h3 className="text_dark fw-6">AMCFZ</h3>
                   </div>
                   <p className="text-body-1 text_mono-gray-7 mt_20 mb-4">
-          Ajman Media City Free Zone is a dynamic and cost-effective free zone designed to support media, creative, and digital businesses. With a simplified company formation process, 100% foreign ownership, and a wide range of license packages, it’s an ideal destination for entrepreneurs and freelancers looking to establish a presence in the UAE’s growing media industry. Partnering with Quest Management Business Setup Services LLC ensures a smooth and efficient setup experience. Quest Management provides comprehensive services including company registration, license issuance, visa assistance, and ongoing business support to help clients make the most of the opportunities in Ajman Media City Free Zone.
+                    Ajman Media City Free Zone is a dynamic and cost-effective
+                    free zone designed to support media, creative, and digital
+                    businesses. With a simplified company formation process,
+                    100% foreign ownership, and a wide range of license
+                    packages, it’s an ideal destination for entrepreneurs and
+                    freelancers looking to establish a presence in the UAE’s
+                    growing media industry. Partnering with Quest Management
+                    Business Setup Services LLC ensures a smooth and efficient
+                    setup experience. Quest Management provides comprehensive
+                    services including company registration, license issuance,
+                    visa assistance, and ongoing business support to help
+                    clients make the most of the opportunities in Ajman Media
+                    City Free Zone.
                   </p>
 
                   <Link
@@ -103,16 +131,21 @@ const AjmanMediaCityFZ = () => {
         </div>
       </div>
 
-     <EffectiveSolutions/>
+      <EffectiveSolutions />
       <div className="section-testimonial style-5 tf-spacing-16 pb-0">
         <div className="heading-section text-center mb_63">
           <h3 className="text_white split-text effect-right">
-Why Should You Setup Your Business in Ajman Media City Free Zone
+            Why Should You Setup Your Business in Ajman Media City Free Zone
           </h3>
         </div>
         <Swiper
           className="swiper sw-layout"
-          loop
+          loop={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+           modules={[Autoplay]}
           initialSlide={1}
           centeredSlides
           spaceBetween={15}
@@ -152,14 +185,14 @@ Why Should You Setup Your Business in Ajman Media City Free Zone
                   />
                 </div>
                 <div className="content">
-                 <div className="d-flex flex-column">
-                      <h2 className="text_white mb-3">{testimonial.heading}</h2>
-                      <div className="left">
-                        <p className="text-body-2 text_white mb_12">
-                          {testimonial.quote}
-                        </p>
-                      </div>
-                 </div>
+                  <div className="d-flex flex-column">
+                    <h2 className="text_white mb-3">{testimonial.heading}</h2>
+                    <div className="left">
+                      <p className="text-body-2 text_white mb_12">
+                        {testimonial.quote}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
@@ -192,7 +225,6 @@ Why Should You Setup Your Business in Ajman Media City Free Zone
           </div>
         </div>
       </div>
-
 
       <Footer1 />
     </>

@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import EffectiveSolutions from "../EffectiveSolutions";
 import { sharjahAirportFreezone, fujairahFZA } from "@/data/sliderData";
+import { Autoplay } from "swiper/modules";
 
 const metadata = {
   title: "Fujairah Free Zone Authority",
@@ -29,18 +30,35 @@ const FujairahFZA = () => {
                   <div className="content">
                     <div className="heading">
                       <h1 className="title split-text effect-right  mb-5">
-                  Fujairah Free Zone<br/> Authority (FFZA)
+                        Fujairah Free Zone
+                        <br /> Authority (FFZA)
                       </h1>
                       <div className="description">
                         <p
                           className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
                           data-wow-delay="0s"
                         >
-                  Fujairah Free Zone Authority (FFZA) is a rapidly growing business hub located in the Emirate of Fujairah, which is situated on the east coast of the United Arab Emirates. It is one of the most successful and fast-growing free zones in the UAE, offering a wide range of business opportunities to investors and entrepreneurs.The Fujairah Free Zone Authority is strategically located near major shipping routes, providing easy access to markets in Asia, Europe, and Africa. The free zone offers a variety of business activities, including trading, manufacturing, logistics, and services. Investors can take advantage of tax exemptions, 100% foreign ownership, and a simplified business setup process. FFZA is home to more than 2,500 companies from different industries, such as healthcare, food and beverage, construction, and technology. It offers world-class infrastructure and facilities, including warehouses, offices, and industrial units, which are equipped with the latest technology.
+                          Fujairah Free Zone Authority (FFZA) is a rapidly
+                          growing business hub located in the Emirate of
+                          Fujairah, which is situated on the east coast of the
+                          United Arab Emirates. It is one of the most successful
+                          and fast-growing free zones in the UAE, offering a
+                          wide range of business opportunities to investors and
+                          entrepreneurs.The Fujairah Free Zone Authority is
+                          strategically located near major shipping routes,
+                          providing easy access to markets in Asia, Europe, and
+                          Africa. The free zone offers a variety of business
+                          activities, including trading, manufacturing,
+                          logistics, and services. Investors can take advantage
+                          of tax exemptions, 100% foreign ownership, and a
+                          simplified business setup process. FFZA is home to
+                          more than 2,500 companies from different industries,
+                          such as healthcare, food and beverage, construction,
+                          and technology. It offers world-class infrastructure
+                          and facilities, including warehouses, offices, and
+                          industrial units, which are equipped with the latest
+                          technology.
                         </p>
-                  
-                       
-                       
                       </div>
                     </div>
                   </div>
@@ -86,7 +104,22 @@ const FujairahFZA = () => {
                     <h3 className="text_dark fw-6">FFZA</h3>
                   </div>
                   <p className="text-body-1 text_mono-gray-7 mt_20 mb-4">
-             The free zone is known for its excellent customer service, making it easier for investors to set up and operate their businesses. Additionally, it provides support services such as legal and accounting services, banking facilities, and visa processing services.Overall, Fujairah Free Zone is an ideal destination for investors who are looking to establish their businesses in the UAE. With its strategic location, flexible business setup process, and world-class infrastructure, the free zone offers a conducive environment for growth and success. Partnering with Quest Management can help entrepreneurs and investors take advantage of the numerous benefits of setting up a business in FFZA. Quest Management can provide a range of services including company registration, licensing, visa processing, and ongoing business support to help ensure a successful business setup in the UAE.
+                    The free zone is known for its excellent customer service,
+                    making it easier for investors to set up and operate their
+                    businesses. Additionally, it provides support services such
+                    as legal and accounting services, banking facilities, and
+                    visa processing services.Overall, Fujairah Free Zone is an
+                    ideal destination for investors who are looking to establish
+                    their businesses in the UAE. With its strategic location,
+                    flexible business setup process, and world-class
+                    infrastructure, the free zone offers a conducive environment
+                    for growth and success. Partnering with Quest Management can
+                    help entrepreneurs and investors take advantage of the
+                    numerous benefits of setting up a business in FFZA. Quest
+                    Management can provide a range of services including company
+                    registration, licensing, visa processing, and ongoing
+                    business support to help ensure a successful business setup
+                    in the UAE.
                   </p>
 
                   <Link
@@ -103,16 +136,21 @@ const FujairahFZA = () => {
         </div>
       </div>
 
-     <EffectiveSolutions/>
+      <EffectiveSolutions />
       <div className="section-testimonial style-5 tf-spacing-16 pb-0">
         <div className="heading-section text-center mb_63">
           <h3 className="text_white split-text effect-right">
-    Why should you choose to Setup Your Business in Fujairah Free Zone?
+            Why should you choose to Setup Your Business in Fujairah Free Zone?
           </h3>
         </div>
         <Swiper
           className="swiper sw-layout"
-          loop
+          loop={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+           modules={[Autoplay]}
           initialSlide={1}
           centeredSlides
           spaceBetween={15}
@@ -152,14 +190,14 @@ const FujairahFZA = () => {
                   />
                 </div>
                 <div className="content">
-                 <div className="d-flex flex-column">
-                      <h2 className="text_white mb-3">{testimonial.heading}</h2>
-                      <div className="left">
-                        <p className="text-body-2 text_white mb_12">
-                          {testimonial.quote}
-                        </p>
-                      </div>
-                 </div>
+                  <div className="d-flex flex-column">
+                    <h2 className="text_white mb-3">{testimonial.heading}</h2>
+                    <div className="left">
+                      <p className="text-body-2 text_white mb_12">
+                        {testimonial.quote}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
@@ -192,7 +230,6 @@ const FujairahFZA = () => {
           </div>
         </div>
       </div>
-
 
       <Footer1 />
     </>

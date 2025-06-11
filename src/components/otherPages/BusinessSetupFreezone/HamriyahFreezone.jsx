@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import EffectiveSolutions from "../EffectiveSolutions";
 import { hamriyahFreezone } from "@/data/sliderData";
+import { Autoplay } from "swiper/modules";
 
 const metadata = {
   title: "Hamriyah Freezone",
@@ -29,22 +30,33 @@ const HamriyahFreezone = () => {
                   <div className="content">
                     <div className="heading">
                       <h1 className="title split-text effect-right  mb-5">
-                      Hamriyah Free Zone <br/> Authority (HAFZA)
+                        Hamriyah Free Zone <br /> Authority (HAFZA)
                       </h1>
                       <div className="description">
                         <p
                           className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
                           data-wow-delay="0s"
                         >
-                      Hamriyah Free Zone is a dynamic business hub located in Sharjah, UAE, with easy access to major airports and seaports. Established in 1995, the free zone covers an area of 22 million square meters and provides a wide range of business opportunities and services to companies operating in various industries, including manufacturing, trading, and services.
+                          Hamriyah Free Zone is a dynamic business hub located
+                          in Sharjah, UAE, with easy access to major airports
+                          and seaports. Established in 1995, the free zone
+                          covers an area of 22 million square meters and
+                          provides a wide range of business opportunities and
+                          services to companies operating in various industries,
+                          including manufacturing, trading, and services.
                         </p>
                         <p
                           className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
                           data-wow-delay="0s"
                         >
-                      The free zone offers several advantages to businesses, including 100% foreign ownership, 100% repatriation of profits and capital, tax exemptions, and easy business set-up procedures. It also provides state-of-the-art infrastructure, including advanced telecommunications and IT infrastructure, modern office spaces, and warehouses.
+                          The free zone offers several advantages to businesses,
+                          including 100% foreign ownership, 100% repatriation of
+                          profits and capital, tax exemptions, and easy business
+                          set-up procedures. It also provides state-of-the-art
+                          infrastructure, including advanced telecommunications
+                          and IT infrastructure, modern office spaces, and
+                          warehouses.
                         </p>
-                       
                       </div>
                     </div>
                   </div>
@@ -90,10 +102,18 @@ const HamriyahFreezone = () => {
                     <h3 className="text_dark fw-6">HAFZA</h3>
                   </div>
                   <p className="text-body-1 text_mono-gray-7 mt_20 mb-4">
-                  Hamriyah Free Zone has become a preferred destination for companies looking to set up a business in the UAE and the wider Middle East region due to its strategic location, business-friendly environment, and excellent connectivity. The free zone also provides access to a large pool of skilled and diverse workforce from around the world.
+                    Hamriyah Free Zone has become a preferred destination for
+                    companies looking to set up a business in the UAE and the
+                    wider Middle East region due to its strategic location,
+                    business-friendly environment, and excellent connectivity.
+                    The free zone also provides access to a large pool of
+                    skilled and diverse workforce from around the world.
                   </p>
                   <p className="text-body-1 text_mono-gray-7 mt_20 mb-4">
-                Overall, Hamriyah Free Zone offers a cost-effective and efficient business environment for companies looking to establish a presence in the UAE, with excellent opportunities for growth and expansion.
+                    Overall, Hamriyah Free Zone offers a cost-effective and
+                    efficient business environment for companies looking to
+                    establish a presence in the UAE, with excellent
+                    opportunities for growth and expansion.
                   </p>
 
                   <Link
@@ -110,16 +130,21 @@ const HamriyahFreezone = () => {
         </div>
       </div>
 
-     <EffectiveSolutions/>
+      <EffectiveSolutions />
       <div className="section-testimonial style-5 tf-spacing-16 pb-0">
         <div className="heading-section text-center mb_63">
           <h3 className="text_white split-text effect-right">
-         Why Should you Setup your Business in Hamriyah Free Zone
+            Why Should you Setup your Business in Hamriyah Free Zone
           </h3>
         </div>
         <Swiper
           className="swiper sw-layout"
-          loop
+          loop={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+           modules={[Autoplay]}
           initialSlide={1}
           centeredSlides
           spaceBetween={15}
@@ -159,14 +184,14 @@ const HamriyahFreezone = () => {
                   />
                 </div>
                 <div className="content">
-                 <div className="d-flex flex-column">
-                      <h2 className="text_white mb-3">{testimonial.heading}</h2>
-                      <div className="left">
-                        <p className="text-body-2 text_white mb_12">
-                          {testimonial.quote}
-                        </p>
-                      </div>
-                 </div>
+                  <div className="d-flex flex-column">
+                    <h2 className="text_white mb-3">{testimonial.heading}</h2>
+                    <div className="left">
+                      <p className="text-body-2 text_white mb_12">
+                        {testimonial.quote}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
@@ -199,7 +224,6 @@ const HamriyahFreezone = () => {
           </div>
         </div>
       </div>
-
 
       <Footer1 />
     </>

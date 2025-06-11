@@ -175,7 +175,7 @@ export default function Footer1({ parentClass = "footer style-default" }) {
                     <ul className="footer-menu-list">
                       <li className="text-body-2 text_mono-gray-6">
                         <Link to={`/about`} className="link footer-menu_item">
-                          About Quest Management
+                          Who we are
                         </Link>
                       </li>
                       <li className="text-body-2 text_mono-gray-6">

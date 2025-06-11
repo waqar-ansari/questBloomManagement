@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import EffectiveSolutions from "../EffectiveSolutions";
 import { rasAlKhaimahFEZA } from "@/data/sliderData";
+import { Autoplay } from "swiper/modules";
 
 const metadata = {
   title: "Ras Al Khaimah Free Economic Zone Authority",
@@ -29,18 +30,40 @@ const RasAlKhaimahFEZA = () => {
                   <div className="content">
                     <div className="heading">
                       <h1 className="title split-text effect-right  mb-5">
-                Ras Al Khaimah Free Economic<br/> Zone Authority (RAKEZ)
+                        Ras Al Khaimah Free Economic
+                        <br /> Zone Authority (RAKEZ)
                       </h1>
                       <div className="description">
                         <p
                           className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
                           data-wow-delay="0s"
                         >
-               Ras Al Khaimah Free Economic Zone (RAKEZ) is one of the most dynamic and fastest-growing free zones in the UAE. Located in the northernmost emirate of the UAE, RAKEZ offers a range of benefits to entrepreneurs and investors looking to establish their businesses in the region. RAKEZ provides a cost-effective and business-friendly environment for entrepreneurs, with 100% foreign ownership, 0% corporate and personal income tax, and simplified import/export procedures. The free zone also offers access to world-class infrastructure, modern office spaces, and logistics facilities, as well as a skilled and diverse workforce. RAKEZ supports a wide range of industries, including manufacturing, trading, and logistics, among others. The free zone also provides industry-specific benefits, such as the RAK Maritime City Free Zone, which caters to businesses operating in the maritime industry. Quest Management can help streamline the process of setting up your business in RAKEZ, providing a range of services including company registration, licensing, visa processing, and ongoing business support. With Quest Management's expertise, entrepreneurs and investors can take advantage of the numerous benefits of RAKEZ and establish a successful business in the UAE.
+                          Ras Al Khaimah Free Economic Zone (RAKEZ) is one of
+                          the most dynamic and fastest-growing free zones in the
+                          UAE. Located in the northernmost emirate of the UAE,
+                          RAKEZ offers a range of benefits to entrepreneurs and
+                          investors looking to establish their businesses in the
+                          region. RAKEZ provides a cost-effective and
+                          business-friendly environment for entrepreneurs, with
+                          100% foreign ownership, 0% corporate and personal
+                          income tax, and simplified import/export procedures.
+                          The free zone also offers access to world-class
+                          infrastructure, modern office spaces, and logistics
+                          facilities, as well as a skilled and diverse
+                          workforce. RAKEZ supports a wide range of industries,
+                          including manufacturing, trading, and logistics, among
+                          others. The free zone also provides industry-specific
+                          benefits, such as the RAK Maritime City Free Zone,
+                          which caters to businesses operating in the maritime
+                          industry. Quest Management can help streamline the
+                          process of setting up your business in RAKEZ,
+                          providing a range of services including company
+                          registration, licensing, visa processing, and ongoing
+                          business support. With Quest Management's expertise,
+                          entrepreneurs and investors can take advantage of the
+                          numerous benefits of RAKEZ and establish a successful
+                          business in the UAE.
                         </p>
-                  
-                       
-                       
                       </div>
                     </div>
                   </div>
@@ -86,7 +109,20 @@ const RasAlKhaimahFEZA = () => {
                     <h3 className="text_dark fw-6">RAKEZ</h3>
                   </div>
                   <p className="text-body-1 text_mono-gray-7 mt_20 mb-4">
-         Ras Al Khaimah Economic Zone (RAKEZ) is a thriving business hub that caters to startups, SMEs, and industrial enterprises with a wide range of customizable solutions. Strategically located in the northern emirate of Ras Al Khaimah, RAKEZ offers competitive setup costs, modern infrastructure, and access to international markets. Its flexible licensing options and investor-friendly regulations make it an attractive choice for businesses across various sectors. Partnering with Quest Management Business Setup Services LLC can help streamline the setup process in RAKEZ. Quest Management offers expert services including company formation, licensing, visa processing, and ongoing operational support to ensure a successful and compliant business launch in the UAE.
+                    Ras Al Khaimah Economic Zone (RAKEZ) is a thriving business
+                    hub that caters to startups, SMEs, and industrial
+                    enterprises with a wide range of customizable solutions.
+                    Strategically located in the northern emirate of Ras Al
+                    Khaimah, RAKEZ offers competitive setup costs, modern
+                    infrastructure, and access to international markets. Its
+                    flexible licensing options and investor-friendly regulations
+                    make it an attractive choice for businesses across various
+                    sectors. Partnering with Quest Management Business Setup
+                    Services LLC can help streamline the setup process in RAKEZ.
+                    Quest Management offers expert services including company
+                    formation, licensing, visa processing, and ongoing
+                    operational support to ensure a successful and compliant
+                    business launch in the UAE.
                   </p>
 
                   <Link
@@ -103,16 +139,21 @@ const RasAlKhaimahFEZA = () => {
         </div>
       </div>
 
-     <EffectiveSolutions/>
+      <EffectiveSolutions />
       <div className="section-testimonial style-5 tf-spacing-16 pb-0">
         <div className="heading-section text-center mb_63">
           <h3 className="text_white split-text effect-right">
-Why Should You Choose to Setup Your Business in RAKEZ
+            Why Should You Choose to Setup Your Business in RAKEZ
           </h3>
         </div>
         <Swiper
           className="swiper sw-layout"
-          loop
+          loop={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+           modules={[Autoplay]}
           initialSlide={1}
           centeredSlides
           spaceBetween={15}
@@ -152,14 +193,14 @@ Why Should You Choose to Setup Your Business in RAKEZ
                   />
                 </div>
                 <div className="content">
-                 <div className="d-flex flex-column">
-                      <h2 className="text_white mb-3">{testimonial.heading}</h2>
-                      <div className="left">
-                        <p className="text-body-2 text_white mb_12">
-                          {testimonial.quote}
-                        </p>
-                      </div>
-                 </div>
+                  <div className="d-flex flex-column">
+                    <h2 className="text_white mb-3">{testimonial.heading}</h2>
+                    <div className="left">
+                      <p className="text-body-2 text_white mb_12">
+                        {testimonial.quote}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
@@ -192,7 +233,6 @@ Why Should You Choose to Setup Your Business in RAKEZ
           </div>
         </div>
       </div>
-
 
       <Footer1 />
     </>

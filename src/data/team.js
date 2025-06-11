@@ -1,14 +1,15 @@
 export const teamMembers = [
-  {
-    name: "JALENDER SHARMA",
-    role: "JALENDER SHARMA",
-    image: "/images/qb/people1.webp",
-  },
-  {
-    name: "BRAHMARUP GAANGULY",
-    role: "HR Head",
+   {
+    name: "BRAHMARUP GANGULY",
+    role: "Director",
     image: "/images/qb/people4.png",
   },
+  {
+    name: "JALENDER SHARMA",
+    role: "General Manager Head of Business Development",
+    image: "/images/qb/people1.webp",
+  },
+ 
   {
     name: "SYED MAJID HASAN",
     role: "Business & Corporate Banking Head",

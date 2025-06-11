@@ -21,7 +21,7 @@ export default function Testimonials() {
                   <b>Quest Management was established in</b>
                 </p>
                 <p
-                  className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated"
+                  className="text-body-1 text_mono-gray-7 mt-2 wow animate__fadeInUp animate__animated"
                   data-wow-delay="0s"
                   style={{textAlign:"justify"}}
                 >
@@ -134,13 +134,13 @@ export default function Testimonials() {
             </div> */}
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <p
-              className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated"
+              className="text-body-1 text_mono-gray-7 mt_20 mt-5 wow animate__fadeInUp animate__animated"
               data-wow-delay="0s"
             >
               <b>Expertise : </b>
             </p>
             <p
-              className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated"
+              className="text-body-1 text_mono-gray-7 mt-2 wow animate__fadeInUp animate__animated"
               data-wow-delay="0s"
             >
 
@@ -155,7 +155,7 @@ export default function Testimonials() {
               <b>Client Satisfaction : </b>
             </p>
             <p
-              className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated"
+              className="text-body-1 text_mono-gray-7 mt-2 wow animate__fadeInUp animate__animated"
               data-wow-delay="0s"
             >
 
@@ -170,7 +170,7 @@ export default function Testimonials() {
                 : </b>
             </p>
             <p
-              className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated"
+              className="text-body-1 text_mono-gray-7 mt-2 wow animate__fadeInUp animate__animated"
               data-wow-delay="0s"
             >
 

@@ -52,8 +52,15 @@ import AjmanMediaCityFZ from "./components/otherPages/BusinessSetupFreezone/Ajma
 import RasAlKhaimahFEZA from "./components/otherPages/BusinessSetupFreezone/RasAlKhaimahFEZA";
 import Freezones from "./components/otherPages/BusinessSetupFreezone/Freezones";
 import InternationalFZA from "./components/otherPages/BusinessSetupFreezone/InternationalFZA";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { fetchServices } from "./redux/slices/servicesSlice";
 
 function App() {
+  const dispatch = useDispatch()
+  useEffect(()=>{
+dispatch(fetchServices())
+  },[])
   return (
     <>
       <div id="wrapper" className="counter-scroll">

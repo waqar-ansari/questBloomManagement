@@ -2,27 +2,29 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination,Navigation } from "swiper/modules";
+import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import { caseStudies } from "@/data/caseStudies";
 import { homepageServices } from "@/data/homepageServices";
 
-
 export default function Services() {
   return (
-   
-    <div className="section sw-layout-1 tf-spacing-13 pt-0" style={{marginTop:100}}>
+    <div
+      className="section sw-layout-1 tf-spacing-13 pt-0"
+      style={{ marginTop: 100 }}
+    >
       <div className="tf-container">
         <div className="heading-section d-flex justify-content-between flex-wrap-md gap_12 align-items-end mb_88">
           <div className="left">
             <h2 className="heading-title split-text effect-right">
-             Smart Business Services, Built Around You
+              Smart Business Services, Built Around You
             </h2>
             <p
               className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated"
               data-wow-delay="0s"
             >
-            From company formation to banking and compliance — our expert-led services are
-             tailored to fuel your success and simplify your journey in Dubai.
+              From company formation to banking and compliance — our expert-led
+              services are tailored to fuel your success and simplify your
+              journey in Dubai.
             </p>
           </div>
           <div className="wrap-sw-button d-flex gap_16">
@@ -56,7 +58,12 @@ export default function Services() {
               spaceBetween: 24,
             },
           }}
-          modules={[Navigation]}
+          modules={[Navigation, Autoplay]}
+          loop={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
           navigation={{
             prevEl: ".snbp6",
             nextEl: ".snbn6",
@@ -85,7 +92,11 @@ export default function Services() {
                         height={item.brandHeight}
                       />
                     </div> */}
-                    <a href={`/${item.link}`} className="tf-btn" target="_blank">
+                    <a
+                      href={`/${item.link}`}
+                      className="tf-btn"
+                      target="_blank"
+                    >
                       <span className="icon-arrow-top-right" />
                       <span className="bg-effect" />
                     </a>

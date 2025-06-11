@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import Nav from "./Nav";
 import SearchPopup from "./SearchPopup";
 export default function Header1({ parentClass = "header style-default" }) {
+  const [hovered, setHovered] = useState(false);
   return (
     <header className={parentClass}>
       <div className="header-inner">
@@ -50,14 +51,14 @@ export default function Header1({ parentClass = "header style-default" }) {
                       <div
                         style={{
                           background: "#fff",
-                          padding: "5px 12px",
+                          padding: "5px 25px",
                           borderRadius: 30,
                           marginRight: 10,
                         }}
                       >
                         <img
                           src="/images/qb/questBloomTransparent.png"
-                          width={120}
+                          width={150}
                         />
                       </div>
                     </Link>
@@ -69,13 +70,33 @@ export default function Header1({ parentClass = "header style-default" }) {
                   </nav>
                 </div>
                 <div className="header-right d-flex align-items-center">
-                  <Link to="tel:+97145299247" className="tf-btn hide-sm">
+                  {/* <Link to="tel:+97145299247" className="tf-btn hide-sm">
                     <span>
-                      {/* <img src="/images/qb/phoneIcon.png" width={20} /> */}
+                      <img src="/images/qb/phoneIconWhite.png" width={20} />
                      +971 4 529 9247</span>
                     <span className="bg-effect" />
+                  </Link> */}
+                  <Link
+                    to="tel:+97145299247"
+                    className="tf-btn hide-sm"
+                    onMouseEnter={() => setHovered(true)}
+                    onMouseLeave={() => setHovered(false)}
+                  >
+                    <span>
+                      <img
+                        src={
+                          hovered
+                            ? "/images/qb/phoneIcon.png"
+                            : "/images/qb/phoneIconWhite.png"
+                        }
+                        width={20}
+                        alt="Phone Icon"
+                      />
+                      +971 4 529 9247
+                    </span>
+                    <span className="bg-effect" />
                   </Link>
-                 
+
                   <div
                     className="mobile-button"
                     data-bs-toggle="offcanvas"

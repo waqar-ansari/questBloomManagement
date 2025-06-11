@@ -278,29 +278,13 @@ const BankAccountOpening = () => {
                           className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
                           data-wow-delay="0s"
                         >
-                          Dubai South (formerly known as Dubai World Central) is
-                          a rapidly growing free zone located in the southern
-                          part of Dubai. Dubai South offers a range of benefits
-                          to entrepreneurs and investors looking to establish
-                          their businesses in the region.Dubai South provides a
-                          business-friendly environment, with streamlined
-                          business registration processes, simplified
-                          import/export procedures, and 100% foreign ownership.
-                          The free zone also offers access to world-class
-                          infrastructure, including modern office buildings,
-                          logistics facilities, and an international airport.
+                        Quest Management Consultancy is a reputable consulting firm which specializes in providing a wide range of Business Banking services. One of the key services offered by the firm is facilitating trade finance services and Business Account Opening.As businesses expand and operate in different locations, it is essential to have a trusted banking partner that can facilitate financial transactions. However, opening a corporate bank account can be a time-consuming and complicated process, particularly in International markets. Quest Management Consultancy understands the complexities involved in business banking, thereby offering customized solutions to corporates seeking to expand business in the Mid-East.
                         </p>
                         <p
                           className="text-body-1 text_mono-gray-7 wow animate__fadeInUp animate__animated"
                           data-wow-delay="0s"
                         >
-                          Dubai South is a strategic location for businesses
-                          operating in logistics, aviation, and other
-                          industries, offering access to major global markets.
-                          The free zone also provides industry-specific
-                          benefits, including the Aviation District, which
-                          caters to businesses operating in the aviation
-                          industry.
+                          The firm's team of experts assists businesses in preparing the necessary documentation, including company registration documents, tax certificates, and identification papers, among others. They also guide clients through the bank selection process, ensuring that they choose a bank that meets their specific needs. With their extensive experience and knowledge of banking regulations and procedures, Quest Management Consultancy provides clients with a hassle-free and efficient corporate bank account opening process.
                         </p>
                       </div>
                     </div>
@@ -367,52 +351,8 @@ const BankAccountOpening = () => {
                     <h3 className="text_dark fw-6">Dubai World Central</h3>
                   </div>
                   <p className="text-body-1 text_mono-gray-7 mt_20 mb-4">
-                    Dubai South is creating a vibrant society to invest, live
-                    and work within a sustainable, healthy and happy
-                    environment. As an important function of the regulatory
-                    authority Dubai Aviation City Corporation (DACC), the Free
-                    Zone Management fosters ingenuity and ease of business set
-                    up and operations by providing all types of services such as
-                    visas issuance, NOC letters, access cards, and work permits
-                    that would assist business owners to set up and run their
-                    businesses in a seamless and simple way as possible. As part
-                    of Dubai Aviation City Corporation ( Dubai South regulatory
-                    body ) pursuit of excellence and its mission to empower
-                    businesses , the free-zone management offers a full array of
-                    administrative and virtual services to individuals ,
-                    business owners and investors to make day-to- day business
-                    operations smoother and easier while focusing on growing
-                    their business . Covering Free Zone, staff and family
-                    sponsorship visas, permits, NOC letters and access cards,
-                    among others.
+                   In summary, Quest Management Consultancy's corporate/company bank account opening assistance services offer businesses the convenience of having a trusted banking partner without the stress and complexities of the account opening process.
                   </p>
-                  {/* <ul className="list effect-item effect-right effect-3">
-                    <li className="text-body-1 text_dark">
-                      Instant Trade Name Approval & Initial Approval.
-                    </li>
-                    <li className="text-body-1 text_dark">
-                      Office Lease Agreement or EJARI.
-                    </li>
-                    <li className="text-body-1 text_dark">
-                      Obtaining SIRA Approval for Industrial Activities.
-                    </li>
-                    <li className="text-body-1 text_dark">License Issuance.</li>
-                    <li className="text-body-1 text_dark">
-                      Your queries are answered and met within a short time.
-                    </li>
-                    <li className="text-body-1 text_dark">
-                      Collaboration with various Govt/Semi Govt agencies.
-                    </li>
-                    <li className="text-body-1 text_dark">
-                      Affordable Charges.
-                    </li>
-                    <li className="text-body-1 text_dark">
-                      Tailor made packages.
-                    </li>
-                    <li className="text-body-1 text_dark">
-                      Highly experienced Professional.
-                    </li>
-                  </ul> */}
 
                   <Link
                     to={`/contact-us`}
@@ -454,13 +394,10 @@ const BankAccountOpening = () => {
               data-wow-delay="0s"
             >
               <div className="heading">
-                <h5 className="text_dark fw-6 mb_16">Choose Your Activity:</h5>
+                <h5 className="text_dark fw-6 mb_16">Client Profile Analysis:</h5>
                 <p className="text-body-1 text_dark">
-                  The First step to start a business in Dubai is to choose the
-                  correct business activity. In Dubai you have access to
-                  thousands of business activities and Quest Management Services
-                  can help you to analyze and choose the correct and most
-                  suitable Business Activity.
+                  The firm's professionals are knowledgeable in banking regulations,Documentation and Risk assessment allowing them to provide clients with comprehensive and reliable advice.
+With Quest Management Consultancy's customized services, clients can access exclusive banking facilities, such as Business Banking & Private banking, offshore banking, and investment opportunities.
                 </p>
               </div>
             </div>
@@ -470,14 +407,10 @@ const BankAccountOpening = () => {
             >
               <div className="heading">
                 <h5 className="text_dark text_white fw-6 mb_16">
-                  Choose Jurisdictions:
+                  Business Profile Analysis:
                 </h5>
                 <p className="text-body-1 text_dark text_white mb_32">
-                  Our Business Setup Expert team ensures that you choose the
-                  most appropriate jurisdictions to ensures that your UAE Free
-                  Zone firm is successfully registered and that all UAE rules
-                  are followed. Examine the advantages among UAE Free Zones and
-                  helps you to create the appropriate company setup strategy.
+                 With over two decade of banking experience, the firm's professionals are updated with the current banking regulations, accordingly paving the road map for clients for the ease of banking
                 </p>
               </div>
             </div>
@@ -486,16 +419,9 @@ const BankAccountOpening = () => {
               data-wow-delay="0.3s"
             >
               <div className="heading">
-                <h5 className="text_dark fw-6 mb_16">Get Your License:</h5>
+                <h5 className="text_dark fw-6 mb_16">Selecting Bank:</h5>
                 <p className="text-body-1 text_dark">
-                  Starting a business in Dubai can be difficult, but it doesn't
-                  have to be! There are several legal procedures, government
-                  documentation, and paperwork needed in establishing a business
-                  in Dubai. Don't be concerned if you are unfamiliar with all of
-                  the legal etiquette! That's where Quest Management Services
-                  can help you out and guide you through the process. Leave the
-                  legal stuff to us so you can concentrate on your core
-                  business.
+                  Quest Management team of experts work closely with clients to understand their unique financial needs and develop tailor made solution to meet customer’s banking requirements.
                 </p>
               </div>
             </div>
