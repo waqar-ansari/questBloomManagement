@@ -529,3 +529,47 @@ export const internationalFZA = [
     quote: `From visa processing to banking assistance, IFZA offers comprehensive support services to simplify your business journey in the UAE.`,
   },
 ];
+export const accountOpeningAssistance = [
+  {
+    id: 1,
+    imageSrc: "/images/qb/whyDubaiSouth1.avif",
+    heading: "Exclusive RM for Each Business Account",
+    quote: `Enjoy personalized service with a dedicated Relationship Manager for every business account, ensuring expert guidance, faster assistance, and tailored banking solutions to support your business growth in the UAE.`,
+  },
+  {
+    id: 2,
+    imageSrc: "/images/qb/whyDubaiSouth2.avif",
+    heading: "Easy Transfer Local or International",
+    quote: `Seamlessly send and receive funds across the UAE or worldwide with our secure, fast, and user-friendly transfer solutions designed for both local and international business transactions.`,
+  },
+  {
+    id: 3,
+    imageSrc: "/images/qb/whyDubaiSouth1.avif",
+    heading: "Digital Banking",
+    quote: `Manage your finances anytime with secure online access, instant transfers, and real-time tracking through our advanced digital banking platform.`,
+  },
+  {
+    id: 4,
+    imageSrc: "/images/qb/whyDubaiSouth2.avif",
+    heading: "Worldwide Bank Network",
+    quote: `Connect globally with our extensive banking network, enabling smooth international transactions and business operations across multiple countries and currencies.`,
+  },
+  {
+    id: 5,
+    imageSrc: "/images/qb/whyDubaiSouth1.avif",
+    heading: "Easy to Maintain",
+    quote: `Our business accounts are designed for simplicity, offering low maintenance requirements and user-friendly tools to manage finances effortlessly.`,
+  },
+  {
+    id: 6,
+    imageSrc: "/images/qb/whyDubaiSouth2.avif",
+    heading: "Trade Support",
+    quote: `Get expert assistance for all your import and export needs, with reliable trade finance solutions and documentation support tailored for global business.`,
+  },
+  {
+    id: 7,
+    imageSrc: "/images/qb/whyDubaiSouth1.avif",
+    heading: "24/7 Customer Support",
+    quote: `Receive round-the-clock assistance from our dedicated support team, ensuring your banking needs are met anytime, without delays.`,
+  },
+];
