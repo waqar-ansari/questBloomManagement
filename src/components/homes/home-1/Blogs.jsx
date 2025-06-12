@@ -18,7 +18,10 @@ export default function Blogs() {
                 className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated"
                 data-wow-delay="0s"
               >
-               Our Premium Services offer end-to-end business solutions, from company formation to legal support,<br/> ensuring a seamless and efficient setup process tailored to your unique needs and growth goals.
+                Our Premium Services offer end-to-end business solutions, from
+                company formation to legal support,
+                <br /> ensuring a seamless and efficient setup process tailored
+                to your unique needs and growth goals.
               </p>
             </div>
             <div className="wrap-sw-button d-flex gap_16">
@@ -57,10 +60,7 @@ export default function Blogs() {
             {blogArticles.map((article) => (
               <SwiperSlide className="swiper-slide" key={article.id}>
                 <div className="blog-article-item hover-image">
-                  <Link
-                    to={`/${article.link}`}
-                    className="article-thumb mb_25"
-                  >
+                  <Link to={`/${article.link}`} className="article-thumb mb_25">
                     <img
                       className="lazyload"
                       data-src={article.imageSrc}
@@ -73,10 +73,7 @@ export default function Blogs() {
                   <div className="article-content">
                     <ul className="blog-article-meta mb_15 d-flex align-items-center">
                       <li className="meta-item text-body-1">
-                        <Link
-                          to={`/${article.link}`}
-                          className="link-black"
-                        >
+                        <Link to={`/${article.link}`} className="link-black">
                           {article.category}
                         </Link>
                       </li>

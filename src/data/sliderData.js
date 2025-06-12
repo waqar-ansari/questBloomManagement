@@ -573,3 +573,41 @@ export const accountOpeningAssistance = [
     quote: `Receive round-the-clock assistance from our dedicated support team, ensuring your banking needs are met anytime, without delays.`,
   },
 ];
+export const tradeFinanceAssistance = [
+  {
+    id: 1,
+    imageSrc: "/images/qb/whyDubaiSouth1.avif",
+    heading: "Letter of Credit Issuance",
+    quote: `Secure your international trade deals with guaranteed payments through swift letter of credit issuance services.`,
+  },
+  {
+    id: 2,
+    imageSrc: "/images/qb/whyDubaiSouth2.avif",
+    heading: "Shipping Guarantee",
+    quote: `Facilitate quick cargo release with our shipping guarantee, ensuring smooth trade flow without original documents.`,
+  },
+  {
+    id: 3,
+    imageSrc: "/images/qb/whyDubaiSouth1.avif",
+    heading: "Standby Letter of Credit",
+    quote: `Ensure payment security with a standby letter of credit, offering a reliable financial backup for global trade transactions.`,
+  },
+  {
+    id: 4,
+    imageSrc: "/images/qb/whyDubaiSouth2.avif",
+    heading: "Revolving Letter of Credit",
+    quote: `Support ongoing trade with a revolving letter of credit, ideal for regular shipments under a single credit facility.`,
+  },
+  {
+    id: 5,
+    imageSrc: "/images/qb/whyDubaiSouth1.avif",
+    heading: "Transferable Letter of Credit",
+    quote: `Easily transfer credit to secondary beneficiaries, simplifying multi-party international trade transactions.`,
+  },
+  {
+    id: 6,
+    imageSrc: "/images/qb/whyDubaiSouth2.avif",
+    heading: "Import Bill Collection.",
+    quote: `Handle import payments securely with our efficient document-based bill collection service for smooth international trade.`,
+  },
+];

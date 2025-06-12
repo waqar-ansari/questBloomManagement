@@ -33,35 +33,35 @@ export const freezones2 = [
     href: "/jebel-ali-freezone",
     src: "/images/qb/jebelAliFZA.jpg",
     alt: "freezones",
-    title: "Jebel Ali Free Zone Authority",
+    title: "Jebel Ali FZA",
     current: false,
   },
   {
     href: "/hamriyah-freezone",
     src: "/images/qb/hamariyahFZ.jpg",
     alt: "freezones",
-    title: "Hamriyah Free Zone Authority",
+    title: "Hamriyah FZA",
     current: false,
   },
   {
     href: "/sharjah-airport-freezone",
     src: "/images/qb/sharjahAirportFreezone.jpg",
     alt: "freezones",
-    title: "Sharjah Airport International Free Zone",
+    title: "Sharjah Airport FZ",
     current: false,
   },
   {
     href: "/umm-al-quwain-ftz",
     src: "/images/qb/ummalquwainFTZ.jpeg",
     alt: "freezones",
-    title: "Umm Al Quwain Free Trade Zone",
+    title: "Umm Al Quwain FTZ",
     current: false,
   },
   {
     href: "/fujairah-fza",
     src: "/images/qb/fujairahFZA.jpg",
     alt: "freezones",
-    title: "Fujairah Free Zone Authority",
+    title: "Fujairah FZA",
     current: false,
   },
   {
@@ -75,31 +75,51 @@ export const freezones2 = [
     href: "/ajman-fza",
     src: "/images/qb/ajmanFZA2.webp",
     alt: "freezones",
-    title: "Ajman Free Zone Authority",
+    title: "Ajman FZA",
     current: false,
   },
   {
     href: "/ajman-media-city-fz",
     src: "/images/qb/ajmanMediaCityFZ.jpeg",
     alt: "freezones",
-    title: "Ajman Media City Free Zone",
+    title: "Ajman Media City FZ",
     current: false,
   },
   {
     href: "/ras-al-khaimah-feza",
     src: "/images/qb/rasAlKhaimahFEZA.jpg",
     alt: "freezones",
-    title: "Ras Al Khaimah Free Zone",
+    title: "Ras Al Khaimah FZ",
     current: false,
   },
   {
     href: "/international-fza",
     src: "/images/qb/ifzaFreezone2.webp",
     alt: "freezones",
-    title: "International Free Zone Authority",
+    title: "International FZA",
     current: false,
   },
 ];
+
+export const bankingAssistance = [
+  {
+    href: "/bank-account-opening",
+    src: "/images/qb/bankAccount.jpg",
+    alt: "bankingAssistance",
+    title: "Bank Account Assistance",
+    current: false,
+  },
+  {
+    href: "/trade-finance-assistance",
+    src: "/images/qb/tradeFinance.png",
+    alt: "tradeFinanceAssistance",
+    title: "Trade Finance Assiatnce",
+    current: false,
+  },
+];
+
+
+
 
 export const otherPages = [
   { href: "/about", label: "About" },
@@ -117,10 +137,10 @@ export const blogPages = [
   { href: "/blog", label: "Blog" },
   { href: "/single-post/1", label: "Single Post" },
 ];
-export const bankingAssistance = [
-  { href: "/bank-account-opening", label: "Bank Account Opening" },
-  { href: "/trade-finance-assistance", label: "Trade Finance" },
-];
+// export const bankingAssistance = [
+//   { href: "/bank-account-opening", label: "Bank Account Opening" },
+//   { href: "/trade-finance-assistance", label: "Trade Finance" },
+// ];
 
 export const servicePages = [
   { href: "/services", label: "Services" },

@@ -7,15 +7,16 @@ export default function Hero() {
       <div className="content-inner">
         <div className="tf-container">
           <div className="heading-title">
-            <div className="text-display-2 text_white mb_49 split-text effect-scale">
-              Start Your Company
-              <br />
-              in Dubai
-            </div>
-            <Link to={`/contact-us`} className="tf-btn btn-white height-2">
-              <span className="text_black">Get Free Quote</span>
-              <span className="bg-effect" />
-            </Link>
+          
+              <div className="text-display-2 text_white mb_49 split-text effect-scale">
+                Start Your<br/>  <span className="fw-bold">Company</span>
+                <br />
+                in Dubai
+              </div>
+              <Link to={`/contact-us`} className="tf-btn btn-white height-2">
+                <span className="text_black fs-2 fw-medium">Start Now</span>
+                <span className="bg-effect" />
+              </Link>
           </div>
           <div className="bot d-flex align-items-end justify-content-between gap-20 flex-wrap">
             <p className="text_white sub-heading description">
@@ -23,7 +24,7 @@ export default function Hero() {
               ease through expert guidance and support from Quest Management.
             </p>
             <div className="wrap-facts">
-              <h5 className="text_white mb_19">Connect Your Experts</h5>
+              <h5 className="text_white mb_19">Connect To The Expert</h5>
               <div className="facts style-1">
                 <div className="avatar-wrap d-flex">
                   <div className="avatar item-1">

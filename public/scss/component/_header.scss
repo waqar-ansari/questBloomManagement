@@ -3,7 +3,7 @@
   .header-inner-wrap {
     display: flex;
     justify-content: space-between;
-    padding-top: 32px;
+    padding-top: 25px;
     position: relative;
     z-index: 999;
   }
@@ -292,8 +292,14 @@
         // font-size: 18px;
         font-size: 16px;
         line-height: 46px;
+        // line-height: 25px;
         color: var(--Mono-gray-5);
       }
+       @media (max-width: 1400px) {
+ a {
+      line-height: 25px !important;
+ }
+       }
       &:hover,
       &.current-menu {
         a {
@@ -303,6 +309,7 @@
           }
         }
       }
+
     }
   }
   &.style-default {
@@ -420,6 +427,8 @@
         right: 0;
         top: -1px;
       }
+      
+     
     }
     .submenu {
       min-width: 200px;

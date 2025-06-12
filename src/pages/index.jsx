@@ -12,8 +12,8 @@ import Testimonials from "@/components/common/Testimonials";
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
   title:
-    "Quest Management Services",
-  description: "Quest Management Services",
+    "Quest Management Consultancy",
+  description: "Quest Management Consultancy",
 };
 export default function HomePage() {
   return (

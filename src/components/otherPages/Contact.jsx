@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Contact() {
   return (
-    <div className="page-title style-default -mb_11">
+    <div className="page-title style-default">
       <div className="section-contact style-default position-relative py-0 hover-animate">
         <div className="tf-container">
           <div className="row">
@@ -91,7 +91,7 @@ export default function Contact() {
                   Add an attachment
                 </a> */}
                 <button type="submit" className="tf-btn btn-primary2 mt_22">
-                  <span>Send Message</span>
+                  <span>Submit</span>
                   <span className="bg-effect" />
                 </button>
               </form>

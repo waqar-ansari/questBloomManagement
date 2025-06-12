@@ -6,8 +6,8 @@ export default function Process() {
       <div className="tf-container">
         <div className="wrap">
           <div className="row align-items-end">
-            <div className="col-xl-6 left">
-              <div className="heading-section mb_88 ps-0">
+            <div className="col-12">
+<div className="heading-section mb_88 ps-0">
                 <h2 className="heading-title split-text effect-right">
                   Our Approach
                 </h2>
@@ -15,11 +15,14 @@ export default function Process() {
                   className="text-body-1 text_mono-gray-7 mt_18 wow animate__fadeInUp animate__animated"
                   data-wow-delay="0s"
                 >
-                  We rely on datadriven analysis and rigorous methodologies
-                  <br />
-                  to inform our decisions and ensure accuracy.
+                  We rely on data-driven analysis and methodologies
+                
+                  to structurise our client's business model, thereby ensuring accuracy.
                 </p>
               </div>
+            </div>
+            <div className="col-xl-6 left">
+              
               <ul
                 className="accordion-wrap gap-16 style-faqs"
                 id="accordion-approach"
@@ -34,7 +37,7 @@ export default function Process() {
                   >
                     <div className="heading">
                       <h3 className="text_mono-gray-5 title">
-                        <span className="text_primary">1.</span>Research & Discovery
+                        <span className="text_primary">1.</span>Research & Analysis
                       </h3>
                     </div>
                     <span className="icon" />
@@ -46,7 +49,8 @@ export default function Process() {
                   >
                     <div className="accordion-faqs-content">
                       <p className="text-body-1">
-                      We start by deeply understanding your business goals and challenges. This phase helps us gather critical insights that shape a tailored, strategic roadmap aligned with your unique objectives.
+                      {/* We start by deeply understanding your business goals and challenges. This phase helps us gather critical insights that shape a tailored, strategic roadmap aligned with your unique objectives. */}
+                      We start with understanding your business goals and find out the best ways to help you achieve them through SWOT analysis. This phase helps us gather critical insights that shape a bespoke, strategic roadmap aligned with your unique objectives.
                       </p>
                     </div>
                   </div>

@@ -179,6 +179,7 @@ const JebelAliFreeZone = () => {
             >
               <div className="testimonial style-4">
                 <div className="img-style-slider mb_40">
+                  <div style={{borderRadius:35, width:"max-content", overflow:"hidden"}}>
                   <img
                     className="lazyload"
                     data-src={testimonial.imageSrc}
@@ -186,7 +187,9 @@ const JebelAliFreeZone = () => {
                     src={testimonial.imageSrc}
                     width={908}
                     height={652}
+                    style={{borderRadius:35}}
                   />
+                </div>
                 </div>
                 <div className="content">
                   <div className="d-flex flex-column">

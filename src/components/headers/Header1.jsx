@@ -51,14 +51,14 @@ export default function Header1({ parentClass = "header style-default" }) {
                       <div
                         style={{
                           background: "#fff",
-                          padding: "5px 25px",
-                          borderRadius: 30,
+                          padding: "4px 12px",
+                          borderRadius: 8,
                           marginRight: 10,
                         }}
                       >
                         <img
                           src="/images/qb/questBloomTransparent.png"
-                          width={150}
+                          width={200}
                         />
                       </div>
                     </Link>

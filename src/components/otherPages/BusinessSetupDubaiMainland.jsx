@@ -186,7 +186,7 @@ const BusinessSetupDubaiMainland = () => {
                 <p className="text-body-1 text_dark">
                   The First step to start a business in Dubai is to choose the
                   correct business activity. In Dubai you have access to
-                  thousands of business activities and Quest Management Services
+                  thousands of business activities and Quest Management Consultancy
                   can help you to analyze and choose the correct and most
                   suitable Business Activity.
                 </p>

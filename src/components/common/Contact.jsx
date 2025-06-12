@@ -72,7 +72,7 @@ export default function Contact() {
                 />
               </fieldset>
               <button type="submit" className="tf-btn btn-primary2 mt_27">
-                <span>Send Message</span>
+                <span>Submit</span>
                 <span className="bg-effect" />
               </button>
             </form>

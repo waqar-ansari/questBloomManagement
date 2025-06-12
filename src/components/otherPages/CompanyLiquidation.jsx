@@ -642,7 +642,7 @@ const CompanyLiquidation = () => {
                                 <p className="text-body-1 text_dark">
                                     The First step to start a business in Dubai is to choose the
                                     correct business activity. In Dubai you have access to
-                                    thousands of business activities and Quest Management Services
+                                    thousands of business activities and Quest Management Consultancy
                                     can help you to analyze and choose the correct and most
                                     suitable Business Activity.
                                 </p>
@@ -676,7 +676,7 @@ const CompanyLiquidation = () => {
                                     have to be! There are several legal procedures, government
                                     documentation, and paperwork needed in establishing a business
                                     in Dubai. Don't be concerned if you are unfamiliar with all of
-                                    the legal etiquette! That's where Quest Management Services
+                                    the legal etiquette! That's where Quest Management Consultancy
                                     can help you out and guide you through the process. Leave the
                                     legal stuff to us so you can concentrate on your core
                                     business.

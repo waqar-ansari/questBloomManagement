@@ -51,12 +51,12 @@ export default function Nav() {
             {homepages.map((item, index) => (
               <div
                 key={index}
-                className={`demo-item ${
+                className={`demo-item pb-2 ${
                   isActive(item.href) ? "current-menu-item" : ""
                 }`}
               >
                 <Link to={item.href}>
-                  <div className="demo-image">
+                  <div className="demo-image mb-3">
                     <img
                       className="lazyload"
                       data-src={item.src}
@@ -81,18 +81,18 @@ export default function Nav() {
         <a href="#">Free Zones</a>
         <div
           className="submenu mega-menu"
-          style={{ height: "100vh", overflow: "auto" ,width:"80%"}}
+          style={{ height: "auto", overflow: "auto" ,width:"80%"}}
         >
           <div className="wrap-demo-item tf-grid-layout-lg lg-col-4">
             {freezones2.map((item, index) => (
               <div
                 key={index}
-                className={`demo-item ${
+                className={`demo-item pb-2 ${
                   isActive(item.href) ? "current-menu-item" : ""
                 }`}
               >
                 <Link to={item.href}>
-                  <div className="demo-image">
+                  <div className="demo-image mb-3">
                     <img
                       className="lazyload"
                       data-src={item.src}
@@ -112,26 +112,8 @@ export default function Nav() {
           </div>
         </div>
       </li>
+
       {/* <li
-        className={`has-child position-relative ${
-          isActiveParent(businessSetupInFreeZone) ? "current-menu" : ""
-        } `}
-      >
-        <a href="#">Free Zone</a>
-        <ul className="submenu">
-          {businessSetupInFreeZone.map((item) => (
-            <li
-              key={item.href}
-              className={`menu-item  ${
-                isActive(item.href) ? "current-menu-item" : ""
-              }`}
-            >
-              <Link to={item.href}>{item.label}</Link>
-            </li>
-          ))}
-        </ul>
-      </li> */}
-      <li
         className={`has-child position-relative ${
           isActiveParent(bankingAssistance) ? "current-menu" : ""
         } `}
@@ -149,7 +131,44 @@ export default function Nav() {
             </li>
           ))}
         </ul>
+      </li> */}
+
+<li
+        className={`has-child ${
+          isActiveParent(bankingAssistance) ? "current-menu" : ""
+        } `}
+      >
+        <a href="#">Banking Assistance</a>
+        <div className="submenu mega-menu" style={{width:"50%", left:200}}>
+          <div className="wrap-demo-item tf-grid-layout-lg lg-col-2">
+            {bankingAssistance.map((item, index) => (
+              <div
+                key={index}
+                className={`demo-item pb-2 ${
+                  isActive(item.href) ? "current-menu-item" : ""
+                }`}
+              >
+                <Link to={item.href}>
+                  <div className="demo-image mb-3">
+                    <img
+                      className="lazyload"
+                      data-src={item.src}
+                      src={item.src}
+                      alt={item.alt}
+                      width={480}
+                      height={228}
+                    />
+                  </div>
+                  <h6 className="demo-name fw-4">{item.title}</h6>
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
       </li>
+
+
+
       <li className={` ${isActive("/other-services") ? "current-menu" : ""} `}>
         <Link to={`/other-services`}>Our Services</Link>
       </li>

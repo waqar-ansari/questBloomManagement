@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { counterItems3 } from "@/data/facts";
 import OdometerComponent from "@/components/common/OdometerComponent";
+
 export default function Brands() {
+
   return (
     <div className="section-about style-2 tf-spacing-15 pt-0">
       <div className="tf-container">
@@ -385,25 +387,22 @@ export default function Brands() {
               <div className="content">
                 <div className="heading">
                   <h1 className="title split-text effect-right">
-                    Our Mission Is Realization <br />
-                    Your Dream Into Reality
+                  Our mission is to turn your<br/> dream into reality.
                   </h1>
+                   <span className="cursor"></span>
                   <div className="description">
-                    <p
+                    {/* <p
                       className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
                       data-wow-delay="0s"
                     >
                       Quest Management is a leading business consulting firm in
                       the UAE with over 10 years of experience.
-                    </p>
+                    </p> */}
                     <p
                       className="text-body-1 text_mono-gray-7 wow animate__fadeInUp animate__animated"
                       data-wow-delay="0s"
                     >
-                      We provide expert assistance in Corporate Banking and all
-                      aspects of company registration with an impressive track
-                      record in business license related Services for clients
-                      globally.
+                    We provide expert assistance in company formation and all related aspects including bank account opening. We hold an impressive track record in business Iservices for over a decade.
                     </p>
                   </div>
                 </div>
