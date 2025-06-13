@@ -69,7 +69,7 @@ export default function Footer1({ parentClass = "footer style-default" }) {
     <footer id="footer" className={parentClass}>
       <div className="footer-wrap">
         <div className="tf-container">
-          <div className="footer-body">
+          <div className="footer-body pt_90">
             <div className="row">
               <div className="col-lg-4">
                 <div className="footer-about">
@@ -298,14 +298,14 @@ export default function Footer1({ parentClass = "footer style-default" }) {
                             Trade Finance Assistance
                           </Link>
                         </li>
-                        <li className="text-body-2 text_mono-gray-6">
+                        {/* <li className="text-body-2 text_mono-gray-6">
                           <Link
                             to={`/company-liquidation`}
                             className="link footer-menu_item"
                           >
                             Company Liquidation
                           </Link>
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
                   </div>
@@ -352,7 +352,7 @@ export default function Footer1({ parentClass = "footer style-default" }) {
         <div className="tf-container">
           <div className="row">
             <div className="col-12">
-              <div className="wrapper d-flex align-items-center flex-wrap gap_12">
+              <div className="wrapper d-flex align-items-center flex-wrap gap_12 mt_90">
                 <p className="text-body-2">
                   © {new Date().getFullYear()} Copyright by{" "}
                   <a href="#" className="link-black text_primary text-body-3">

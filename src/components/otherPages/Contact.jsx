@@ -1,7 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import Select from "react-select";
 export default function Contact() {
+  const options = [
+    { value: "businessSetup", label: "Business Setup" },
+    { value: "freezone", label: "Free Zone" },
+    { value: "bankingAssistance", label: "Banking Assistance" },
+    { value: "tradefinanceAssistance", label: "Trade Finance Assistance" },
+  ];
+
+const [selectedOption, setSelectedOption] = useState(null);
+  const customStyles = {
+  control: (provided) => ({
+    ...provided,
+    borderRadius: 20,
+    borderColor: "#ccc",
+    boxShadow: "none",
+    "&:hover": {
+      borderColor: "#ccc",
+    },
+  }),
+  singleValue: (provided) => ({
+    ...provided,
+    color: "#797631", // selected text
+  }),
+  option: (provided, state) => ({
+    ...provided,
+    backgroundColor: state.isSelected
+      ? "#f0f0f0" // background when selected
+      : state.isFocused
+      ? "#f9f9f9" // background on hover/focus
+      : "white",
+    color: "#797631", // text color for all options
+    cursor: "pointer",
+  }),
+};
   return (
     <div className="page-title style-default">
       <div className="section-contact style-default position-relative py-0 hover-animate">
@@ -10,17 +43,25 @@ export default function Contact() {
             <div className="col-lg-6">
               <div className="left">
                 <div className="heading">
-                  <h1 className="mb_21">
-                    Contact Us
-                  </h1>
-                  <p className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
-                    data-wow-delay="0s">
-                    Let us know how we can help! Fill out our contact form and we will get back to you as soon as possible.
-                  </p><br /><br /><br />
-                  <p className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
-                    data-wow-delay="0s">
-                    Reach Our Expert Team : <br /><br />
-                    Send a message through given form, If your enquiry is time sensitive please use below contact details.
+                  <h1 className="mb_21">Contact Us</h1>
+                  <p
+                    className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
+                    data-wow-delay="0s"
+                  >
+                    Let us know how we can help! Fill out our contact form and
+                    we will get back to you as soon as possible.
+                  </p>
+                  <br />
+                  <br />
+                  <br />
+                  <p
+                    className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
+                    data-wow-delay="0s"
+                  >
+                    Reach Our Expert Team : <br />
+                    <br />
+                    Send a message through given form, If your enquiry is time
+                    sensitive please use below contact details.
                   </p>
                   {/* <ul className="breadcrumb">
                     <li>
@@ -31,7 +72,6 @@ export default function Contact() {
                     <li>Contact</li>
                   </ul> */}
                 </div>
-               
               </div>
             </div>
             <div className="col-lg-6">
@@ -75,6 +115,14 @@ export default function Contact() {
                     />
                   </fieldset>
                 </div>
+
+               <Select
+      value={selectedOption}
+      onChange={setSelectedOption}
+      options={options}
+      styles={customStyles}
+      placeholder="Select an option"
+    />
                 <fieldset className="">
                   <label className="mb_15" htmlFor="message">
                     Message

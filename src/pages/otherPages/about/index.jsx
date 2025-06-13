@@ -20,7 +20,7 @@ export default function AboutPage() {
   return (
     <>
       <MetaComponent meta={metadata} />
-      <div className="wrap-page-header">
+      <div className="wrap-page-header" id="animated-background" >
         <Header1 />
         <div className="page-title style-default">
           <div className="tf-container">
@@ -28,7 +28,7 @@ export default function AboutPage() {
               <div className="col-12">
                 <div className="heading mb_51">
                   <h1 className="text_black mb_16 letter-spacing-1">
-                    Meet the minds our success
+                    Meet the minds of our success
                   </h1>
                   <p className="sub-heading text_mono-gray-7">
                     A dedicated team driving innovation and
@@ -49,8 +49,8 @@ export default function AboutPage() {
         {/* <Process /> */}
         {/* <Faqs parentClass="section-faqs style-1 tf-spacing-8" /> */}
         {/* <Contact /> */}
-         <div className="tf-container">
-        <div className="row wrap-counter" style={{paddingTop:100}}>
+         <div className="tf-container tf-spacing-3 pt_90 pb_90">
+        <div className="row wrap-counter">
           {counterItems3.map((item, index) => (
             <div key={index} className="col-md-4">
               <div className="counter-item style-default">

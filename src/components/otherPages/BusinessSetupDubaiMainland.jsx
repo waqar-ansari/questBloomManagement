@@ -5,6 +5,7 @@ import Footer1 from "../footers/Footer1";
 import { counterItems3, counterItems4 } from "@/data/facts";
 import OdometerComponent from "../common/OdometerComponent";
 import { Link } from "react-router-dom";
+import { dubaiMainlandEffectiveSolutionsData } from "@/data/blogs";
 const metadata = {
   title: "Business setup in Dubai Mainland",
   description: "Business setup in Dubai Mainland",
@@ -16,9 +17,9 @@ const BusinessSetupDubaiMainland = () => {
       <div className="wrap-page-header">
         <Header1 />
 
-        <div className="section-process style-1 tf-spacing-5">
+        <div className="section-process style-1 tf-spacing-5 pb-0">
           <div className="tf-container">
-            <div className="wrap">
+            <div className="wrap pb-0 border-0">
               <div className="row align-items-end">
                 <div className="col-xl-6 my-auto">
                   <div className="content">
@@ -166,66 +167,63 @@ const BusinessSetupDubaiMainland = () => {
         </div>
       </div>
 
-      <div
-        className="bg-mono-gray-1"
-        style={{ marginTop: 100, paddingTop: 100, paddingBottom: 100 }}
-      >
-        <div className="tf-container-2">
-          <div className="heading-secetion text-center mb_61">
-            <h1 className="heading-title text_dark fw-6 split-text effect-right">
-              Effective Solutions
-            </h1>
-          </div>
-          <div className="tf-grid-layout lg-col-3">
-            <div
-              className="choice-item left wow animate__fadeInLeft animate__animated"
-              data-wow-delay="0s"
-            >
-              <div className="heading">
-                <h5 className="text_dark fw-6 mb_16">Choose Your Activity:</h5>
-                <p className="text-body-1 text_dark">
-                  The First step to start a business in Dubai is to choose the
-                  correct business activity. In Dubai you have access to
-                  thousands of business activities and Quest Management Consultancy
-                  can help you to analyze and choose the correct and most
-                  suitable Business Activity.
+      <div className="section-blog style-3 sw-layout-1 tf-spacing-17">
+        <div className="tf-container">
+          <div className="wrap pb-0" style={{ borderBottom: 0 }}>
+            <div className="heading-section d-flex justify-content-center flex-wrap-md gap_12 align-items-end mb_108">
+              <div className="left">
+                <h1 className="heading-title split-text effect-right text-center">
+                  Effective Solutions
+                </h1>
+                <p
+                  className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated text-center"
+                  data-wow-delay="0s"
+                >
+                  We are a team of professionals who are specialized in
+                  providing holistic support and services towards setting up
+                  your business
+                  <br />
+                  in UAE and abroad. We are always ready to walk the extra mile
+                  to cater to all your business requisites. Our customer-centric
+                  <br />
+                  approach makes us more accessible to our global clientele.
                 </p>
               </div>
             </div>
-            <div
-              className="choice-item center wow animate__fadeInLeft animate__animated"
-              data-wow-delay="0.2s"
-            >
-              <div className="heading">
-                <h5 className="text_dark text_white fw-6 mb_16">
-                  Choose Jurisdictions:
-                </h5>
-                <p className="text-body-1 text_dark text_white mb_32">
-                  Our Business Setup Expert team ensures that you choose the
-                  most appropriate jurisdictions to ensures that your UAE Free
-                  Zone firm is successfully registered and that all UAE rules
-                  are followed. Examine the advantages among UAE Free Zones and
-                  helps you to create the appropriate company setup strategy.
-                </p>
-              </div>
-            </div>
-            <div
-              className="choice-item right wow animate__fadeInLeft animate__animated"
-              data-wow-delay="0.3s"
-            >
-              <div className="heading">
-                <h5 className="text_dark fw-6 mb_16">Get Your License:</h5>
-                <p className="text-body-1 text_dark">
-                  We are always looking for talented, driven professionals who
-                  share our commitment to excellence
-                </p>
-              </div>
+            <div className="row">
+              {dubaiMainlandEffectiveSolutionsData.map((article) => (
+                <div className="col-md-4">
+                  <div className="blog-article-item hover-image">
+                    <div className="article-thumb mb_25">
+                      <img
+                        className="lazyload"
+                        data-src={article.imageSrc}
+                        alt="blog"
+                        src={article.imageSrc}
+                        width={article.width}
+                        height={article.height}
+                      />
+                    </div>
+                    <div className="article-content">
+                      <h5 className="title letter-spacing-2">
+                        <div className="link">{article.title}</div>
+                      </h5>
+                      <p
+                        className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated"
+                        data-wow-delay="0s"
+                      >
+                        {article.text}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </div>
 
-      <div style={{marginTop:100}}>
+      <div style={{ marginTop: 100 }}>
         <div className="tf-container-2">
           <div className="heading-section text-center mb_58">
             <div className="heading-tag d-flex gap_12 mx-auto mb_20 text_mono-dark-8 fw-5">
@@ -459,7 +457,6 @@ const BusinessSetupDubaiMainland = () => {
                       Apply for Emirates ID issuance
                     </li>
                   </ul>
- 
                 </div>
               </div>
             </div>
@@ -510,66 +507,67 @@ const BusinessSetupDubaiMainland = () => {
                       Complete KYC and verification
                     </li>
                   </ul>
-
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="section-figures position-relative">
-      <div className="tf-container-2">
-        <div className="heading-section d-flex gap_12 justify-content-between flex-wrap-md mb_59">
-          <div className="left">
-
-            <h2 className="title text_white fw-5 split-text split-lines-transform">
-              Where data <span className="text-gradient">tells</span> our storys
-            </h2>
-          </div>
-          <div className="right">
-            <p className="text-body-1 text_mono-gray-5 mb_23 split-text split-lines-transform">
-              Empowering businesses with data-driven strategies to <br />
-              achieve sustainable growth and lasting impact.
-            </p>
-          </div>
-        </div>
-        <div className="wrap-counter style-2 tf-grid-layout lg-col-4 sm-col-2 gap-0">
-          {counterItems4.map((item, index) => (
-            <div key={index} className="counter-item style-2">
-              <div className="icon mb_18">
-                <i className={item.icon} />
+          <div className="tf-container-2">
+            <div className="heading-section d-flex gap_12 justify-content-between flex-wrap-md mb_59">
+              <div className="left">
+                <h2 className="title text_white fw-5 split-text split-lines-transform">
+                  Where data <span className="text-gradient">tells</span> our
+                  storys
+                </h2>
               </div>
-              <p className="text-body-2 mb_6 text_mono-gray-5">{item.label}</p>
-              <div className="counter-number">
-                <div className="odometer text_white">
-                  <OdometerComponent max={item.value} />
-                </div>
-                <span className="sub text_white">{item.unit}</span>
+              <div className="right">
+                <p className="text-body-1 text_mono-gray-5 mb_23 split-text split-lines-transform">
+                  Empowering businesses with data-driven strategies to <br />
+                  achieve sustainable growth and lasting impact.
+                </p>
               </div>
             </div>
-          ))}
+            <div className="wrap-counter style-2 tf-grid-layout lg-col-4 sm-col-2 gap-0">
+              {counterItems4.map((item, index) => (
+                <div key={index} className="counter-item style-2">
+                  <div className="icon mb_18">
+                    <i className={item.icon} />
+                  </div>
+                  <p className="text-body-2 mb_6 text_mono-gray-5">
+                    {item.label}
+                  </p>
+                  <div className="counter-number">
+                    <div className="odometer text_white">
+                      <OdometerComponent max={item.value} />
+                    </div>
+                    <span className="sub text_white">{item.unit}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="shape-2 position-absolute hide-lg">
+            <img
+              alt="item"
+              src="/images/item/shape-3.png"
+              width={742}
+              height={223}
+            />
+          </div>
+          <div className="shape position-absolute">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1000 100"
+              preserveAspectRatio="none"
+            >
+              <path
+                className="elementor-shape-fill"
+                d="M500,97C126.7,96.3,0.8,19.8,0,0v100l1000,0V1C1000,19.4,873.3,97.8,500,97z"
+              />
+            </svg>
+          </div>
         </div>
-      </div>
-      <div className="shape-2 position-absolute hide-lg">
-        <img
-          alt="item"
-          src="/images/item/shape-3.png"
-          width={742}
-          height={223}
-        />
-      </div>
-      <div className="shape position-absolute">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1000 100"
-          preserveAspectRatio="none"
-        >
-          <path
-            className="elementor-shape-fill"
-            d="M500,97C126.7,96.3,0.8,19.8,0,0v100l1000,0V1C1000,19.4,873.3,97.8,500,97z"
-          />
-        </svg>
-      </div>
-    </div>
       </div>
 
       <Footer1 />

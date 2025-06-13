@@ -1,231 +1,3 @@
-// import React from 'react';
-// import Header1 from '../headers/Header1';
-// import Footer1 from '../footers/Footer1';
-// import MetaComponent from '@/components/common/MetaComponent';
-
-// const metadata = {
-//     title: "Company Liquidation || Advitex - Finance and Business Consulting Reactjs Template",
-//     description: "Advitex - Finance and Business Consulting Reactjs Template",
-// };
-
-// const BankAccountOpening = () => {
-//     return (
-//         <>
-//             <MetaComponent meta={metadata} />
-
-//             {/* Header */}
-//             <div className="wrap-page-header">
-//                 <Header1 />
-//             </div>
-
-//             <div class="container my-5">
-
-//                 <div class="row align-items-center mb-5">
-//                     <div class="col-md-6">
-//                         <div class="row g-2">
-//                             <div class="col-6"><img src="https://questmanagement.ae/wp-content/uploads/2023/05/Banking-Pic-2.jpg.webp" class="img-fluid rounded shadow-sm" alt="img1" height={300} width={200} /></div>
-//                             <div class="col-6"><img src="https://questmanagement.ae/wp-content/uploads/2023/05/banking-3.jpg.webp" class="img-fluid rounded shadow-sm" alt="img2" /></div>
-//                             <div class="col-12 mt-2"><img src="https://questmanagement.ae/wp-content/uploads/2023/05/Banking-Pic-1.jpg.webp" class="img-fluid rounded shadow-sm" alt="img3" /></div>
-//                         </div>
-//                     </div>
-//                     <div class="col-md-6">
-//                         <h3 class="mb-3">
-//                             Corporate Bank Account Assistance</h3>
-//                         <p class="text-muted">Quest Management Consultancy is a reputable consulting firm which specializes in providing a wide range of Business Banking services. One of the key services offered by the firm is facilitating trade finance services and Business Account Opening.As businesses expand and operate in different locations, it is essential to have a trusted banking partner that can facilitate financial transactions. However, opening a corporate bank account can be a time-consuming and complicated process, particularly in International markets. Quest Management Consultancy understands the complexities involved in business banking, thereby offering customized solutions to corporates seeking to expand business in the Mid-East.</p>
-//                         <p>The firm's team of experts assists businesses in preparing the necessary documentation, including company registration documents, tax certificates, and identification papers, among others. They also guide clients through the bank selection process, ensuring that they choose a bank that meets their specific needs. With their extensive experience and knowledge of banking regulations and procedures, Quest Management Consultancy provides clients with a hassle-free and efficient corporate bank account opening process.</p>
-//                         <p>In summary, Quest Management Consultancy's corporate/company bank account opening assistance services offer businesses the convenience of having a trusted banking partner without the stress and complexities of the account opening process.</p>
-//                     </div>
-//                 </div>
-//                 {/*
-//                 <div class="row align-items-center mb-5">
-//                     <div class="col-md-6">
-//                         <h3 class="mb-3">Tailored Business Solutions</h3>
-//                         <p class="text-muted">Our solutions are specifically crafted to fit your company's unique requirements, providing long-term value and sustainable growth.</p>
-//                     </div>
-//                     <div class="col-md-6">
-//                         <div class="row g-2">
-//                             <div class="col-6"><img src="https://via.placeholder.com/200x150" class="img-fluid rounded shadow-sm" alt="img4" /></div>
-//                             <div class="col-6"><img src="https://via.placeholder.com/200x150" class="img-fluid rounded shadow-sm" alt="img5" /></div>
-//                         </div>
-//                     </div>
-//                 </div> */}
-//                 {/*
-//                 <div class="row align-items-center mb-5">
-//                     <div class="col-md-6">
-//                         <img src="https://via.placeholder.com/500x300" class="img-fluid rounded shadow-sm" alt="img6" />
-//                     </div>
-//                     <div class="col-md-6">
-//                         <h3 class="mb-3">Visual Communication That Connects</h3>
-//                         <p class="text-muted">We create visual content that captures attention and keeps users engaged, while telling a compelling story about your brand.</p>
-//                     </div>
-//                 </div> */}
-
-//                 <div class="row text-center mb-5">
-//                     <div class="col-md-4">
-//                         <div class="p-4 border rounded shadow-sm h-100">
-//                             <i class="bi bi-headset display-4 text-primary mb-3"></i>
-//                             <h5 class="mb-2">24/7 Support</h5>
-//                             <p class="text-muted">Our team is available around the clock to assist you with any issues or inquiries you have.</p>
-//                         </div>
-//                     </div>
-//                     <div class="col-md-4">
-//                         <div class="p-4 border rounded shadow-sm h-100">
-//                             <i class="bi bi-bar-chart-line display-4 text-success mb-3"></i>
-//                             <h5 class="mb-2">Performance Insights</h5>
-//                             <p class="text-muted">Track your performance metrics in real-time with our integrated analytics dashboard.</p>
-//                         </div>
-//                     </div>
-//                     <div class="col-md-4">
-//                         <div class="p-4 border rounded shadow-sm h-100">
-//                             <i class="bi bi-shield-lock display-4 text-danger mb-3"></i>
-//                             <h5 class="mb-2">Data Security</h5>
-//                             <p class="text-muted">We ensure your data is encrypted, backed up, and protected against any breaches.</p>
-//                         </div>
-//                     </div>
-//                 </div>
-
-//                 <div className="title_sections three center my-5 text-center">
-//                     <div className="main_title heading-title split-text fw-bold fs-3 mb-3">
-//                         Effective Solutions
-//                     </div>
-//                     <p>Opening a corporate bank account can be a time-consuming and complicated process, particularly in International markets. Quest Management Consultancy understands the complexities involved in business banking, thereby offering customized solutions to corporates seeking to expand business in the Mid-East</p>
-
-//                 </div>
-
-//                 <div class="row text-center mb-5">
-//                     <div class="col-md-4">
-//                         <div class="p-4 border rounded shadow-sm h-100">
-//                             {/* <i class="bi bi-headset display-4 text-primary mb-3"></i> */}
-//                             <h3 class="mb-2">Client Profile Analysis:</h3>
-//                             <p class="text-muted">The firm's professionals are knowledgeable in banking regulations,Documentation and Risk assessment allowing them to provide clients with comprehensive and reliable advice.
-//                                 <br />With Quest Management Consultancy's customized services, clients can access exclusive banking facilities, such as Business Banking & Private banking, offshore banking, and investment opportunities.
-//                             </p>
-//                         </div>
-//                     </div>
-//                     <div class="col-md-4">
-//                         <div class="p-4 border rounded shadow-sm h-100">
-//                             {/* <i class="bi bi-bar-chart-line display-4 text-success mb-3"></i> */}
-//                             <h3 class="mb-2">Business Profile Analysis:</h3>
-//                             <p class="text-muted">With over two decade of banking experience, the firm's professionals are updated with the current banking regulations, accordingly paving the road map for clients for the ease of banking</p>
-//                         </div>
-//                     </div>
-//                     <div class="col-md-4">
-//                         <div class="p-4 border rounded shadow-sm h-100">
-//                             {/* <i class="bi bi-shield-lock display-4 text-danger mb-3"></i> */}
-//                             <h3 class="mb-2">Selecting Bank:</h3>
-//                             <p class="text-muted">Quest Management team of experts work closely with clients to understand their unique financial needs and develop tailor made solution to meet customer’s banking requirements.</p>
-//                         </div>
-//                     </div>
-//                 </div>
-
-//                 <div class="row align-items-center mb-5">
-//                     <div class="col-md-6">
-//                         <h3 class="mb-3">
-//                             Quest Management  Provide Private Account Services</h3>
-//                         <p class="text-muted">Quest Management Consultancy provides private account services to individuals looking for personalized banking solutions. Quest team of experts works closely with clients to understand their unique financial needs and develop tailored solutions that meet their requirements. The private account services offered by Quest Management Consultancy include opening and managing bank accounts, investment advisory services, wealth management, and tax planning. The firm's professionals are knowledgeable in banking regulations, investment opportunities, and taxation, allowing them to provide clients with comprehensive and reliable advice.</p>
-//                     </div>
-//                     <div class="col-md-6">
-//                         <div class="row g-3">
-//                             <div class="col-12">
-//                                 <p>With Quest Management Consultancy’s private account services, clients can access exclusive banking facilities, such as private banking, offshore banking, and investment opportunities. The firm prioritizes client confidentiality and ensures that all private account services are conducted with the utmost discretion.
-//                                     Whether clients are looking to secure their wealth, minimize their tax liabilities, or diversify their investment portfolio, Quest Management Consultancy’s private account services offer a range of solutions that cater to their individual needs. The firm’s commitment to excellence and personalized service ensures that clients receive the best possible advice and support to achieve their financial goals.</p>
-//                             </div>
-
-//                         </div>
-//                     </div>
-//                 </div>
-
-//                 <div className="container my-5">
-//                     <div className="row g-4">
-//                         <div className="col-md-4">
-//                             <ul className="list-unstyled border rounded p-3 h-100 shadow-sm text-center">
-//                                 <li>
-//                                     <i className='bi bi-book display-4 text-primary mb-3'></i>
-
-//                                 </li>
-//                                 <li>
-//                                     <h3>
-
-//                                         Easy to Maintain                                    </h3>
-//                                 </li>
-//                                 <br /><br /><br /><br />
-//                                 <li>
-//                                     <i className='bi bi-book display-4 text-primary mb-3'></i>
-
-//                                 </li>
-//                                 <li>
-//                                     <h3>
-
-//                                         Trade Support</h3>
-//                                 </li><br /><br /><br />
-//                                 <li>                                    <i className='bi bi-book display-4 text-primary mb-3'></i>
-//                                 </li>
-//                                 <li>
-
-//                                     <h3>24/7 Customer Support</h3>
-//                                 </li>
-//                             </ul>
-//                         </div>
-//                         <div className="col-md-4">
-//                             <ul className="list-unstyled border rounded p-3 h-100 shadow-sm text-center">
-//                                 <li>
-//                                     <img src="https://questmanagement.ae/wp-content/uploads/2023/05/Bank-pic-4.jpg.webp" alt="" height={700} width={500} />
-//                                 </li>
-
-//                             </ul>
-//                         </div>
-
-//                         <div className="col-md-4">
-//                             <ul className="list-unstyled border rounded p-3 h-100 shadow-sm text-center">
-//                                 <li>
-//                                     <i className='bi bi-book display-4 text-primary mb-3'></i>
-//                                 </li>
-//                                 <li>
-//                                     <h3>
-//                                         Exclusive RM for Each Business Account
-//                                     </h3>
-//                                 </li>
-//                                 <br /><br /><br /><br />
-//                                 <li>
-//                                     <i className='bi bi-bank display-4 text-primary mb-3'></i>
-//                                 </li>
-//                                 <li>
-//                                     <h3>
-
-//                                         Easy Transfer Local or International</h3>
-//                                 </li><br /><br /><br /><br />
-//                                 <li>
-//                                     <i className='bi bi-bank display-4 text-primary mb-3'></i>
-//                                 </li>
-//                                 <li>
-//                                     <h3>Digital Banking</h3>
-//                                 </li><br /><br /><br /><br />
-//                                 <li>
-//                                     <i className='fa fa-globe'></i>
-//                                 </li>
-//                                 <li>                                    <i className='bi bi-globe display-4 text-primary mb-3'></i>
-//                                 </li>
-//                                 <li>
-//                                     <h3>
-
-//                                         Worldwide Bank Network</h3>
-//                                 </li>
-
-//                             </ul>
-//                         </div>
-//                     </div>
-//                 </div>
-
-//             </div>
-
-//             {/* Footer */}
-//             <Footer1 />
-//         </>
-//     );
-// };
-
-// export default BankAccountOpening;
-
 import MetaComponent from "@/components/common/MetaComponent";
 import OdometerComponent from "@/components/common/OdometerComponent";
 import Footer1 from "@/components/footers/Footer1";
@@ -240,14 +12,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
+import { accountOpeningEffectiveSolutionsData } from "@/data/blogs";
 
-// const metadata = {
-//   title: "Dubai South Freezone",
-//   description: "Dubai South Freezone",
-// };
+
 const metadata = {
-  title: "Bank Account Opeing",
-  description: "Bank Account Opeing",
+  title: "Bank Account Opening",
+  description: "Bank Account Opening",
 };
 const BankAccountOpening = () => {
   return (
@@ -256,9 +26,9 @@ const BankAccountOpening = () => {
       <div className="wrap-page-header">
         <Header1 />
 
-        <div className="section-process style-1 tf-spacing-5">
+        <div className="section-process style-1 tf-spacing-5 pb-0 pt_90">
           <div className="tf-container">
-            <div className="wrap border-0">
+            <div className="wrap border-0 pb-0">
               <div className="row align-items-end">
                 <div className="col-xl-6 my-auto">
                   <div className="content">
@@ -294,7 +64,7 @@ const BankAccountOpening = () => {
                 <div className="col-xl-6">
                   <div
                     className="shape-img-bg shape-border style-2 scroll-tranform"
-                    data-distance="20%"
+                    data-distance="0%"
                   >
                     <img
                       alt=""
@@ -310,26 +80,6 @@ const BankAccountOpening = () => {
           </div>
         </div>
       </div>
-
-      {/* <div style={{ marginTop: 100 }}>
-        <div className={`heading-section text-center`}>
-          <h2 className="section-faqs style-1 pt-0">
-            Why business setup in Dubai?
-          </h2>
-
-          <p
-            className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated"
-            data-wow-delay="0s"
-          >
-            The UAE provides numerous possibilities for corporate growth because
-            of its favorable business climate, <br /> cutting-edge
-            infrastructure, and prime location as a commercial hub. Start your
-            business journey in Dubai right <br />
-            away to enjoy all that the city has to offer. Start your business in
-            Dubai RIGHT NOW!
-          </p>
-        </div>
-      </div> */}
 
       <div className="tf-container">
         <div className="wrap">
@@ -439,32 +189,6 @@ const BankAccountOpening = () => {
                   </p>
                 </div>
               </div>
-              {/* <div
-                  className="wrap d-flex wow animate__fadeInUp animate__animated"
-                  data-wow-delay="0s"
-                >
-                  <a
-                    href="/about"
-                    className="tf-btn btn-primary2 height-2 btn-px-28"
-                  >
-                    <span> Learn more</span>
-                    <span className="bg-effect" />
-                  </a>
-                  <div className="contact d-flex align-items-center gap_12">
-                    <div className="icon">
-                      <i className="icon-tty-solid" />
-                    </div>
-                    <p className="font2 text-body-2">
-                      24/7 Support:{" "}
-                      <a
-                        href="tel:+97145299247"
-                        style={{ textDecoration: "none", color: "inherit" }}
-                      >
-                        +971 4 529 9247
-                      </a>
-                    </p>
-                  </div>
-                </div> */}
             </div>
           </div>
           <div className="col-lg-6">
@@ -532,78 +256,61 @@ const BankAccountOpening = () => {
         </div>
       </div>
 
-      <div
-        className="bg-mono-gray-1"
-        style={{ marginTop: 100, paddingTop: 100, paddingBottom: 100 }}
-      >
-        <div className="tf-container-2">
-          <div className="heading-secetion text-center mb_61">
-            <h1 className="heading-title text_dark fw-6 split-text effect-right">
-              Effective Solutions
-            </h1>
-          </div>
-          <p
-            className="text-body-1 text_mono-gray-7 mb-4"
-            style={{ marginBottom: 100 }}
-          >
-            Opening a corporate bank account can be a time-consuming and
-            complicated process, particularly in International markets. Quest
-            Management Consultancy understands the complexities involved in
-            business banking, thereby offering customized solutions to
-            corporates seeking to expand business in the Mid-East.
-          </p>
-          <div className="tf-grid-layout lg-col-3">
-            <div
-              className="choice-item left wow animate__fadeInLeft animate__animated"
-              data-wow-delay="0s"
-            >
-              <div className="heading">
-                <h5 className="text_dark fw-6 mb_16">
-                  Client Profile Analysis:
-                </h5>
-                <p className="text-body-1 text_dark">
-                  The firm's professionals are knowledgeable in banking
-                  regulations,Documentation and Risk assessment allowing them to
-                  provide clients with comprehensive and reliable advice. With
-                  Quest Management Consultancy's customized services, clients
-                  can access exclusive banking facilities, such as Business
-                  Banking & Private banking, offshore banking, and investment
-                  opportunities.
-                </p>
-              </div>
-            </div>
-            <div
-              className="choice-item center wow animate__fadeInLeft animate__animated"
-              data-wow-delay="0.2s"
-            >
-              <div className="heading">
-                <h5 className="text_dark text_white fw-6 mb_16">
-                  Business Profile Analysis:
-                </h5>
-                <p className="text-body-1 text_dark text_white mb_32">
-                  With over two decade of banking experience, the firm's
-                  professionals are updated with the current banking
-                  regulations, accordingly paving the road map for clients for
-                  the ease of banking
-                </p>
-              </div>
-            </div>
-            <div
-              className="choice-item right wow animate__fadeInLeft animate__animated"
-              data-wow-delay="0.3s"
-            >
-              <div className="heading">
-                <h5 className="text_dark fw-6 mb_16">Selecting Bank:</h5>
-                <p className="text-body-1 text_dark">
-                  Quest Management team of experts work closely with clients to
-                  understand their unique financial needs and develop tailor
-                  made solution to meet customer’s banking requirements.
-                </p>
+     
+<div className="section-blog style-3 sw-layout-1 tf-spacing-17">
+            <div className="tf-container">
+              <div className="wrap pb-0" style={{borderBottom:0 }}>
+                <div className="heading-section d-flex justify-content-center flex-wrap-md gap_12 align-items-end mb_108">
+                  <div className="left">
+                    <h1 className="heading-title split-text effect-right text-center">
+                      Effective Solutions
+                    </h1>
+                    <p
+                      className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated text-center"
+                      data-wow-delay="0s"
+                    >
+                    Opening a corporate bank account can be a time-consuming and complicated process, particularly in International markets. Quest Management Consultancy understands the complexities involved in business banking, thereby offering customized solutions to corporates seeking to expand business in the Mid-East.
+                    </p>
+                  </div>
+                </div>
+                <div className="row">
+                  {accountOpeningEffectiveSolutionsData.map((article) => (
+                    <div className="col-md-4">
+                      <div className="blog-article-item hover-image">
+                        <div className="article-thumb mb_25">
+                          <img
+                            className="lazyload"
+                            data-src={article.imageSrc}
+                            alt="blog"
+                            src={article.imageSrc}
+                            width={article.width}
+                            height={article.height}
+                          />
+                        </div>
+                        <div className="article-content">
+                          <h5 className="title letter-spacing-2">
+                            <div className="link">
+                              {article.title}
+                            </div>
+                          </h5>
+                          <p
+                            className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated"
+                            data-wow-delay="0s"
+                          >
+                            {article.text}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+
+
+
+
       <div className="section-testimonial style-5 tf-spacing-16 pb-0">
         <div className="heading-section text-center mb_63">
           <h3 className="text_white split-text effect-right">
@@ -643,7 +350,7 @@ const BankAccountOpening = () => {
           {accountOpeningAssistance.map((item, index) => (
             <SwiperSlide className="swiper-slide" key={`${item.id}-${index}`}>
               <div className="testimonial style-4">
-                <div className="img-style-slider mb_40">
+                <div className="img-style-slider mb_40" style={{borderRadius:35, width:"max-content", overflow:"hidden"}}>
                   <img
                     className="lazyload"
                     data-src={item.imageSrc}
@@ -651,6 +358,7 @@ const BankAccountOpening = () => {
                     src={item.imageSrc}
                     width={908}
                     height={652}
+                    style={{borderRadius:35}}
                   />
                 </div>
                 <div className="content">

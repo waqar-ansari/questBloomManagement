@@ -6,7 +6,7 @@ import OdometerComponent from "@/components/common/OdometerComponent";
 export default function Brands() {
 
   return (
-    <div className="section-about style-2 tf-spacing-15 pt-0">
+    <div className="section-about style-2 tf-spacing-15 pb_90">
       <div className="tf-container">
         {/* <div className="tf-spacing-14">
           <div className="heading-section text-center mb_55">
@@ -290,7 +290,7 @@ export default function Brands() {
             </div>
           </div>
         </div> */}
-        <div className="text-with-img-1 tf-spacing-14">
+        <div className="text-with-img-1 tf-spacing-14 pt_90 pb_90 mb_90">
           <div className="row">
             <div className="col-lg-6">
               <div className="left">
@@ -387,7 +387,7 @@ export default function Brands() {
               <div className="content">
                 <div className="heading">
                   <h1 className="title split-text effect-right">
-                  Our mission is to turn your<br/> dream into reality.
+                  Our mission is to <span className="line-break"/>turn your dream<span className="line-break"/> into reality.
                   </h1>
                    <span className="cursor"></span>
                   <div className="description">

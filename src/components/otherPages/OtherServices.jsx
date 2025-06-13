@@ -19,9 +19,9 @@ const allServices = useSelector((state)=>state.services)
   return (
     <>
       <MetaComponent meta={metadata} />
-      <div className="wrap-page-header">
+      <div className="wrap-page-header" id="animated-background">
         <Header1 />
-        <div className="page-title style-default">
+        <div className="page-title style-default pb-0">
           <div className="tf-container">
             <div className="row">
               <div className="col-12">
@@ -42,10 +42,9 @@ const allServices = useSelector((state)=>state.services)
         </div>
       </div>
       <div
-        className="tf-container-2"
-        style={{ marginTop: 100, marginBottom: 100 }}
+        className="tf-container-2 pt_90"
       >
-        <div className="heading-section text-center mb_58">
+        <div className="heading-section text-center mb_60">
           <h2 className="title text_mono-dark-9 fw-5 split-text split-lines-rotation-x">
            Other
             <span className="text-gradient"> Services</span>

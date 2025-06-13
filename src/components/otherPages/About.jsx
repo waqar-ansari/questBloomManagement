@@ -6,11 +6,11 @@ export default function About() {
   return (
     <>
       {/* .section-about */}
-      <div className="text-with-img-2 tf-spacing-2">
+      <div className="text-with-img-2 tf-spacing-2 pt_90 pb_90">
         <div className="tf-container">
           <div className="row">
             <div className="col-lg-6">
-              <div className="wrap-img"><br /><br /><br /><br /><br /><br /><br />
+              <div className="wrap-img">
                 <div className="shape-img-bg shape-border">
                   <img
                     alt="shape"
@@ -72,7 +72,7 @@ export default function About() {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="content mb-0">
+              <div className="content mb-0 pt-0">
                 <h5 className="title split-text split-lines-rotation-x">
                   <br />
                   BRAHMARUP GANGULY
@@ -105,11 +105,11 @@ export default function About() {
       </div>
       {/* /.section-about */}
       {/* .section-about */}
-      <div className="text-with-img-2 tf-spacing-5 pt-0">
+      <div className="text-with-img-2 tf-spacing-5 pt-0 pb_90">
         <div className="tf-container">
-          <div className="row">
-            <div className="col-xl-6">
-              <div className="content">
+          <div className="row pt_90">
+            <div className="col-xl-6 my-auto">
+              <div className="content pt-0">
                 <h5 className="title split-text split-lines-rotation-x">
                   <br />
                   JALENDHAR SHARMA
@@ -138,7 +138,7 @@ export default function About() {
               </div>
             </div>
             <div className="col-xl-6">
-              <div className="wrap-img mb-0"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+              <div className="wrap-img mb-0">
                 <div className="shape-img-bg shape-border">
                   <img
                     alt="shape"

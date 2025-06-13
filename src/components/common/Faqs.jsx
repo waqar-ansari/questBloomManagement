@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Faqs({
-  parentClass = "section-faqs style-1 tf-spacing-8 pt-0",
+  parentClass = "section-faqs style-1 tf-spacing-8 pt-0 pb_90",
   headingClass = "heading-title split-text effect-right",
   header2 = false,
 }) {
@@ -10,7 +10,7 @@ export default function Faqs({
         <div className="tf-container">
           <div
             className={`heading-section text-center ${
-              header2 ? "mb_86" : "mb_92"
+              header2 ? "mb_60" : "mb_60"
             } `}
           >
             {header2 ? (

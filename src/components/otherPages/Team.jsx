@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import { teamMembers } from "@/data/team";
 export default function Team() {
   return (
-    <div className="section-team style-1 tf-spacing-6">
+    <div className="section-team style-1 tf-spacing-6 pt_90">
       <div className="tf-container">
-        <div className="heading-secion mb_88">
+        <div className="heading-secion mb_60">
           <h2 className="heading-title split-text effect-right">
             Dedicated Team
           </h2>

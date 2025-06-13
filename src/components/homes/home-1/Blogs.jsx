@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 import { Navigation } from "swiper/modules";
 export default function Blogs() {
   return (
-    <div className="section-blog style-3 sw-layout-1 tf-spacing-17">
+    <div className="section-blog style-3 sw-layout-1 tf-spacing-17 pb_90 pt_90">
       <div className="tf-container">
-        <div className="wrap">
-          <div className="heading-section d-flex justify-content-between flex-wrap-md gap_12 align-items-end mb_108">
+        <div className="wrap pb_90">
+          <div className="heading-section d-flex justify-content-between flex-wrap-md gap_12 align-items-end mb_60">
             <div className="left">
               <h1 className="heading-title split-text effect-right">
                 Our Premium Services

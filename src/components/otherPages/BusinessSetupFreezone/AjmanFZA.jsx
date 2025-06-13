@@ -22,9 +22,9 @@ const AjmanFZA = () => {
       <div className="wrap-page-header">
         <Header1 />
 
-        <div className="section-process style-1 tf-spacing-5">
+        <div className="section-process style-1 tf-spacing-5 pb-0">
           <div className="tf-container">
-            <div className="wrap border-0">
+            <div className="wrap border-0 pb-0">
               <div className="row align-items-end">
                 <div className="col-xl-6 my-auto">
                   <div className="content">
@@ -37,35 +37,8 @@ const AjmanFZA = () => {
                           className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
                           data-wow-delay="0s"
                         >
-                          Ajman Free Zone Authority (AFZA) is a government-owned
-                          entity that was established in 1988 to promote
-                          business opportunities in the United Arab Emirates
-                          (UAE). It is located in the Emirate of Ajman and
-                          provides a variety of business setup options for local
-                          and international companies looking to operate in the
-                          region.AFZA offers a range of facilities and services
-                          to its clients, including commercial office space,
-                          warehouses, land plots, and virtual offices. The free
-                          zone also provides various administrative and support
-                          services, such as company registration, licensing,
-                          visa processing, and legal assistance.One of the key
-                          advantages of setting up a company in AFZA is the
-                          favorable business environment, which includes 100%
-                          foreign ownership, no corporate or personal income
-                          tax, and no restrictions on the repatriation of
-                          profits. The free zone also has a streamlined and
-                          efficient company registration process, which can be
-                          completed within a few days.AFZA caters to a wide
-                          range of industries, including trading, manufacturing,
-                          services, and logistics. It has established itself as
-                          a hub for small and medium-sized enterprises (SMEs)
-                          and offers attractive incentives for startups and
-                          entrepreneurs.Overall, AFZA is an attractive
-                          destination for companies looking to establish a
-                          presence in the UAE. Its strategic location, favorable
-                          business environment, and comprehensive range of
-                          services make it a popular choice for local and
-                          international businesses alike.
+                        Ajman Free Zone Authority (AFZA), established in 1988, is a government-run free zone in the Emirate of Ajman. It offers flexible business setup options for local and international companies, including office spaces, warehouses, land, and virtual offices. AFZA provides quick company registration, 100% foreign ownership, tax exemptions, and full profit repatriation. Catering to various sectors like trade, manufacturing, and services, it’s a popular choice for startups and SMEs seeking a cost-effective, business-friendly base in the UAE.
+
                         </p>
                       </div>
                     </div>
@@ -150,12 +123,12 @@ const AjmanFZA = () => {
         </div>
         <Swiper
           className="swiper sw-layout"
-         loop={true}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-          }}
-           modules={[Autoplay]}
+        //  loop={true}
+        //   autoplay={{
+        //     delay: 2000,
+        //     disableOnInteraction: false,
+        //   }}
+        //    modules={[Autoplay]}
           initialSlide={1}
           centeredSlides
           spaceBetween={15}

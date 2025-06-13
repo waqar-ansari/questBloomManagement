@@ -7,3 +7,10 @@
   $("[data-magnetic]").each(function () {
     new Magnetic(this);
   });
+  // let smoother = ScrollSmoother.create({
+  //   wrapper: "#wrapper",
+  //   content: "#main-content",
+  //   smooth: 2.5,
+  //   ignoreMobileResize: true,
+  //   effects: true,
+  // });

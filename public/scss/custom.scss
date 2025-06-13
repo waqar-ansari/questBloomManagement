@@ -174,11 +174,62 @@ li.has-child ul.submenu li.has-child:hover > ul.submenu {
   transition: transform 0.6s ease;
   display: block;
 }
+// ANIMATED BACKGROUND
 
+// @keyframes colorShift {
+//   0% {
+//     background-color: #d3defe;
+//   }
+//   50% {
+//     background-color: #a9ad88;
+//   }
+//   100% {
+//     background-color: #d3defe;
+//   }
+// }
+
+// #animated-background {
+//   animation: colorShift 10s ease-in-out infinite;
+//   background: transparent;
+// }
+
+.line-break{
+  display: block;
+}
+h1{
+  font-size: 48px;
+  line-height: 52px;
+}
+.pt_90{
+  padding-top:90px !important;
+}
+.pb_90{
+  padding-bottom:90px !important;
+}
+.mb_90{
+  margin-bottom: 90px !important;
+}
+.mb_60{
+  margin-bottom: 60px !important;
+}
+@media only screen and (max-width: 576px) {
+.line-break{
+  display: inline;
+}
+}
+@keyframes wowGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+#animated-background {
+  background: linear-gradient(-45deg, #d3defe, #a9ad88, #ece8d9, #797631);
+  background-size: 400% 400%;
+  animation: wowGradient 10s ease infinite;
+}
 
 //CURSOR
-
-
   .cb-cursor {
     position: fixed;
     top: 0;
@@ -232,7 +283,7 @@ li.has-child ul.submenu li.has-child:hover > ul.submenu {
             justify-content: center;
     transform: scale(0) rotate(10deg);
     opacity: 0;
-    color: var(--dark-1);
+    color: #000;
     font-size: 16px;
     line-height: 20px;
     text-align: center;
@@ -255,7 +306,7 @@ li.has-child ul.submenu li.has-child:hover > ul.submenu {
   
     .cb-cursor.-exclusion:before,
     .cb-cursor.-opaque:before {
-      background: var(--light-2);
+      background: #fff;
     }
   }
   
@@ -270,7 +321,7 @@ li.has-child ul.submenu li.has-child:hover > ul.submenu {
   }
   
   .cb-cursor.-inverse {
-    color: var(--light-2);
+    color: #fff;
   }
   
   .cb-cursor.-visible:before {
@@ -311,30 +362,30 @@ li.has-child ul.submenu li.has-child:hover > ul.submenu {
   .cb-cursor.-hidden:before { transform: scale(0) }
   
   .cb-cursor.-circle-light:before {
-    border: 1px solid var(--light-1);
+    border: 1px solid #fff;
     color: transparent;
   }
   
   .cb-cursor.-circle-dark:before {
-    border: 1px solid var(--dark-3);
+    border: 1px solid #0C0C0C;
     color: transparent;
   }
   
   .cb-cursor.-circle-brown:before {
-    border: 1px solid var(--brown-1);
+    border: 1px solid #81684b;
     color: transparent;
   }
   
   .-text-light .cb-cursor-text {
-    color: var(--light-1);
+    color: #ccd0db;
   }
   
   .-text-brown .cb-cursor-text {
-    color: var(--brown-2);
+    color: #917655;
   }
   
   .-text-dark .cb-cursor-text {
-    color: var(--dark-2);
+    color: #222;
   }
   
   .-xl .cb-cursor-text {

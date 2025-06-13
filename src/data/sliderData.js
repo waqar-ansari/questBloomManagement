@@ -362,7 +362,7 @@ export const ajmanFZA = [
   },
   {
     id: 2,
-    imageSrc: "/images/qb/whyDubaiSouth2.avif",
+    imageSrc: "/images/qb/worldClassInfrastructure.jpg",
     heading: "World-Class Infrastructure",
     quote: `The free zone provides modern office spaces, warehouses, advanced telecommunications and IT infrastructure, and other amenities to support businesses.`,
   },

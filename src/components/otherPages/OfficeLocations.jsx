@@ -3,9 +3,9 @@ import React from "react";
 
 export default function OfficeLocations() {
   return (
-    <div className="section-map tf-spacing-6">
+    <div className="section-map tf-spacing-6 pt_90 pb_90">
       <div className="tf-container">
-        <div className="heading-seciton mb_83">
+        <div className="heading-seciton mb_60">
           <h2 className="heading-title">Visit Our Office</h2>
         </div>
         <div className="tf-grid-layout lg-col-2">

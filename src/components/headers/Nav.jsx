@@ -36,7 +36,7 @@ export default function Nav() {
           isActiveParent(shopPages) ? "current-menu" : ""
         } `}
       >
-        <a href="/about">Who we are</a>
+        <Link to="/about">Who we are</Link>
       </li>
       <li
         className={`has-child ${
@@ -177,7 +177,7 @@ export default function Nav() {
           isActiveParent(shopPages) ? "current-menu" : ""
         } `}
       >
-        <a href="/contact-us">Contact Us</a>
+        <Link to="/contact-us">Contact Us</Link>
       </li>
     </>
   );

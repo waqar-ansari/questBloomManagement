@@ -6,7 +6,7 @@ export default function Hero() {
     <div className="page-title style-1">
       <div className="content-inner">
         <div className="tf-container">
-          <div className="heading-title">
+          <div className="heading-title" style={{marginBottom:60}}>
           
               <div className="text-display-2 text_white mb_49 split-text effect-scale">
                 Start Your<br/>  <span className="fw-bold">Company</span>

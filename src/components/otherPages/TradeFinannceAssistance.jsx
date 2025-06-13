@@ -8,10 +8,11 @@ import { testimonials } from "@/data/testimonials";
 import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { tradeFinanceEffectiveSolutionsData } from "@/data/blogs";
 
 const metadata = {
-  title: "Trade Finannce Assistance",
-  description: "Trade Finannce Assistance",
+  title: "Trade Finance Assistance",
+  description: "Trade Finance Assistance",
 };
 const TradeFinannceAssistance = () => {
   return (
@@ -20,15 +21,15 @@ const TradeFinannceAssistance = () => {
       <div className="wrap-page-header">
         <Header1 />
 
-        <div className="section-process style-1 tf-spacing-5">
+        <div className="section-process style-1 tf-spacing-5 pb-0 pt_90">
           <div className="tf-container">
-            <div className="wrap border-0">
+            <div className="wrap border-0 pb-0">
               <div className="row align-items-end">
                 <div className="col-xl-6 my-auto">
                   <div className="content">
                     <div className="heading">
                       <h1 className="title split-text effect-right">
-                        Trade Finannce Assistance
+                        Trade Finance Assistance
                       </h1>
                       <div className="description">
                         <p
@@ -61,7 +62,7 @@ const TradeFinannceAssistance = () => {
                 <div className="col-xl-6">
                   <div
                     className="shape-img-bg shape-border style-2 scroll-tranform"
-                    data-distance="20%"
+                    data-distance="0%"
                   >
                     <img
                       alt=""
@@ -127,73 +128,59 @@ const TradeFinannceAssistance = () => {
         </div>
       </div>
 
-      <div
-        className="bg-mono-gray-1"
-        style={{ marginTop: 100, paddingTop: 100, paddingBottom: 100 }}
-      >
-        <div className="tf-container-2">
-          <div className="heading-secetion text-center mb_61">
-            <h1 className="heading-title text_dark fw-6 split-text effect-right">
-              Effective Solutions
-            </h1>
-          </div>
-          <p
-            className="text-body-1 text_mono-gray-7 mb-4"
-            style={{ marginBottom: 100 }}
-          >
-            We are a team of professionals who are specialized in providing
-            holistic support and services towards setting up your business in
-            UAE and abroad. We are always ready to walk the extra mile to cater
-            to all your business requisites. Our customer-centric approach makes
-            us more accessible to our global clientele.
-          </p>
-          <div className="tf-grid-layout lg-col-3">
-            <div
-              className="choice-item left wow animate__fadeInLeft animate__animated"
-              data-wow-delay="0s"
-            >
-              <div className="heading">
-                <h5 className="text_dark fw-6 mb_16">Customer Support 24/7:</h5>
-                <p className="text-body-1 text_dark">
-                  We have a competent team of core professionals who are
-                  available to serve the clients requirement round the clock.
-                </p>
-              </div>
-            </div>
-            <div
-              className="choice-item center wow animate__fadeInLeft animate__animated"
-              data-wow-delay="0.2s"
-            >
-              <div className="heading">
-                <h5 className="text_dark text_white fw-6 mb_16">
-                  Experience Team:
-                </h5>
-                <p className="text-body-1 text_dark text_white mb_32">
-                  The firm's team of experts assist businesses in preparing the
-                  necessary documentation, including Company Registration
-                  Documents, obtaining FTA tax certificates and Business Bank
-                  Account Opening.
-                </p>
-              </div>
-            </div>
-            <div
-              className="choice-item right wow animate__fadeInLeft animate__animated"
-              data-wow-delay="0.3s"
-            >
-              <div className="heading">
-                <h5 className="text_dark fw-6 mb_16">
-                  Exceeds our client’s expectations:
-                </h5>
-                <p className="text-body-1 text_dark">
-                  Minimum Turnaround Time and Affordable Charges, Collaboration
-                  with various Govt/Semi Govt agencies, Tailor made packages and
-                  Highly experienced Professionals.
-                </p>
+
+
+<div className="section-blog style-3 sw-layout-1 tf-spacing-17">
+            <div className="tf-container">
+              <div className="wrap pb-0" style={{borderBottom:0 }}>
+                <div className="heading-section d-flex justify-content-center flex-wrap-md gap_12 align-items-end mb_108">
+                  <div className="left">
+                    <h1 className="heading-title split-text effect-right text-center">
+                      Effective Solutions
+                    </h1>
+                    <p
+                      className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated text-center"
+                      data-wow-delay="0s"
+                    >
+                   We are a team of professionals who are specialized in providing holistic support and services towards setting up your business in UAE and abroad. We are always ready to walk the extra mile to cater to all your business requisites. Our customer-centric approach makes us more accessible to our global clientele.
+                    </p>
+                  </div>
+                </div>
+                <div className="row">
+                  {tradeFinanceEffectiveSolutionsData.map((article) => (
+                    <div className="col-md-4">
+                      <div className="blog-article-item hover-image">
+                        <div className="article-thumb mb_25">
+                          <img
+                            className="lazyload"
+                            data-src={article.imageSrc}
+                            alt="blog"
+                            src={article.imageSrc}
+                            width={article.width}
+                            height={article.height}
+                          />
+                        </div>
+                        <div className="article-content">
+                          <h5 className="title letter-spacing-2">
+                            <div className="link">
+                              {article.title}
+                            </div>
+                          </h5>
+                          <p
+                            className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated"
+                            data-wow-delay="0s"
+                          >
+                            {article.text}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
+
 
       <div className="tf-container">
         <div className="wrap">
@@ -253,14 +240,9 @@ const TradeFinannceAssistance = () => {
         </div>
       </div>
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
 
       <div className="tf-container">
-        <div className="text-with-img-1 tf-spacing-14">
+        <div className="text-with-img-1 tf-spacing-14 pb-0 mb-0">
           <div className="row">
             <div className="col-lg-6">
               <div className="left">
@@ -428,7 +410,7 @@ const TradeFinannceAssistance = () => {
               key={`${item.id}-${index}`}
             >
               <div className="testimonial style-4">
-                <div className="img-style-slider mb_40">
+                <div className="img-style-slider mb_40" style={{borderRadius:35, width:"max-content", overflow:"hidden"}}>
                   <img
                     className="lazyload"
                     data-src={item.imageSrc}

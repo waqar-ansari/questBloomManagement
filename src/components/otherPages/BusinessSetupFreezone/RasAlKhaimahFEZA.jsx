@@ -22,16 +22,15 @@ const RasAlKhaimahFEZA = () => {
       <div className="wrap-page-header">
         <Header1 />
 
-        <div className="section-process style-1 tf-spacing-5">
+        <div className="section-process style-1 tf-spacing-5 pb-0">
           <div className="tf-container">
-            <div className="wrap border-0">
+            <div className="wrap border-0 pb-0">
               <div className="row align-items-end">
                 <div className="col-xl-6 my-auto">
                   <div className="content">
                     <div className="heading">
                       <h1 className="title split-text effect-right  mb-5">
-                        Ras Al Khaimah Free Economic
-                        <br /> Zone Authority (RAKEZ)
+                        Ras Al Khaimah Free EZA
                       </h1>
                       <div className="description">
                         <p

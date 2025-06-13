@@ -9,11 +9,10 @@ import { homepageServices } from "@/data/homepageServices";
 export default function Services() {
   return (
     <div
-      className="section sw-layout-1 tf-spacing-13 pt-0"
-      style={{ marginTop: 100 }}
+      className="section sw-layout-1 tf-spacing-13 py-0"
     >
       <div className="tf-container">
-        <div className="heading-section d-flex justify-content-between flex-wrap-md gap_12 align-items-end mb_88">
+        <div className="heading-section d-flex justify-content-between flex-wrap-md gap_12 align-items-end mb_60">
           <div className="left">
             <h2 className="heading-title split-text effect-right">
               Smart Business Services, Built Around You

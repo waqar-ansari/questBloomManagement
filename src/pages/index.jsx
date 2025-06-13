@@ -22,7 +22,7 @@ export default function HomePage() {
       <Header1 />
 
       <Hero />
-      <div className="main-content style-1 position-relative z-5">
+      <div className="main-content style-1 position-relative z-5" id="main-content">
         <Brands />
         <Services />
         <Process />

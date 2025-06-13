@@ -55,6 +55,7 @@ import InternationalFZA from "./components/otherPages/BusinessSetupFreezone/Inte
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { fetchServices } from "./redux/slices/servicesSlice";
+import ScrollToTop from "./utlis/ScrollToTop";
 
 function App() {
   const dispatch = useDispatch()
@@ -66,6 +67,7 @@ dispatch(fetchServices())
       <div id="wrapper" className="counter-scroll">
         <LayoutWrapper>
           <Context>
+             <ScrollToTop />
             <Routes>
               <Route path="/">
                 <Route index element={<HomePage />} />
