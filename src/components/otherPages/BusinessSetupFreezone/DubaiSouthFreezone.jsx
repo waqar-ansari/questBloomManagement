@@ -29,8 +29,8 @@ const DubaiSouthFreezone = () => {
                 <div className="col-xl-6 my-auto">
                   <div className="content">
                     <div className="heading">
-                      <h1 className="title split-text effect-right">
-                        Dubai South <br /> Free Zone
+                      <h1 className="title split-text effect-right mb-5">
+                        Dubai South Free Zone
                       </h1>
                       <div className="description">
                         <p
@@ -69,7 +69,7 @@ const DubaiSouthFreezone = () => {
                 <div className="col-xl-6">
                   <div
                     className="shape-img-bg shape-border style-2 scroll-tranform"
-                    data-distance="20%"
+                    data-distance="6%"
                   >
                     <img
                       alt=""
@@ -109,7 +109,7 @@ const DubaiSouthFreezone = () => {
       <div className="tf-container">
         <div className="wrap">
           <div className="row align-items-end">
-            <div style={{ marginTop: 100 }}>
+            <div className="pt_90">
               <div className="box-service style-1">
                 <div className="img-style effect-item effect-left effect-2">
                   <img
@@ -188,14 +188,14 @@ const DubaiSouthFreezone = () => {
       </div>
 
      <EffectiveSolutions />
-      <div className="section-testimonial style-5 tf-spacing-16 pb-0">
+      <div className="section-testimonial style-5 tf-spacing-16 pb-0 pt_90">
         <div className="heading-section text-center mb_63">
           <h3 className="text_white split-text effect-right">
             Why Should You to Setup Your Business in Dubai South Free Zone ?
           </h3>
         </div>
         <Swiper
-          className="swiper sw-layout"
+          className="swiper sw-layout mb-0"
           loop={true}
           autoplay={{
             delay: 2000,
@@ -228,11 +228,12 @@ const DubaiSouthFreezone = () => {
             <SwiperSlide
               className="swiper-slide"
               key={`${item.id}-${index}`}
+              style={{paddingTop:50 }}
             >
               <div className="testimonial style-4">
                 <div className="img-style-slider mb_40">
-                 <div style={{borderRadius:35, width:"max-content", overflow:"hidden"}}>
-                  <div style={{borderRadius:35, width:"max-content", overflow:"hidden"}}>
+               
+                  <div style={{borderRadius:35, width:"auto", overflow:"hidden"}}>
                     <img
                       className="lazyload"
                       data-src={item.imageSrc}
@@ -243,7 +244,7 @@ const DubaiSouthFreezone = () => {
 
                     />
                  </div>
-                 </div>
+                 
                 </div>
                 <div className="content">
                   <div className="d-flex flex-column">

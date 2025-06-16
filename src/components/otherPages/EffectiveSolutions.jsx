@@ -5,10 +5,10 @@ const EffectiveSolutions = () => {
   return (
     <>
     
-    <div className="section-blog style-3 sw-layout-1 tf-spacing-17">
+    <div className="section-blog style-3 sw-layout-1 tf-spacing-17 pt_90 pb_90">
       <div className="tf-container">
         <div className="wrap pb-0" style={{borderBottom:0 }}>
-          <div className="heading-section d-flex justify-content-center flex-wrap-md gap_12 align-items-end mb_108">
+          <div className="heading-section d-flex justify-content-center flex-wrap-md gap_12 align-items-end mb_60">
             <div className="left">
               <h1 className="heading-title split-text effect-right text-center">
                 Effective Solutions

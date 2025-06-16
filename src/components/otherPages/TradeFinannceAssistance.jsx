@@ -9,6 +9,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { tradeFinanceEffectiveSolutionsData } from "@/data/blogs";
+import { Autoplay } from "swiper/modules";
 
 const metadata = {
   title: "Trade Finance Assistance",
@@ -28,7 +29,7 @@ const TradeFinannceAssistance = () => {
                 <div className="col-xl-6 my-auto">
                   <div className="content">
                     <div className="heading">
-                      <h1 className="title split-text effect-right">
+                      <h1 className="title split-text effect-right mb-5">
                         Trade Finance Assistance
                       </h1>
                       <div className="description">
@@ -62,7 +63,7 @@ const TradeFinannceAssistance = () => {
                 <div className="col-xl-6">
                   <div
                     className="shape-img-bg shape-border style-2 scroll-tranform"
-                    data-distance="0%"
+                    data-distance="6%"
                   >
                     <img
                       alt=""
@@ -83,7 +84,7 @@ const TradeFinannceAssistance = () => {
       <div className="tf-container">
         <div className="wrap">
           <div className="row align-items-end">
-            <div style={{ marginTop: 100 }}>
+            <div className="pt_90">
               <div className="box-service style-1">
                 <div className="img-style effect-item effect-left effect-2">
                   <img
@@ -130,10 +131,10 @@ const TradeFinannceAssistance = () => {
 
 
 
-<div className="section-blog style-3 sw-layout-1 tf-spacing-17">
+<div className="section-blog style-3 sw-layout-1 tf-spacing-17 pt_90 pb_90">
             <div className="tf-container">
               <div className="wrap pb-0" style={{borderBottom:0 }}>
-                <div className="heading-section d-flex justify-content-center flex-wrap-md gap_12 align-items-end mb_108">
+                <div className="heading-section d-flex justify-content-center flex-wrap-md gap_12 align-items-end mb_60">
                   <div className="left">
                     <h1 className="heading-title split-text effect-right text-center">
                       Effective Solutions
@@ -185,7 +186,7 @@ const TradeFinannceAssistance = () => {
       <div className="tf-container">
         <div className="wrap">
           <div className="row align-items-end">
-            <div style={{ marginTop: 100 }}>
+            <div>
               <div className="box-service style-1">
                 <div className="img-style effect-item effect-left effect-2 my-auto">
                   <h5 className="text_dark fw-6 mb_16">
@@ -242,7 +243,7 @@ const TradeFinannceAssistance = () => {
 
 
       <div className="tf-container">
-        <div className="text-with-img-1 tf-spacing-14 pb-0 mb-0">
+        <div className="text-with-img-1 tf-spacing-14 pb-0 mb-0 pt_90">
           <div className="row">
             <div className="col-lg-6">
               <div className="left">
@@ -373,15 +374,20 @@ const TradeFinannceAssistance = () => {
         </div>
       </div>
 
-      <div className="section-testimonial style-5 tf-spacing-16 pb-0">
+      <div className="section-testimonial style-5 tf-spacing-16 pb-0 pt_90">
         <div className="heading-section text-center mb_63">
           <h3 className="text_white split-text effect-right">
           Trade Solutions for Importers
           </h3>
         </div>
         <Swiper
-          className="swiper sw-layout"
-          loop
+          className="swiper sw-layout mb-0"
+          loop={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay]}
           initialSlide={1}
           centeredSlides
           spaceBetween={15}
@@ -408,9 +414,10 @@ const TradeFinannceAssistance = () => {
             <SwiperSlide
               className="swiper-slide"
               key={`${item.id}-${index}`}
+              style={{paddingTop:50 }}
             >
               <div className="testimonial style-4">
-                <div className="img-style-slider mb_40" style={{borderRadius:35, width:"max-content", overflow:"hidden"}}>
+                <div className="img-style-slider mb_40" style={{borderRadius:35, width:"auto", overflow:"hidden"}}>
                   <img
                     className="lazyload"
                     data-src={item.imageSrc}

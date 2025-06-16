@@ -9,39 +9,57 @@ export default function Contact() {
     { value: "tradefinanceAssistance", label: "Trade Finance Assistance" },
   ];
 
-const [selectedOption, setSelectedOption] = useState(null);
+  const [selectedOption, setSelectedOption] = useState(null);
   const customStyles = {
-  control: (provided) => ({
-    ...provided,
-    borderRadius: 20,
-    borderColor: "#ccc",
-    boxShadow: "none",
-    "&:hover": {
+    control: (base) => ({
+      ...base,
+      borderRadius: 10,
       borderColor: "#ccc",
-    },
-  }),
-  singleValue: (provided) => ({
-    ...provided,
-    color: "#797631", // selected text
-  }),
-  option: (provided, state) => ({
-    ...provided,
-    backgroundColor: state.isSelected
-      ? "#f0f0f0" // background when selected
-      : state.isFocused
-      ? "#f9f9f9" // background on hover/focus
-      : "white",
-    color: "#797631", // text color for all options
-    cursor: "pointer",
-  }),
-};
+      boxShadow: "none",
+        lineHeight:"20px",
+      minHeight: 50, // reduce height
+      height: 50,
+      fontSize: "16px", // increase font size
+      "&:hover": {
+        borderColor: "#ccc",
+      },
+    }),
+    singleValue: (base) => ({
+      ...base,
+      color: "#000",
+      fontSize: "18px", // increase font size
+    }),
+    option: (base, state) => ({
+      ...base,
+      backgroundColor: state.isSelected
+        ? "#797631"
+        : state.isFocused
+        ? "#f9f9f9"
+        : "#fff",
+      color: state.isSelected ? "#fff" : "#000",
+      cursor: "pointer",
+      fontSize: "16px",
+      paddingTop: 8,
+      paddingBottom: 8,
+    }),
+    indicatorsContainer: (base) => ({
+      ...base,
+      height: 50,
+    }),
+    valueContainer: (base) => ({
+      ...base,
+      height: 50,
+      paddingTop: 0,
+      paddingBottom: 0,
+    }),
+  };
   return (
-    <div className="page-title style-default">
+    <div className="page-title style-default pb_90 pt_90">
       <div className="section-contact style-default position-relative py-0 hover-animate">
         <div className="tf-container">
-          <div className="row">
+          <div className="row pb-3">
             <div className="col-lg-6">
-              <div className="left">
+              <div className="left pt-5 mt-5">
                 <div className="heading">
                   <h1 className="mb_21">Contact Us</h1>
                   <p
@@ -78,6 +96,7 @@ const [selectedOption, setSelectedOption] = useState(null);
               <form
                 className="form-contact"
                 onSubmit={(e) => e.preventDefault()}
+                style={{ padding: "30px 64px" }}
               >
                 <fieldset>
                   <label className="mb_15" htmlFor="name">
@@ -115,14 +134,19 @@ const [selectedOption, setSelectedOption] = useState(null);
                     />
                   </fieldset>
                 </div>
-
-               <Select
-      value={selectedOption}
-      onChange={setSelectedOption}
-      options={options}
-      styles={customStyles}
-      placeholder="Select an option"
-    />
+                <fieldset>
+                  <label className="mb_15" htmlFor="serviceType">
+                    Service Type
+                  </label>
+                  <Select
+                    value={selectedOption}
+                    onChange={setSelectedOption}
+                    options={options}
+                    styles={customStyles}
+                    id="serviceType"
+                    placeholder="Select an option"
+                  />
+                </fieldset>
                 <fieldset className="">
                   <label className="mb_15" htmlFor="message">
                     Message

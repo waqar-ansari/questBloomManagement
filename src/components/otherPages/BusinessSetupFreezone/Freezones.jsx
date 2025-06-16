@@ -54,7 +54,7 @@ const Freezones = () => {
                 <div className="col-xl-6">
                   <div
                     className="shape-img-bg shape-border style-2 scroll-tranform"
-                    data-distance="20%"
+                    data-distance="6%"
                   >
                     <img
                       alt=""
@@ -71,7 +71,7 @@ const Freezones = () => {
         </div>
       </div>
 
-     <div className="tf-container" style={{marginTop:100}}>
+     <div className="tf-container pt_90">
          <div className="row">
               {freezones.map((item) => (
                 <div className="col-md-3 col-sm-2 col-12 mb-5" key={item.id}>

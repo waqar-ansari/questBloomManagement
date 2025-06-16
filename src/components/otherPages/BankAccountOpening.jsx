@@ -14,7 +14,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { accountOpeningEffectiveSolutionsData } from "@/data/blogs";
 
-
 const metadata = {
   title: "Bank Account Opening",
   description: "Bank Account Opening",
@@ -64,7 +63,7 @@ const BankAccountOpening = () => {
                 <div className="col-xl-6">
                   <div
                     className="shape-img-bg shape-border style-2 scroll-tranform"
-                    data-distance="0%"
+                    data-distance="6%"
                   >
                     <img
                       alt=""
@@ -84,7 +83,7 @@ const BankAccountOpening = () => {
       <div className="tf-container">
         <div className="wrap">
           <div className="row align-items-end">
-            <div style={{ marginTop: 100 }}>
+            <div className="pt_90">
               <div className="box-service style-1">
                 <div className="img-style effect-item effect-left effect-2">
                   <img
@@ -134,15 +133,12 @@ const BankAccountOpening = () => {
         </div>
       </div>
 
-      <div
-        className="tf-container"
-        style={{ marginTop: 100, marginBottom: 100 }}
-      >
+      <div className="tf-container pt_90 pb_90">
         <div className="row">
           <div className="col-lg-6">
             <div className="content">
               <div className="heading">
-                <h1 className="title split-text effect-right mb-4">
+                <h1 className="title split-text effect-right mb-5">
                   Private Account Services
                 </h1>
                 <div className="description">
@@ -256,69 +252,68 @@ const BankAccountOpening = () => {
         </div>
       </div>
 
-     
-<div className="section-blog style-3 sw-layout-1 tf-spacing-17">
-            <div className="tf-container">
-              <div className="wrap pb-0" style={{borderBottom:0 }}>
-                <div className="heading-section d-flex justify-content-center flex-wrap-md gap_12 align-items-end mb_108">
-                  <div className="left">
-                    <h1 className="heading-title split-text effect-right text-center">
-                      Effective Solutions
-                    </h1>
-                    <p
-                      className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated text-center"
-                      data-wow-delay="0s"
-                    >
-                    Opening a corporate bank account can be a time-consuming and complicated process, particularly in International markets. Quest Management Consultancy understands the complexities involved in business banking, thereby offering customized solutions to corporates seeking to expand business in the Mid-East.
-                    </p>
-                  </div>
-                </div>
-                <div className="row">
-                  {accountOpeningEffectiveSolutionsData.map((article) => (
-                    <div className="col-md-4">
-                      <div className="blog-article-item hover-image">
-                        <div className="article-thumb mb_25">
-                          <img
-                            className="lazyload"
-                            data-src={article.imageSrc}
-                            alt="blog"
-                            src={article.imageSrc}
-                            width={article.width}
-                            height={article.height}
-                          />
-                        </div>
-                        <div className="article-content">
-                          <h5 className="title letter-spacing-2">
-                            <div className="link">
-                              {article.title}
-                            </div>
-                          </h5>
-                          <p
-                            className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated"
-                            data-wow-delay="0s"
-                          >
-                            {article.text}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+      <div className="section-blog style-3 sw-layout-1 tf-spacing-17 pt_90 pb_90">
+        <div className="tf-container">
+          <div className="wrap pb-0" style={{ borderBottom: 0 }}>
+            <div className="heading-section d-flex justify-content-center flex-wrap-md gap_12 align-items-end mb_60">
+              <div className="left">
+                <h1 className="heading-title split-text effect-right text-center">
+                  Effective Solutions
+                </h1>
+                <p
+                  className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated text-center"
+                  data-wow-delay="0s"
+                >
+                  Opening a corporate bank account can be a time-consuming and
+                  complicated process, particularly in International markets.
+                  Quest Management Consultancy understands the complexities
+                  involved in business banking, thereby offering customized
+                  solutions to corporates seeking to expand business in the
+                  Mid-East.
+                </p>
               </div>
             </div>
+            <div className="row">
+              {accountOpeningEffectiveSolutionsData.map((article) => (
+                <div className="col-md-4">
+                  <div className="blog-article-item hover-image">
+                    <div className="article-thumb mb_25">
+                      <img
+                        className="lazyload"
+                        data-src={article.imageSrc}
+                        alt="blog"
+                        src={article.imageSrc}
+                        width={article.width}
+                        height={article.height}
+                      />
+                    </div>
+                    <div className="article-content">
+                      <h5 className="title letter-spacing-2">
+                        <div className="link">{article.title}</div>
+                      </h5>
+                      <p
+                        className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated"
+                        data-wow-delay="0s"
+                      >
+                        {article.text}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
+        </div>
+      </div>
 
-
-
-
-      <div className="section-testimonial style-5 tf-spacing-16 pb-0">
+      <div className="section-testimonial style-5 tf-spacing-16 pb-0 pt_90">
         <div className="heading-section text-center mb_63">
           <h3 className="text_white split-text effect-right">
             Banking in Dubai/UAE
           </h3>
         </div>
         <Swiper
-          className="swiper sw-layout"
+          className="swiper sw-layout mb-0 pb_90"
           loop={true}
           autoplay={{
             delay: 2000,
@@ -348,9 +343,16 @@ const BankAccountOpening = () => {
           }}
         >
           {accountOpeningAssistance.map((item, index) => (
-            <SwiperSlide className="swiper-slide" key={`${item.id}-${index}`}>
+            <SwiperSlide className="swiper-slide" key={`${item.id}-${index}`} style={{paddingTop:50 }}>
               <div className="testimonial style-4">
-                <div className="img-style-slider mb_40" style={{borderRadius:35, width:"max-content", overflow:"hidden"}}>
+                <div
+                  className="img-style-slider mb_40"
+                  style={{
+                    borderRadius: 35,
+                    width: "auto",
+                    overflow: "hidden",
+                  }}
+                >
                   <img
                     className="lazyload"
                     data-src={item.imageSrc}
@@ -358,7 +360,7 @@ const BankAccountOpening = () => {
                     src={item.imageSrc}
                     width={908}
                     height={652}
-                    style={{borderRadius:35}}
+                    style={{ borderRadius: 35 }}
                   />
                 </div>
                 <div className="content">

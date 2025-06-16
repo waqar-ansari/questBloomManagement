@@ -10,31 +10,49 @@ export default function Contact() {
   ];
  const [selectedOption, setSelectedOption] = useState(null);
 
-const customStyles = {
-  control: (provided) => ({
-    ...provided,
-    borderRadius: 10,
-    borderColor: "#ccc",
-    boxShadow: "none",
-    "&:hover": {
+  const customStyles = {
+    control: (base) => ({
+      ...base,
+      borderRadius: 10,
       borderColor: "#ccc",
-    },
-  }),
-  singleValue: (provided) => ({
-    ...provided,
-    color: "#797631", // selected text
-  }),
-  option: (provided, state) => ({
-    ...provided,
-    backgroundColor: state.isSelected
-      ? "#f0f0f0" // background when selected
-      : state.isFocused
-      ? "#f9f9f9" // background on hover/focus
-      : "white",
-    color: "#797631", // text color for all options
-    cursor: "pointer",
-  }),
-};
+      boxShadow: "none",
+      minHeight: 50,
+      height: 50,
+      lineHeight:"20px",
+      fontSize: "18px",
+      "&:hover": {
+        borderColor: "#ccc",
+      },
+    }),
+    singleValue: (base) => ({
+      ...base,
+      color: "#000",
+      fontSize: "18px",
+    }),
+    option: (base, state) => ({
+      ...base,
+      backgroundColor: state.isSelected
+        ? "#797631"
+        : state.isFocused
+        ? "#f9f9f9"
+        : "#fff",
+      color: state.isSelected ? "#fff" : "#000",
+      cursor: "pointer",
+      fontSize: "16px",
+      paddingTop: 8,
+      paddingBottom: 8,
+    }),
+    indicatorsContainer: (base) => ({
+      ...base,
+      height: 50,
+    }),
+    valueContainer: (base) => ({
+      ...base,
+      height: 50,
+      paddingTop: 0,
+      paddingBottom: 0,
+    }),
+  };
   return (
     <div className="section-contact style-default position-relative py-5">
       <div className="tf-container">
@@ -101,6 +119,10 @@ const customStyles = {
                 </fieldset>
               </div>
               <div>
+                  <fieldset>
+                  <label className="mb_15" htmlFor="serviceType">
+                    Service Type
+                  </label>
                <Select
       value={selectedOption}
       onChange={setSelectedOption}
@@ -108,6 +130,7 @@ const customStyles = {
       styles={customStyles}
       placeholder="Select an option"
     />
+    </fieldset>
               </div>
               <fieldset className="">
                 <label className="mb_15" htmlFor="message">

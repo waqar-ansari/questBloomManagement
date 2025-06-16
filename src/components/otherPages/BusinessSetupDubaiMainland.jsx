@@ -24,7 +24,7 @@ const BusinessSetupDubaiMainland = () => {
                 <div className="col-xl-6 my-auto">
                   <div className="content">
                     <div className="heading">
-                      <h1 className="title split-text effect-right">
+                      <h1 className="title split-text effect-right mb-5">
                         Mainland Company Setup
                         <br /> with DED-Dubai
                       </h1>
@@ -65,7 +65,7 @@ const BusinessSetupDubaiMainland = () => {
                 <div className="col-xl-6">
                   <div
                     className="shape-img-bg shape-border style-2 scroll-tranform"
-                    data-distance="20%"
+                    data-distance="6%"
                   >
                     <img
                       alt=""
@@ -82,8 +82,7 @@ const BusinessSetupDubaiMainland = () => {
         </div>
       </div>
 
-      <div style={{ marginTop: 100 }}>
-        <div className={`heading-section text-center`}>
+        <div className={`heading-section text-center pt_90`}>
           <h2 className="section-faqs style-1 pt-0">
             Why business setup in Dubai?
           </h2>
@@ -100,12 +99,12 @@ const BusinessSetupDubaiMainland = () => {
             Dubai RIGHT NOW!
           </p>
         </div>
-      </div>
+   
 
-      <div className="tf-container">
+      <div className="tf-container pt_90">
         <div className="wrap">
           <div className="row align-items-end">
-            <div style={{ marginTop: 100 }}>
+           
               <div className="box-service style-1">
                 <div className="img-style effect-item effect-left effect-2">
                   <img
@@ -162,15 +161,15 @@ const BusinessSetupDubaiMainland = () => {
                   </Link>
                 </div>
               </div>
-            </div>
+          
           </div>
         </div>
       </div>
 
-      <div className="section-blog style-3 sw-layout-1 tf-spacing-17">
+      <div className="section-blog style-3 sw-layout-1 tf-spacing-17 pt_90">
         <div className="tf-container">
           <div className="wrap pb-0" style={{ borderBottom: 0 }}>
-            <div className="heading-section d-flex justify-content-center flex-wrap-md gap_12 align-items-end mb_108">
+            <div className="heading-section d-flex justify-content-center flex-wrap-md gap_12 align-items-end mb_60">
               <div className="left">
                 <h1 className="heading-title split-text effect-right text-center">
                   Effective Solutions
@@ -223,7 +222,7 @@ const BusinessSetupDubaiMainland = () => {
         </div>
       </div>
 
-      <div style={{ marginTop: 100 }}>
+      
         <div className="tf-container-2">
           <div className="heading-section text-center mb_58">
             <div className="heading-tag d-flex gap_12 mx-auto mb_20 text_mono-dark-8 fw-5">
@@ -568,7 +567,7 @@ const BusinessSetupDubaiMainland = () => {
             </svg>
           </div>
         </div>
-      </div>
+      
 
       <Footer1 />
     </>

@@ -6,7 +6,7 @@ import OdometerComponent from "@/components/common/OdometerComponent";
 export default function Brands() {
 
   return (
-    <div className="section-about style-2 tf-spacing-15 pb_90">
+    <div className="section-about style-2 tf-spacing-15 pb_90 pt-0">
       <div className="tf-container">
         {/* <div className="tf-spacing-14">
           <div className="heading-section text-center mb_55">
