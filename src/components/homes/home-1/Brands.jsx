@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 import { counterItems3 } from "@/data/facts";
 import OdometerComponent from "@/components/common/OdometerComponent";
+import VariableProximity from "@/utlis/VariableProximity";
 
 export default function Brands() {
-
+  const containerRef = useRef(null);
   return (
     <div className="section-about style-2 tf-spacing-15 pb_90 pt-0">
       <div className="tf-container">
@@ -368,11 +369,12 @@ export default function Brands() {
                           className="h3"
                         >
                           {/* BUSINESS CONSULTING • ADVITEX • */}
-                          Quest Management Consultancy 
+                          Quest Management Consultancy
                         </textPath>
                       </text>
                     </svg>
                   </div>
+
                   <img
                     alt="logo"
                     className="logo"
@@ -387,9 +389,20 @@ export default function Brands() {
               <div className="content">
                 <div className="heading">
                   <h1 className="title split-text effect-right">
-                  Our mission is to <span className="line-break"/>turn your dream<span className="line-break"/> into reality.
+                    {/* Our mission is to <span className="line-break"/>turn your dream<span className="line-break"/> into reality. */}
+                    <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Our mission is to turn your dream into reality."
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
                   </h1>
-                   <span className="cursor"></span>
+                  <span className="cursor"></span>
                   <div className="description">
                     {/* <p
                       className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
@@ -402,7 +415,10 @@ export default function Brands() {
                       className="text-body-1 text_mono-gray-7 wow animate__fadeInUp animate__animated"
                       data-wow-delay="0s"
                     >
-                    We provide expert assistance in company formation and all related aspects including bank account opening. We hold an impressive track record in business Iservices for over a decade.
+                      We provide expert assistance in company formation and all
+                      related aspects including bank account opening. We hold an
+                      impressive track record in business Iservices for over a
+                      decade.
                     </p>
                   </div>
                 </div>

@@ -15,9 +15,10 @@ export default function About() {
                   <img
                     alt="shape"
                     className="img-custom-anim-left wow"
-                    src="/images/qb/head of hr.png"
+                    src="/images/qb/head of hr.webp"
                     width={692}
                     height={543}
+                    style={{ objectFit: "none" }}
                   />
                   <div className="img-bg-shape">
                     <svg
@@ -111,7 +112,7 @@ export default function About() {
             <div className="col-xl-6 my-auto">
               <div className="content pt-0">
                 <h5 className="title split-text split-lines-rotation-x">
-                  <br />
+                 
                   JALENDHAR SHARMA
                 </h5>
                 <p className="title split-text split-lines-rotation-x">
@@ -143,9 +144,10 @@ export default function About() {
                   <img
                     alt="shape"
                     className="img-custom-anim-right wow"
-                    src="/images/qb/General Manager.png"
+                    src="/images/qb/General Manager.webp"
                     width={695}
                     height={568}
+                    style={{ objectFit: "none" }}
                   />
                   <div className="img-bg-shape">
                     <svg

@@ -1,10 +1,12 @@
 import { blogArticles } from "@/data/blogs";
-import React from "react";
+import React, { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from "react-router-dom";
 
 import { Navigation } from "swiper/modules";
+import VariableProximity from "@/utlis/VariableProximity";
 export default function Blogs() {
+  const containerRef = useRef(null);
   return (
     <div className="section-blog style-3 sw-layout-1 tf-spacing-17 pb_90 pt_90">
       <div className="tf-container">
@@ -12,7 +14,17 @@ export default function Blogs() {
           <div className="heading-section d-flex justify-content-between flex-wrap-md gap_12 align-items-end mb_60">
             <div className="left">
               <h1 className="heading-title split-text effect-right">
-                Our Premium Services
+                 <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Our Premium Services"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
               </h1>
               <p
                 className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated"

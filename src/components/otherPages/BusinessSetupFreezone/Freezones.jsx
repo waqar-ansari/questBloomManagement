@@ -3,13 +3,15 @@ import Footer1 from "@/components/footers/Footer1";
 import Header1 from "@/components/headers/Header1";
 import { blogArticles2 } from "@/data/blogs";
 import { freezones } from "@/data/freezones";
-import React from "react";
+import VariableProximity from "@/utlis/VariableProximity";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 const metadata = {
   title: "Free Zones",
   description: "Free Zones",
 };
 const Freezones = () => {
+  const containerRef = useRef(null);
   return (
     <>
       <MetaComponent meta={metadata} />
@@ -19,12 +21,22 @@ const Freezones = () => {
         <div className="section-process style-1 tf-spacing-5 pb-0">
           <div className="tf-container">
             <div className="wrap border-0 pb-0">
-              <div className="row align-items-end">
-                <div className="col-xl-6 my-auto">
+              <div className="row">
+                <div className="col-xl-6">
                   <div className="content">
                     <div className="heading">
-                      <h1 className="title split-text effect-right">
-                        UAE Free Zones
+                      <h1 className="title split-text effect-right mb-5">
+                         <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="UAE Free Zones"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
                       </h1>
                       <div className="description">
                         <p
@@ -73,6 +85,12 @@ const Freezones = () => {
 
      <div className="tf-container pt_90">
          <div className="row">
+           <div className="text-center pb_90">
+             <h2 className="title text_mono-dark-9 fw-5 split-text split-lines-rotation-x">
+               Choose your{" "}
+                <span className="text-gradient">Free zone</span>
+              </h2>
+           </div>
               {freezones.map((item) => (
                 <div className="col-md-3 col-sm-2 col-12 mb-5" key={item.id}>
                   <div className="blog-article-item style-1 hover-image-3">

@@ -1,15 +1,17 @@
-import React, { useState } from "react";
+import VariableProximity from "@/utlis/VariableProximity";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Select from "react-select";
 export default function Contact() {
   const options = [
-    { value: "businessSetup", label: "Business Setup" },
-    { value: "freezone", label: "Free Zone" },
+    { value: "businessSetupMainland", label: "Business Setup Mainland" },
+    { value: "businessSetupfreezone", label: "Business Setup Free Zone" },
     { value: "bankingAssistance", label: "Banking Assistance" },
-    { value: "tradefinanceAssistance", label: "Trade Finance Assistance" },
+    { value: "tradeFinanceAssistance", label: "Trade Finance Assistance" },
   ];
 
   const [selectedOption, setSelectedOption] = useState(null);
+  const containerRef = useRef(null);
   const customStyles = {
     control: (base) => ({
       ...base,
@@ -61,7 +63,20 @@ export default function Contact() {
             <div className="col-lg-6">
               <div className="left pt-5 mt-5">
                 <div className="heading">
-                  <h1 className="mb_21">Contact Us</h1>
+                  <h1 className="mb_21">
+<div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Contact Us"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
+
+                  </h1>
                   <p
                     className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
                     data-wow-delay="0s"

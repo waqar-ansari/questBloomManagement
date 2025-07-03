@@ -6,33 +6,45 @@ import Header1 from "@/components/headers/Header1";
 import About from "@/components/otherPages/About";
 import Process from "@/components/otherPages/Process";
 import Team from "@/components/otherPages/Team";
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import MetaComponent from "@/components/common/MetaComponent";
 import OriginalTestimonials from "@/components/common/OriginalTestimonials";
 import { counterItems3 } from "@/data/facts";
 import OdometerComponent from "@/components/common/OdometerComponent";
+import VariableProximity from "@/utlis/VariableProximity";
 const metadata = {
   title: "About Quest Management",
   description: "About Quest Management",
 };
 export default function AboutPage() {
+  const containerRef = useRef(null);
   return (
     <>
       <MetaComponent meta={metadata} />
       <div className="wrap-page-header" id="animated-background" >
         <Header1 />
-        <div className="page-title style-default">
+        <div className="page-title style-default pt_90 pb_90">
           <div className="tf-container">
             <div className="row">
               <div className="col-12">
-                <div className="heading mb_51">
+                <div className="heading mb_51 text-center">
                   <h1 className="text_black mb_16 letter-spacing-1">
-                    Meet the minds of our success
+                     <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Meet the minds of our success"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
                   </h1>
                   <p className="sub-heading text_mono-gray-7">
                     A dedicated team driving innovation and
-                    <br /> delivering great results.
+                     delivering great results.
                   </p>
                 </div>
               </div>

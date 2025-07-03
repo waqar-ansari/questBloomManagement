@@ -17,7 +17,7 @@ export const homepages = [
 export const freezones2 = [
   {
     href: "/dubai-south-freezone",
-    src: "/images/qb/dubaiPic1.webp",
+    src: "/images/qb/dubaiSouthFreezone.jpg",
     alt: "dubaiMainland",
     title: "Dubai South Free Zone",
     current: false,
@@ -80,7 +80,7 @@ export const freezones2 = [
   },
   {
     href: "/ajman-media-city-fz",
-    src: "/images/qb/ajmanMediaCityFZ.jpeg",
+    src: "/images/qb/ajmanMediaCityFZ.jpg",
     alt: "freezones",
     title: "Ajman Media City FZ",
     current: false,

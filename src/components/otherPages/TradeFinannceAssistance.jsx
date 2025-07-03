@@ -5,17 +5,19 @@ import Header1 from "@/components/headers/Header1";
 import { dubaiSouthFreeZone, tradeFinanceAssistance } from "@/data/sliderData";
 import { counterItems2, counterItems4 } from "@/data/facts";
 import { testimonials } from "@/data/testimonials";
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { tradeFinanceEffectiveSolutionsData } from "@/data/blogs";
 import { Autoplay } from "swiper/modules";
+import VariableProximity from "@/utlis/VariableProximity";
 
 const metadata = {
   title: "Trade Finance Assistance",
   description: "Trade Finance Assistance",
 };
 const TradeFinannceAssistance = () => {
+  const containerRef = useRef(null);
   return (
     <>
       <MetaComponent meta={metadata} />
@@ -25,12 +27,22 @@ const TradeFinannceAssistance = () => {
         <div className="section-process style-1 tf-spacing-5 pb-0 pt_90">
           <div className="tf-container">
             <div className="wrap border-0 pb-0">
-              <div className="row align-items-end">
-                <div className="col-xl-6 my-auto">
+              <div className="row">
+                <div className="col-xl-6">
                   <div className="content">
                     <div className="heading">
                       <h1 className="title split-text effect-right mb-5">
-                        Trade Finance Assistance
+                        <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Trade Finance Assistance"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
                       </h1>
                       <div className="description">
                         <p
@@ -99,7 +111,17 @@ const TradeFinannceAssistance = () => {
                 <div className="content">
                   <div className="heading mb_25 effect-item effect-right effect-2">
                     <h3 className="text_dark fw-6">
-                      Local and International Guarantees
+                      <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Local and International Guarantees"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
                     </h3>
                   </div>
                   <p className="text-body-1 text_mono-gray-7 mt_20 mb-4">
@@ -137,7 +159,17 @@ const TradeFinannceAssistance = () => {
                 <div className="heading-section d-flex justify-content-center flex-wrap-md gap_12 align-items-end mb_60">
                   <div className="left">
                     <h1 className="heading-title split-text effect-right text-center">
-                      Effective Solutions
+                      <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Effective Solutions"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
                     </h1>
                     <p
                       className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated text-center"
@@ -190,7 +222,17 @@ const TradeFinannceAssistance = () => {
               <div className="box-service style-1">
                 <div className="img-style effect-item effect-left effect-2 my-auto">
                   <h5 className="text_dark fw-6 mb_16">
-                    Trade Solutions for Exporters:
+                    <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Trade Solutions for Exporters:"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
                   </h5>
                   <ul
                     className="list d-grid gap_16"
@@ -310,7 +352,20 @@ const TradeFinannceAssistance = () => {
             <div className="col-lg-6">
               <div className="content">
                 <div className="heading">
-                  <h1 className="title effect-right">Private Account Services</h1>
+                  <h1 className="title effect-right">
+<div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Private Account Services"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
+
+                  </h1>
                   <div className="description">
                     <p
                       className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
@@ -377,7 +432,17 @@ const TradeFinannceAssistance = () => {
       <div className="section-testimonial style-5 tf-spacing-16 pb-0 pt_90">
         <div className="heading-section text-center mb_63">
           <h3 className="text_white split-text effect-right">
-          Trade Solutions for Importers
+          <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Trade Solutions for Importers"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
           </h3>
         </div>
         <Swiper

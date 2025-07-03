@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import VariableProximity from "@/utlis/VariableProximity";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Select from "react-select";
 export default function Contact() {
   const options = [
-    { value: "businessSetup", label: "Business Setup" },
-    { value: "freezone", label: "Free Zone" },
+     { value: "businessSetupMainland", label: "Business Setup Mainland" },
+    { value: "businessSetupfreezone", label: "Business Setup Free Zone" },
     { value: "bankingAssistance", label: "Banking Assistance" },
-    { value: "tradefinanceAssistance", label: "Trade Finance Assistance" },
+    { value: "tradeFinanceAssistance", label: "Trade Finance Assistance" },
   ];
  const [selectedOption, setSelectedOption] = useState(null);
-
+const containerRef = useRef(null);
   const customStyles = {
     control: (base) => ({
       ...base,
@@ -61,7 +62,17 @@ export default function Contact() {
             <div className="left">
               <div className="heading">
                 <div className="h1 split-text split-lines-rotation-x pt-5 mt-5">
-                  Success is a team play, right? Let’s work together!
+                   <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Success is a team play, right? Let’s work together!"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
                 </div>
               </div>
               <div className="bot">

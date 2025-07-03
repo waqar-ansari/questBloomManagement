@@ -2,33 +2,33 @@ export const teamMembers = [
    {
     name: "BRAHMARUP GANGULY",
     role: "Director",
-    image: "/images/qb/people4.png",
+    image: "/images/qb/team1.png",
   },
   {
     name: "JALENDER SHARMA",
     role: "General Manager Head of Business Development",
-    image: "/images/qb/people1.webp",
+    image: "/images/qb/team2.png",
   },
  
   {
     name: "SYED MAJID HASAN",
     role: "Business & Corporate Banking Head",
-    image: "/images/qb/people3.png",
+    image: "/images/qb/team3.png",
   },
     {
     name: "Tianlai Zhang(Simon)",
     role: "Business Development Director",
-    image: "/images/qb/people7.png",
+    image: "/images/qb/team4.png",
   },
   {
     name: "FAREEDA EK",
     role: "CHARTERED ACCOUNTANT",
-    image: "/images/qb/people5.png",
+    image: "/images/qb/team5.png",
   },
   {
     name: "PRAGYA SHARMA",
     role: "BUSINESS CONSULTANT",
-    image: "/images/qb/people2.png",
+    image: "/images/qb/team6.png",
   },
   // {
   //   name: "Oliver Benjamin",

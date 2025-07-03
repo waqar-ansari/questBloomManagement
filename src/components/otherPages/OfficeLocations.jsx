@@ -1,12 +1,26 @@
 import { mapLocations } from "@/data/locations";
-import React from "react";
+import VariableProximity from "@/utlis/VariableProximity";
+import React, { useRef } from "react";
 
 export default function OfficeLocations() {
+  const containerRef = useRef(null);
   return (
     <div className="section-map tf-spacing-6 pt_90 pb_90">
       <div className="tf-container">
         <div className="heading-seciton mb_60">
-          <h2 className="heading-title">Visit Our Office</h2>
+          <h2 className="heading-title">
+            <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Visit Our Office"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
+          </h2>
         </div>
         <div className="tf-grid-layout lg-col-2">
           {mapLocations.map((item, index) => (

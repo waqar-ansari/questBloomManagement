@@ -5,17 +5,19 @@ import Header1 from "@/components/headers/Header1";
 import { counterItems2, counterItems4 } from "@/data/facts";
 import { dmccFreezone } from "@/data/sliderData";
 import { testimonials } from "@/data/testimonials";
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import EffectiveSolutions from "../EffectiveSolutions";
+import VariableProximity from "@/utlis/VariableProximity";
 
 const metadata = {
   title: "DMCC Freezone",
   description: "DMCC Freezone",
 };
 const DmccFreezone = () => {
+  const containerRef = useRef(null);
   return (
     <>
       <MetaComponent meta={metadata} />
@@ -25,13 +27,22 @@ const DmccFreezone = () => {
         <div className="section-process style-1 tf-spacing-5 pb-0">
           <div className="tf-container">
             <div className="wrap border-0 pb-0">
-              <div className="row align-items-end">
-                <div className="col-xl-6 my-auto">
+              <div className="row">
+                <div className="col-xl-6">
                   <div className="content">
                     <div className="heading">
                       <h1 className="title split-text effect-right mb-5">
-                        Dubai Multi Commodities
-                        <br /> Center (DMCC)
+                        <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Dubai Multi Commodities Center (DMCC)"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
                       </h1>
                       <div className="description">
                         <p
@@ -97,7 +108,19 @@ const DmccFreezone = () => {
                 </div>
                 <div className="content">
                   <div className="heading mb_25 effect-item effect-right effect-2">
-                    <h3 className="text_dark fw-6">DMCC</h3>
+                    <h3 className="text_dark fw-6">
+                      <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="DMCC"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
+                    </h3>
                   </div>
                   <p className="text-body-1 text_mono-gray-7 mt_20 mb-4">
                     Dubai Multi Commodities Center (DMCC) is a free zone in
@@ -131,7 +154,17 @@ const DmccFreezone = () => {
       <div className="section-testimonial style-5 tf-spacing-16 pb-0 pt_90">
         <div className="heading-section text-center mb_63">
           <h3 className="text_white split-text effect-right">
-            Benefits to set up business in DMCC Free Zone
+            <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Benefits to set up business in DMCC Free Zone"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
           </h3>
         </div>
         <Swiper

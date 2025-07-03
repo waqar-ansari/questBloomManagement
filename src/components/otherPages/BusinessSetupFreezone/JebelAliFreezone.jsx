@@ -4,18 +4,20 @@ import Footer1 from "@/components/footers/Footer1";
 import Header1 from "@/components/headers/Header1";
 import { counterItems2, counterItems4 } from "@/data/facts";
 import { testimonials } from "@/data/testimonials";
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import EffectiveSolutions from "../EffectiveSolutions";
 import { jebelAliFreezone } from "@/data/sliderData";
 import { Autoplay } from "swiper/modules";
+import VariableProximity from "@/utlis/VariableProximity";
 
 const metadata = {
   title: "Jebel Ali Freezone",
   description: "Jebel Ali Freezone",
 };
 const JebelAliFreeZone = () => {
+  const containerRef = useRef(null);
   return (
     <>
       <MetaComponent meta={metadata} />
@@ -25,13 +27,22 @@ const JebelAliFreeZone = () => {
         <div className="section-process style-1 tf-spacing-5 pb-0">
           <div className="tf-container">
             <div className="wrap border-0 pb-0">
-              <div className="row align-items-end">
-                <div className="col-xl-6 my-auto">
+              <div className="row">
+                <div className="col-xl-6">
                   <div className="content">
                     <div className="heading">
                       <h1 className="title split-text effect-right  mb-5">
-                        Jebel Ali Free Zone
-                        <br /> Authority (JAFZA)
+                        <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Jebel Ali Free Zone Authority (JAFZA)"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
                       </h1>
                       <div className="description">
                         <p
@@ -104,7 +115,19 @@ const JebelAliFreeZone = () => {
                 </div>
                 <div className="content">
                   <div className="heading mb_25 effect-item effect-right effect-2">
-                    <h3 className="text_dark fw-6">JAFZA</h3>
+                    <h3 className="text_dark fw-6">
+                      <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="JAFZA"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
+                    </h3>
                   </div>
                   <p className="text-body-1 text_mono-gray-7 mt_20 mb-4">
                     Jebel Ali Free Zone (JAFZA) is one of the oldest and most
@@ -139,7 +162,17 @@ const JebelAliFreeZone = () => {
       <div className="section-testimonial style-5 tf-spacing-16 pb-0 pt_90">
         <div className="heading-section text-center mb_63">
           <h3 className="text_white split-text effect-right">
-            Why Should You Setup Your Business in JAFZA
+            <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Why Should You Setup Your Business in JAFZA"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
           </h3>
         </div>
         <Swiper

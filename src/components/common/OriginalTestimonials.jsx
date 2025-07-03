@@ -1,7 +1,9 @@
 import { testimonials3 } from '@/data/testimonials'
-import React from 'react'
+import VariableProximity from '@/utlis/VariableProximity'
+import React, { useRef } from 'react'
 
 const OriginalTestimonials = () => {
+  const containerRef = useRef(null);
   return (
     <div className="section-testimonial style-1">
       <div className="tf-container">
@@ -10,7 +12,17 @@ const OriginalTestimonials = () => {
             <div className="wrap">
               <div className="heading-section">
                 <h2 className="heading-title split-text split-lines-rotation-x">
-                  Client Satisfaction, Our Reputation
+                   <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Client Satisfaction, Our Reputation"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
                 </h2>
                 <p
                   className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated"

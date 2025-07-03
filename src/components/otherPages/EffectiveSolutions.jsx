@@ -1,7 +1,9 @@
 import { effectiveSolutionsData } from "@/data/blogs";
-import React from "react";
+import VariableProximity from "@/utlis/VariableProximity";
+import React, { useRef } from "react";
 
 const EffectiveSolutions = () => {
+  const containerRef = useRef(null);
   return (
     <>
     
@@ -11,7 +13,17 @@ const EffectiveSolutions = () => {
           <div className="heading-section d-flex justify-content-center flex-wrap-md gap_12 align-items-end mb_60">
             <div className="left">
               <h1 className="heading-title split-text effect-right text-center">
-                Effective Solutions
+                <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Effective Solutions"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
               </h1>
               <p
                 className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated text-center"

@@ -78,7 +78,7 @@ export default function Nav() {
           isActiveParent(homepages) ? "current-menu" : ""
         } `}
       >
-        <a href="#">Free Zones</a>
+        <Link to="/freezones">Free Zones</Link>
         <div
           className="submenu mega-menu"
           style={{ height: "auto", overflow: "auto" ,width:"80%"}}

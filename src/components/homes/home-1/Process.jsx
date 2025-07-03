@@ -1,6 +1,8 @@
-import React from "react";
+import VariableProximity from "@/utlis/VariableProximity";
+import React, { useRef } from "react";
 
 export default function Process() {
+  const containerRef = useRef(null);
   return (
     <div className="section-process style-1 tf-spacing-3 pt_90 pb-0">
       <div className="tf-container">
@@ -9,7 +11,17 @@ export default function Process() {
             <div className="col-12">
               <div className="heading-section mb_88 ps-0">
                 <h2 className="heading-title split-text effect-right">
-                  Our Approach
+                   <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Our Approach"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
                 </h2>
                 <p
                   className="text-body-1 text_mono-gray-7 mt_18 wow animate__fadeInUp animate__animated"

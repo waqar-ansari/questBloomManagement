@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import MetaComponent from "../common/MetaComponent";
 import Header1 from "../headers/Header1";
 import Footer1 from "../footers/Footer1";
@@ -6,11 +6,13 @@ import { counterItems3, counterItems4 } from "@/data/facts";
 import OdometerComponent from "../common/OdometerComponent";
 import { Link } from "react-router-dom";
 import { dubaiMainlandEffectiveSolutionsData } from "@/data/blogs";
+import VariableProximity from "@/utlis/VariableProximity";
 const metadata = {
   title: "Business setup in Dubai Mainland",
   description: "Business setup in Dubai Mainland",
 };
 const BusinessSetupDubaiMainland = () => {
+  const containerRef = useRef(null);
   return (
     <>
       <MetaComponent meta={metadata} />
@@ -20,13 +22,22 @@ const BusinessSetupDubaiMainland = () => {
         <div className="section-process style-1 tf-spacing-5 pb-0">
           <div className="tf-container">
             <div className="wrap pb-0 border-0">
-              <div className="row align-items-end">
-                <div className="col-xl-6 my-auto">
+              <div className="row">
+                <div className="col-xl-6">
                   <div className="content">
                     <div className="heading">
                       <h1 className="title split-text effect-right mb-5">
-                        Mainland Company Setup
-                        <br /> with DED-Dubai
+                         <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Mainland Company Setup with DED-Dubai"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
                       </h1>
                       <div className="description">
                         <p
@@ -84,7 +95,17 @@ const BusinessSetupDubaiMainland = () => {
 
         <div className={`heading-section text-center pt_90`}>
           <h2 className="section-faqs style-1 pt-0">
-            Why business setup in Dubai?
+             <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Why business setup in Dubai?"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
           </h2>
 
           <p
@@ -118,7 +139,20 @@ const BusinessSetupDubaiMainland = () => {
                 </div>
                 <div className="content">
                   <div className="heading mb_25 effect-item effect-right effect-2">
-                    <h3 className="text_dark fw-6">How could we assist you?</h3>
+                    <h3 className="text_dark fw-6">
+ <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="How could we assist you?"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
+
+                    </h3>
                   </div>
                   <p className="text-body-1 text_mono-gray-7 mt_20 mb-4">
                     We provide you top-notch, high-quality company formation
@@ -172,7 +206,17 @@ const BusinessSetupDubaiMainland = () => {
             <div className="heading-section d-flex justify-content-center flex-wrap-md gap_12 align-items-end mb_60">
               <div className="left">
                 <h1 className="heading-title split-text effect-right text-center">
-                  Effective Solutions
+                   <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Effective Solutions"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
                 </h1>
                 <p
                   className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated text-center"

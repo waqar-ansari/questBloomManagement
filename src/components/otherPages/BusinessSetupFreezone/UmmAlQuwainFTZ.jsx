@@ -4,18 +4,20 @@ import Footer1 from "@/components/footers/Footer1";
 import Header1 from "@/components/headers/Header1";
 import { counterItems2, counterItems4 } from "@/data/facts";
 import { testimonials } from "@/data/testimonials";
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import EffectiveSolutions from "../EffectiveSolutions";
 import { sharjahAirportFreezone, ummAlQuwainFTZ } from "@/data/sliderData";
 import { Autoplay } from "swiper/modules";
+import VariableProximity from "@/utlis/VariableProximity";
 
 const metadata = {
   title: "Umm Al Quwain Free Trade Zone",
   description: "Umm Al Quwain Free Trade Zone",
 };
 const UmmAlQuwainFTZ = () => {
+  const containerRef = useRef(null);
   return (
     <>
       <MetaComponent meta={metadata} />
@@ -25,13 +27,22 @@ const UmmAlQuwainFTZ = () => {
         <div className="section-process style-1 tf-spacing-5 pb-0">
           <div className="tf-container">
             <div className="wrap border-0 pb-0">
-              <div className="row align-items-end">
-                <div className="col-xl-6 my-auto">
+              <div className="row">
+                <div className="col-xl-6">
                   <div className="content">
                     <div className="heading">
                       <h1 className="title split-text effect-right  mb-5">
-                        Umm Al Quwain Free Trade <br />
-                        Zone (UAQ FTZ)
+                         <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Umm Al Quwain Free Trade Zone (UAQ FTZ)"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
                       </h1>
                       <div className="description">
                         <p
@@ -98,7 +109,19 @@ const UmmAlQuwainFTZ = () => {
                 </div>
                 <div className="content">
                   <div className="heading mb_25 effect-item effect-right effect-2">
-                    <h3 className="text_dark fw-6">UAQ FTZ</h3>
+                    <h3 className="text_dark fw-6">
+                       <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="UAQ FTZ"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
+                    </h3>
                   </div>
                   <p className="text-body-1 text_mono-gray-7 mt_20 mb-4">
                     UAQ FTZ is a strategic location for businesses operating in
@@ -134,7 +157,17 @@ const UmmAlQuwainFTZ = () => {
       <div className="section-testimonial style-5 tf-spacing-16 pb-0 pt_90">
         <div className="heading-section text-center mb_63">
           <h3 className="text_white split-text effect-right">
-            Why Should You Choose to Setup Your Business in UAQFTZ
+             <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Why Should You Choose to Setup Your Business in UAQFTZ"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
           </h3>
         </div>
         <Swiper

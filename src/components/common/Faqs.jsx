@@ -1,10 +1,13 @@
-import React from "react";
+import VariableProximity from "@/utlis/VariableProximity";
+import React, { useRef } from "react";
 
 export default function Faqs({
   parentClass = "section-faqs style-1 tf-spacing-8 pt-0 pb_90",
   headingClass = "heading-title split-text effect-right",
   header2 = false,
 }) {
+
+  const containerRef = useRef(null);
   return (
       <div className={parentClass}>
         <div className="tf-container">
@@ -14,9 +17,35 @@ export default function Faqs({
             } `}
           >
             {header2 ? (
-              <h2 className={headingClass}>Got a question? Get your answer</h2>
+              <h2 className={headingClass}>
+ <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Got a question? Get your answer"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
+
+              </h2>
             ) : (
-              <h1 className={headingClass}>Got a question? Get your answer</h1>
+              <h1 className={headingClass}>
+ <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Got a question? Get your answer"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
+
+              </h1>
             )}
             <p
               className="text-body-1 text_mono-gray-7 mt_20 wow animate__fadeInUp animate__animated"

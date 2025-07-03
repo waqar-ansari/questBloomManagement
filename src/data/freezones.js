@@ -1,7 +1,7 @@
 export const freezones = [
   {
     id: 1,
-    imageSrc: "/images/qb/dubaiPic1.webp",
+    imageSrc: "/images/qb/dubaiSouthFreezone.jpg",
     title: "Dubai South Free Zone",
     link: "dubai-south-freezone",
     width: 406,
@@ -73,7 +73,7 @@ export const freezones = [
   },
   {
     id: 10,
-    imageSrc: "/images/qb/ajmanMediaCityFZ.jpeg",
+    imageSrc: "/images/qb/ajmanMediaCityFZ.jpg",
     title: "Ajman Media City Freezone",
     link: "ajman-media-city-fz",
     width: 406,

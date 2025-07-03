@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import MetaComponent from "../common/MetaComponent";
 import Header1 from "../headers/Header1";
 import Footer1 from "../footers/Footer1";
@@ -7,13 +7,14 @@ import axios from "axios";
 import api from "@/axios/axiosInstance";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import VariableProximity from "@/utlis/VariableProximity";
 const metadata = {
   title: "Other Services",
   description: "Other Services",
 };
 
 const OtherServices = () => {
-
+const containerRef = useRef(null);
 const allServices = useSelector((state)=>state.services)
 
   return (
@@ -25,15 +26,22 @@ const allServices = useSelector((state)=>state.services)
           <div className="tf-container">
             <div className="row">
               <div className="col-12">
-                <div className="heading mb_51">
+                <div className="heading mb_51 text-center">
                   <h1 className="text_black mb_16 letter-spacing-1">
-                    Comprehensive Business Services <br /> Beyond Company Setup
+                 <div ref={containerRef} style={{ position: "relative" }}>
+                      <VariableProximity
+                        label="Business Solutions Beyond Company Formation"
+                        className="variable-proximity"
+                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                        containerRef={containerRef}
+                        radius={100}
+                        falloff="linear"
+                      />
+                    </div>
                   </h1>
                   <p className="sub-heading text_mono-gray-7">
-                    From visa renewals to document attestations, we offer a wide
-                    range <br /> of essential services to keep your business
-                    running smoothly—without the
-                    <br /> need for your physical presence.
+                     We handle everything from visa renewals to document attestations, so your business runs seamlessly without your physical presence.
                   </p>
                 </div>
               </div>
