@@ -291,7 +291,7 @@ export default function Brands() {
             </div>
           </div>
         </div> */}
-        <div className="text-with-img-1 tf-spacing-14 pt_90 pb_90 mb_90">
+        <div className="text-with-img-1 tf-spacing-14 pt_90 pb_90 mb_90" >
           <div className="row">
             <div className="col-lg-6">
               <div className="left">
@@ -299,7 +299,8 @@ export default function Brands() {
                   <img
                     alt="img-with-shape-1"
                     className="img-custom-anim-left wow"
-                    src="/images/qb/group.webp"
+                    src="/images/qb/group.jpg"
+                   
                     width={696}
                     height={598}
                   />
@@ -353,7 +354,7 @@ export default function Brands() {
                     </svg>
                   </div>
                 </div>
-                <div className="item scroll-tranform" data-distance="20%">
+                <div className="item scroll-tranform" data-distance="20%" style={{right: "1.2%",bottom: "-28%"}}>
                   <div className="text-circle">
                     <svg className="textcircle" viewBox="0 0 500 500">
                       <defs>

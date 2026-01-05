@@ -78,7 +78,7 @@ export default function Testimonials() {
              <div className="item">
                 <img
                   alt="item"
-                  src="/images/qb/group.webp"
+                  src="/images/qb/group.jpg"
                   width={1200}
                   height={330}
                 />
