@@ -42,7 +42,6 @@ export const dubaiSouthFreeZone = [
     quote: `Dubai South free zone offers modern office buildings, warehouses, logistics facilities, offers industry-specific benefits, including dedicated business centers and support for startups.`,
   },
 ];
-
 export const dmccFreezone = [
   {
     id: 1,

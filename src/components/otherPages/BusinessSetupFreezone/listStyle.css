@@ -8,3 +8,22 @@
 .list li {
   list-style: none; /* optional: remove default bullet */
 }
+
+
+
+.customList li {
+  list-style: none;
+  display: flex;
+  align-items: flex-start; /* change to center if single-line */
+  gap: 0.9rem;
+}
+
+.customList li::before {
+  content: "•";
+  color: #797631;
+  font-size: 1.4rem;
+  line-height: 1;
+  margin-top: 0.35em; /* fine-tune vertical alignment */
+}
+
+
