@@ -8,9 +8,11 @@ import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import EffectiveSolutions from "../EffectiveSolutions";
-import { sharjahAirportFreezone } from "@/data/sliderData";
+import { hamriyahFreezone, sharjahAirportFreezone } from "@/data/sliderData";
 import { Autoplay } from "swiper/modules";
 import VariableProximity from "@/utlis/VariableProximity";
+import { dmccPackagePrice } from "@/data/priceDetails/dmccPackage";
+import { sharjahAirportPrice } from "@/data/priceDetails/sharjahAirport";
 
 const metadata = {
   title: "Sharjah Airport International Freezone",
@@ -32,39 +34,113 @@ const SharjahAirportFreezone = () => {
                   <div className="content">
                     <div className="heading">
                       <h1 className="title split-text effect-right  mb-5">
-                        <div ref={containerRef} style={{ position: "relative" }}>
-                      <VariableProximity
-                        label="Sharjah Airport International Free Zone"
-                        className="variable-proximity"
-                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
-                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
-                        containerRef={containerRef}
-                        radius={100}
-                        falloff="linear"
-                      />
-                    </div>
+                        <div
+                          ref={containerRef}
+                          style={{ position: "relative" }}
+                        >
+                          <VariableProximity
+                            label="Sharjah Airport International Free Zone"
+                            className="variable-proximity"
+                            fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                            toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                            containerRef={containerRef}
+                            radius={100}
+                            falloff="linear"
+                          />
+                        </div>
                       </h1>
                       <div className="description">
                         <p
                           className="text-body-1 text_mono-gray-7 mb_9 wow animate__fadeInUp animate__animated"
                           data-wow-delay="0s"
                         >
-                          Sharjah Airport International Free Zone (SAIF Zone) is
-                          a dynamic free zone located adjacent to the Sharjah
-                          International Airport. Established in 1995, SAIF Zone
-                          offers a business-friendly environment and a range of
-                          benefits to entrepreneurs and investors looking to
-                          establish their businesses in the region. SAIF Zone
-                          provides a range of business services, including
-                          simplified business registration procedures, 100%
-                          foreign ownership, and zero personal and corporate
-                          income tax. The free zone also offers access to
-                          world-class infrastructure, including modern office
-                          buildings, warehouses, and logistics facilities. SAIF
-                          Zone is a strategic location for businesses operating
-                          in manufacturing, trading, and related industries,
-                          offering easy access to major global markets.
+                          Sharjah Airport International Free Zone (SAIF Zone)
+                          offers cost-effective company setup packages tailored
+                          for trading, services, and industrial activities, with
+                          100% foreign ownership and quick licensing. The free
+                          zone also offers access to world-class infrastructure,
+                          including modern office buildings, logistics
+                          facilities, and easy access to major highways.
                         </p>
+                      </div>
+
+                      <div className="text-display-2 text_white mb_20 split-text effect-scale">
+                        <span
+                          className="fw-bold"
+                          style={{
+                            color: "#797631",
+                            fontSize: 50,
+                            lineHeight: "50px",
+                          }}
+                        >
+                          Packages starts
+                        </span>
+                        <div
+                          className="d-sm-flex align-items-center mt-4"
+                          style={{ gap: "10px" }}
+                        >
+                          <div className="me-4">
+                            <span
+                              style={{
+                                fontSize: 25,
+                                lineHeight: "30px",
+                                display: "block",
+                                color: "#000",
+                              }}
+                            >
+                              From Just
+                            </span>
+                            <span
+                              style={{
+                                fontSize: 40,
+                                lineHeight: "45px",
+                                display: "block",
+                                fontWeight: 900,
+                                letterSpacing: 5,
+                                color: "#797631",
+                              }}
+                            >
+                              AED
+                            </span>
+                          </div>
+
+                          <span
+                            style={{
+                              fontSize: 90,
+                              lineHeight: 1,
+                              position: "relative",
+                              display: "inline-block",
+                              fontWeight: 700,
+                              color: "#797631",
+                            }}
+                          >
+                            10,800
+                            <span
+                              style={{
+                                fontSize: 30,
+                                position: "absolute",
+                                top: 0,
+                                right: -10,
+                              }}
+                            >
+                              *
+                            </span>
+                          </span>
+
+                          {/* <span
+                            style={{
+                              fontSize: 18,
+                              lineHeight: 1,
+                              alignSelf: "flex-end",
+                              marginBottom: 20,
+                              color: "#000",
+                              fontWeight:"bold",
+                              flexWrap:"wrap"
+                            }}
+                          >
+                           (10% DISCOUNT FOR 1 & 2 YRS)
+                          </span> */}
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -90,78 +166,146 @@ const SharjahAirportFreezone = () => {
         </div>
       </div>
 
-      <div className="tf-container">
-        <div className="wrap">
-          <div className="row align-items-end">
-            <div className="pt_90">
-              <div className="box-service style-1">
-                <div className="img-style effect-item effect-left effect-2">
-                  <img
-                    className="lazyload"
-                    data-src="/images/qb/sharjahAirportFreezone2.webp"
-                    alt="service"
-                    src="/images/qb/sharjahAirportFreezone2.webp"
-                    width={657}
-                    height={534}
-                  />
-                </div>
-                <div className="content">
-                  <div className="heading mb_25 effect-item effect-right effect-2">
-                    <h3 className="text_dark fw-6">
-                      <div ref={containerRef} style={{ position: "relative" }}>
-                      <VariableProximity
-                        label="SAIF"
-                        className="variable-proximity"
-                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
-                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
-                        containerRef={containerRef}
-                        radius={100}
-                        falloff="linear"
-                      />
-                    </div>
-                    </h3>
-                  </div>
-                  <p className="text-body-1 text_mono-gray-7 mt_20 mb-4">
-                    SAIF specializes in licenses for general trading,
-                    commercial, service, and industrial purposes.
-                  </p>
-                  <p className="text-body-1 text_mono-gray-7 mt_20 mb-4">
-                    Foreign investments and initiatives are attracted by
-                    efficiency and low-cost operations. It’s ideal location
-                    simplifies transportation and logistics. Warehouses, storage
-                    facilities, container parking, bunkers, and worker housing
-                    are all easily available for the establishment of a firm.
-                  </p>
+      <div className="heading-section text-center mt_60">
+        <div className="heading-tag d-flex gap_12 mx-auto mb_20 text_mono-dark-8 fw-5">
+          <div className="icon">
+            <i className="icon-user-question-02" />
+          </div>
+          <p className="text-body-3 fw-5">Choose From Amazing Packages</p>
+        </div>
+        <h2 className="title text_mono-dark-9 fw-5 split-text split-lines-rotation-x mb-5">
+          Discover the Best Packages for{" "}
+          <span className="text-gradient">Your Business</span> in Sharjah
+          Airport FZ
+          {/* <span className="text-gradient">unlock</span> your <br />
+              brand’s full potential */}
+        </h2>
+      </div>
 
-                  <Link
-                    to={`/contact-us`}
-                    className="tf-btn height-2 btn-dark effect-item effect-right effect-5"
-                  >
-                    <span>Contact Us</span>
+      <div className="section sw-layout-1 tf-spacing-13 py-0">
+        <div className="tf-container">
+          {sharjahAirportPrice.map((item) => (
+            <div className="case-studies-item style-1 hover-image hover-border border-element h-full w-100 mb-4">
+              <Link to={`/${item.link}`} className="img-style">
+                <img
+                  className="lazyload"
+                  data-src={item.image}
+                  alt="case-studies"
+                  src={item.image}
+                  width={382}
+                  height={502}
+                />
+              </Link>
+              <div className="content flex-1" style={{ maxWidth: "100%" }}>
+                <div className="top d-flex align-items-center justify-content-between mb_31">
+                  <span>
+                    <span
+                      className="me-1"
+                      style={{
+                        fontSize: 16,
+                        lineHeight: 1,
+                        fontWeight: 600,
+                        color: "#000",
+                      }}
+                    >
+                      Starts from{" "}
+                    </span>
+                    <span
+                      style={{
+                        fontSize: 25,
+                        lineHeight: 1,
+                        position: "relative",
+                        display: "inline-block",
+                        fontWeight: 700,
+                        color: "#797631",
+                      }}
+                    >
+                      {" "}
+                      {item.startingPrice}
+                    </span>
+                  </span>
+                  <a href={`/contact-us`} className="tf-btn" target="_blank">
+                    <span className="icon-arrow-top-right" />
                     <span className="bg-effect" />
-                  </Link>
+                  </a>
+                </div>
+                <div className="heading">
+                  <h4 className="mb_15 title">
+                    <div className="link" style={{ color: "#797631" }}>
+                      {item.title}
+                    </div>
+                  </h4>
+                  <p className="text_mono-gray-7 text-body-2 mb-5">
+                    {item.description}
+                  </p>
+                </div>
+                <div className="gap-4 packagePricing">
+                  {item?.packages?.map((packageDetails, index) => {
+                    return (
+                      <div key={index} className="light-border mb-4 flex-1">
+                        <div className="mb-5">
+                          <div className=" text_white split-text effect-scale mb-3">
+                            <span
+                              className="fw-bold"
+                              style={{
+                                color: "#797631",
+                                fontSize: 20,
+                                lineHeight: "20px",
+                              }}
+                            >
+                              {packageDetails.heading}
+                            </span>
+                          </div>
+
+                          <div>
+                            <ul className="list effect-item effect-right effect-3 mt-0">
+                              {packageDetails.featuresInclude.map(
+                                (feature, index) => {
+                                  return (
+                                    <li
+                                      className="text-body-1 text_black d-flex align-items-center mb-2"
+                                      key={index}
+                                    >
+                                      <i className="icon-check-cycle-line me-3" />
+                                      {feature}
+                                    </li>
+                                  );
+                                },
+                              )}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
 
       <EffectiveSolutions />
       <div className="section-testimonial style-5 tf-spacing-16 pb-0 pt_90">
-        <div className="heading-section text-center mb_63">
+        
+
+
+
+
+<div style={{ background: "#797631" }}>
+        <div className="heading-section text-center mb_20">
           <h3 className="text_white split-text effect-right">
-            <div ref={containerRef} style={{ position: "relative" }}>
-                      <VariableProximity
-                        label="Why Should You Setup Business in SAIF Zone"
-                        className="variable-proximity"
-                        fromFontVariationSettings="'wght' 400, 'opsz' 9"
-                        toFontVariationSettings="'wght' 1000, 'opsz' 40"
-                        containerRef={containerRef}
-                        radius={100}
-                        falloff="linear"
-                      />
-                    </div>
+            <div ref={containerRef} style={{ position: "relative", paddingTop: "20px" }}>
+              <VariableProximity
+                label="Benefits to set up business in Sharjah Airport Free Zone"
+                className="variable-proximity"
+                fromFontVariationSettings="'wght' 400, 'opsz' 9"
+                toFontVariationSettings="'wght' 1000, 'opsz' 40"
+                containerRef={containerRef}
+                radius={100}
+                falloff="linear"
+              />
+            </div>
           </h3>
         </div>
         <Swiper
@@ -171,25 +315,25 @@ const SharjahAirportFreezone = () => {
             delay: 2000,
             disableOnInteraction: false,
           }}
-           modules={[Autoplay]}
+          modules={[Autoplay]}
           initialSlide={1}
           centeredSlides
           spaceBetween={15}
           breakpoints={{
             0: { slidesPerView: 1.2 },
             575: {
-              slidesPerView: 1.2,
+              slidesPerView: 1,
             },
             768: {
-              slidesPerView: 1.2,
+              slidesPerView: 3.1,
               spaceBetween: 20,
             },
             992: {
-              slidesPerView: 1.3,
+              slidesPerView: 3.2,
               spaceBetween: 72,
             },
             1200: {
-              slidesPerView: 1.98,
+              slidesPerView: 3.8,
               spaceBetween: 72,
             },
           }}
@@ -198,25 +342,32 @@ const SharjahAirportFreezone = () => {
             <SwiperSlide
               className="swiper-slide"
               key={`${testimonial.id}-${index}`}
-              style={{paddingTop:50 }}
             >
               <div className="testimonial style-4">
-                <div className="img-style-slider mb_40">
-                  <div style={{borderRadius:35, width:"auto", overflow:"hidden"}}>
-                  <img
-                    className="lazyload"
-                    data-src={testimonial.imageSrc}
-                    alt="testimonial"
-                    src={testimonial.imageSrc}
-                    width={908}
-                    height={652}
-                    style={{borderRadius:35}}
-                  />
-                </div>
+                <div className="img-style-slider mb_20">
+                  <div
+                    style={{
+                      borderRadius: 35,
+                      width: "auto",
+                      overflow: "hidden",
+                      height: 200
+                    }}
+                  >
+                    <img
+                      className="lazyload"
+                      data-src={testimonial.imageSrc}
+                      alt="testimonial"
+                      src={testimonial.imageSrc}
+                      width={908}
+                      // height={652}
+                      height={200}
+                      style={{ borderRadius: 35 }}
+                    />
+                  </div>
                 </div>
                 <div className="content">
                   <div className="d-flex flex-column">
-                    <h2 className="text_white mb-3">{testimonial.heading}</h2>
+                    <h6 className="text_white mb-3 fw-bold" style={{ fontSize: "20px" }}>{testimonial.heading}</h6>
                     <div className="left">
                       <p className="text-body-2 text_white mb_12">
                         {testimonial.quote}
@@ -228,6 +379,8 @@ const SharjahAirportFreezone = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+
         <div className="bot">
           <div className="tf-container">
             <div className="row">
