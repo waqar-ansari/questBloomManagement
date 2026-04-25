@@ -354,8 +354,8 @@ export default function Brands() {
                     </svg>
                   </div>
                 </div>
-                <div className="item scroll-tranform" data-distance="20%" style={{right: "1.2%",bottom: "-28%"}}>
-                  <div className="text-circle">
+                {/* <div className="item scroll-tranform" data-distance="20%" style={{right: "-1.2%",bottom: "-28%"}}> */}
+                  {/* <div className="text-circle">
                     <svg className="textcircle" viewBox="0 0 500 500">
                       <defs>
                         <path
@@ -369,12 +369,12 @@ export default function Brands() {
                           textLength={900}
                           className="h3"
                         >
-                          {/* BUSINESS CONSULTING • ADVITEX • */}
+                       
                           Quest Management Consultancy
                         </textPath>
                       </text>
                     </svg>
-                  </div>
+                  </div> */}
 
                   <img
                     alt="logo"
@@ -383,7 +383,7 @@ export default function Brands() {
                     width={140}
                     // height={63}
                   />
-                </div>
+                {/* </div> */}
               </div>
             </div>
             <div className="col-lg-6">

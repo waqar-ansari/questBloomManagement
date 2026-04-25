@@ -1559,3 +1559,11 @@
     transform: translateY(-15%);
   }
 }
+
+
+
+@media (max-width: 576px) {
+  .shape-img-bg .img-bg-shape {
+    width: 110%;
+  }
+}
