@@ -9,7 +9,7 @@ export const freezones = [
   },
   {
     id: 2,
-    imageSrc: "/images/qb/dmcc.webp",
+    imageSrc: "/images/qb/dmcc.jpg",
     title: "DMCC Free Zone",
     link: "dmcc-freezone",
     width: 406,
