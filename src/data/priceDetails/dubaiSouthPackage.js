@@ -108,7 +108,7 @@ export const dubaiSouthPackagePrice = [
     },
     {
         id: 5,
-        image: "/images/qb/dubaiSouth5.webp",
+        image: "/images/qb/dubaiSouth5.jpg",
         link: "business-setup-dubai-mainland",
         startingPrice: "AED 23,680*",
         noDiscount: false,

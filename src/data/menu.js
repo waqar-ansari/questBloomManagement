@@ -24,7 +24,7 @@ export const freezones2 = [
   },
   {
     href: "/dmcc-freezone",
-    src: "/images/qb/dmcc.jpg",
+    src: "/images/qb/dmcc.webp",
     alt: "freezones",
     title: "DMCC Free Zone",
     current: false,
@@ -34,13 +34,6 @@ export const freezones2 = [
     src: "/images/qb/jebelAliFZA.jpg",
     alt: "freezones",
     title: "Jebel Ali FZA",
-    current: false,
-  },
-    {
-    href: "/international-fza",
-    src: "/images/qb/ifzaFreezone2.webp",
-    alt: "freezones",
-    title: "International FZA",
     current: false,
   },
   {
@@ -99,7 +92,13 @@ export const freezones2 = [
     title: "Ras Al Khaimah FZ",
     current: false,
   },
-
+  {
+    href: "/international-fza",
+    src: "/images/qb/ifzaFreezone2.webp",
+    alt: "freezones",
+    title: "International FZA",
+    current: false,
+  },
 ];
 
 export const bankingAssistance = [
