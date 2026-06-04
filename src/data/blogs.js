@@ -73,6 +73,15 @@ export const blogArticles = [
     width: 549,
     height: 380,
   },
+    {
+    id: 12,
+    imageSrc: "/images/qb/ifzaFreezone.png",
+    title: "International Free Zone Authority",
+    startingFromPrice: "9,900",
+    link: "international-fza",
+    width: 550,
+    height: 380,
+  },
   {
     id: 4,
     imageSrc: "/images/qb/hamariyahFZ.webp",
@@ -145,15 +154,7 @@ export const blogArticles = [
     width: 550,
     height: 380,
   },
-  {
-    id: 12,
-    imageSrc: "/images/qb/ifzaFreezone.png",
-    title: "International Free Zone Authority",
-    startingFromPrice: "9,900",
-    link: "international-fza",
-    width: 550,
-    height: 380,
-  },
+
 ];
 
 export const blogArticles2 = [

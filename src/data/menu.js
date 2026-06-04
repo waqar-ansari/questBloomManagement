@@ -36,6 +36,13 @@ export const freezones2 = [
     title: "Jebel Ali FZA",
     current: false,
   },
+    {
+    href: "/international-fza",
+    src: "/images/qb/ifzaFreezone2.webp",
+    alt: "freezones",
+    title: "International FZA",
+    current: false,
+  },
   {
     href: "/hamriyah-freezone",
     src: "/images/qb/hamariyahFZ.webp",
@@ -92,13 +99,7 @@ export const freezones2 = [
     title: "Ras Al Khaimah FZ",
     current: false,
   },
-  {
-    href: "/international-fza",
-    src: "/images/qb/ifzaFreezone2.webp",
-    alt: "freezones",
-    title: "International FZA",
-    current: false,
-  },
+
 ];
 
 export const bankingAssistance = [

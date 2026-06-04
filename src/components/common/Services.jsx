@@ -45,10 +45,11 @@ export default function Services() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="tf-container slider-layout-right w-xl">
+      
+      {/* <div className="tf-container slider-layout-right w-xl"> */}
         <Swiper
-          className="swiper"
+          // className="swiper"
+          className="swiper swiper-container wow animate__fadeInLeft animate__animated"
           spaceBetween={15}
           breakpoints={{
             0: { slidesPerView: 1 },
@@ -71,7 +72,7 @@ export default function Services() {
           loop={true}
           autoplay={{
             delay: 2000,
-            disableOnInteraction: false,
+            disableOnInteraction: true,
           }}
           navigation={{
             prevEl: ".snbp6",
@@ -133,6 +134,7 @@ export default function Services() {
             </SwiperSlide>
           ))}
         </Swiper>
+      {/* </div> */}
       </div>
     </div>
   );
